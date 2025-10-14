@@ -1,13 +1,9 @@
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --text-color: #222222;
+  --blue-color: #192b63;
+  --blue-g-color: linear-gradient(90deg, #192b63 0%, #3357c9 100%);
+  --gray-color: #f7f7f7;
 }
 
 html,
@@ -17,13 +13,16 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-color);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+/* 
+"--font-open-sans
+font-family: var(--font-inter), sans-serif;
+*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -34,9 +33,101 @@ a {
   color: inherit;
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-inter), sans-serif;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h1 {
+  color: var(--blue-color);
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -0.802px;
+}
+
+h2 {
+  color: var(--blue-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+h3 {
+  color: var(--blue-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+h4 {
+  color: var(--blue-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.btn input[type="submit"],
+button {
+  border: none;
+  outline: none;
+}
+
+.btn input[type="submit"],
+.btn button,
+.btn a {
+  display: inline-block;
+  background: var(--blue-g-color);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: var(--font-inter), sans-serif;
+  letter-spacing: 0.5px;
+}
+.btn input[type="submit"]:hover,
+.btn button:hover,
+.btn a:hover {
+  background: linear-gradient(90deg, #3357c9 0%, #192b63 100%);
+  transform: scale(1.02);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-color);
+  font-family: var(--font-open-sans), sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+  resize: vertical;
 }

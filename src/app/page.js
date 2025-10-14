@@ -3,93 +3,71 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="container">
+        <h1>
+          H1 <strong>Header</strong> text
+        </h1>
+        <h2>H2 Header text</h2>
+        <h3>H3 Header text</h3>
+        <h4>H4 Header text</h4>
+        <h5>H5 Header text</h5>
+        <h6>H6 Header text</h6>
+        <p>
+          This is a paragraph. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p>
+        <div className="btn-group">
+          <div className="btn">
+            <a href="#">This is a link</a>
+          </div>
+          <div className="btn">
+            <a href="#">This is a link</a>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <br />
+        <div className="btn">
+          <button>This is a link</button>
+        </div>
+        <form>
+          <input type="text" placeholder="This is a text input" />
+          <br />
+          <input type="email" placeholder="This is an email input" />
+          <br />
+          <input type="password" placeholder="This is a password input" />
+          <br />
+          <textarea placeholder="This is a textarea"></textarea>
+          <br />
+          <div className="btn">
+            <button type="submit" className="btn">
+              Submit
+            </button>
+          </div>
+        </form>
+
+        <form>
+          <input type="text" placeholder="This is a text input" />
+          <br />
+          <input type="email" placeholder="This is an email input" />
+          <br />
+          <input type="password" placeholder="This is a password input" />
+          <br />
+          <textarea placeholder="This is a textarea"></textarea>
+          <br />
+          <div className="btn">
+            <input type="submit" className="btn" value="Submit" />
+          </div>
+        </form>
+
+        <Image
+          src="/example.jpg"
+          alt="Example Image"
+          width={600}
+          height={400}
+          className={styles.image}
+        />
+      </div>
+    </>
   );
 }
