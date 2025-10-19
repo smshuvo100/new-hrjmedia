@@ -1,0 +1,124 @@
+section.printing-services {
+  position: relative;
+}
+
+section.printing-services .header-center {
+}
+
+section.printing-services .embla {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+section.printing-services .embla__container {
+  display: flex;
+  flex-direction: row; /* ✅ fix vertical issue */
+  gap: 0;
+}
+
+section.printing-services .embla__slide {
+  flex: 0 0 calc(27% - 25px);
+  min-width: 0;
+  padding: 10px;
+}
+section.printing-services .inner-box {
+  padding: 15px 14px 20px 14px;
+}
+section.printing-services .inner-box h4 {
+  margin-bottom: 5px;
+}
+
+section.printing-services .inner-box p {
+  margin-bottom: 13px;
+}
+section.printing-services .item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #a3c8fe;
+  transition: all 0.3s ease;
+}
+
+section.printing-services .item:hover {
+  transform: translateY(-5px);
+}
+
+section.printing-services .img-box {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  display: flex;
+}
+
+section.printing-services .slider-wrapper {
+  position: relative;
+}
+section.printing-services .embla__prev,
+section.printing-services .embla__next {
+  color: #1d3dbf;
+  cursor: pointer;
+  z-index: 5;
+
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  transition: all 0.3s;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 40px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+section.printing-services .embla__prev:hover,
+section.printing-services .embla__next:hover {
+  background: var(--blue-g-color);
+  color: var(--background);
+}
+
+section.printing-services .embla__prev {
+  left: -20px;
+}
+section.printing-services .embla__next {
+  right: -20px;
+}
+
+/* ✅ Responsive */
+@media (max-width: 992px) {
+  section.printing-services .embla__slide {
+    flex: 0 0 calc(33.333% - 16.6px);
+  }
+}
+@media (max-width: 768px) {
+  section.printing-services .embla__slide {
+    flex: 0 0 50%;
+  }
+
+  section.printing-services .embla__prev,
+  section.printing-services .embla__next {
+    position: static;
+    transform: none;
+    margin: 0 8px;
+  }
+
+  section.printing-services .embla {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  section.printing-services .embla__prev,
+  section.printing-services .embla__next {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  section.printing-services .embla__slide {
+    flex: 0 0 80%;
+  }
+}
