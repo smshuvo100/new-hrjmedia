@@ -1,0 +1,14 @@
+/* 
+==============================
+our-products-section
+==============================
+*/
+section.our-products-section .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 15px;
+}
+section.our-products-section .grid-box img {
+  border-radius: 10px;
+}

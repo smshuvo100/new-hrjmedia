@@ -1,3 +1,4 @@
+/* src/app/components/HeroSlider/HeroSlider.css */
 /* 
 ==============================
 hero-section
@@ -45,13 +46,20 @@ section.hero-section .hero-all {
 section.hero-section .hero-all .hero-left {
   width: 30%;
 }
-
+/* 
 section.hero-section .hero-all .hero-left .hero-left-text .left-title {
   display: flex;
   flex-direction: column;
   gap: 20px;
+} */
+section.hero-section .hero-all .hero-left .hero-left-text h1 {
+  margin-bottom: 10px;
 }
 
+section.hero-section .hero-all .hero-left .hero-left-text p {
+  margin-bottom: 15px;
+  max-width: 300px;
+}
 /* Fixed Right Buttons (over the background) */
 section.hero-section .hero-right {
   position: absolute;
@@ -67,7 +75,7 @@ section.hero-section .hero-right {
 section.hero-section .hero-right button {
   border-radius: 6px;
   background: var(--blue-g-color);
-  width: 265px;
+  width: 284px;
   height: 70px;
   display: flex;
   flex-direction: column;

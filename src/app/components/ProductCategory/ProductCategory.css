@@ -1,0 +1,13 @@
+/* 
+==============================
+categories-section
+==============================
+*/
+section.categories-section .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+section.categories-section .grid-box img {
+  border-radius: 10px;
+}

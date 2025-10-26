@@ -4,38 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import "./HeroSlider.css";
 
-const slides = [
-  {
-    id: 1,
-    bg: "/images/assets/hero1.webp",
-    titleStrong: "Same Day",
-    titleRest: "Printing",
-    desc: "Need urgent printing?",
-  },
-  {
-    id: 2,
-    bg: "/images/assets/hero1.webp",
-    titleStrong: "Digital / Litho",
-    titleRest: "Printing",
-    desc: "Professional and fast printing services.",
-  },
-  {
-    id: 3,
-    bg: "/images/assets/hero1.webp",
-    titleStrong: "Large Format",
-    titleRest: "Print",
-    desc: "High-quality banners and posters.",
-  },
-  {
-    id: 4,
-    bg: "/images/assets/hero1.webp",
-    titleStrong: "T-Shirt and",
-    titleRest: "Hi Vis Vest",
-    desc: "Custom apparel printing on demand.",
-  },
-];
-
-export default function HeroSlider() {
+export default function HeroSlider({ slides }) {
   // ✅ Initialize Embla with Autoplay plugin
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true }),
@@ -47,7 +16,6 @@ export default function HeroSlider() {
     (index) => {
       if (emblaApi) {
         emblaApi.scrollTo(index);
-        // যখন ইউজার ম্যানুয়ালি ক্লিক করবে, autoplay আবার reset হবে
         const autoplay = emblaApi.plugins()?.autoplay;
         if (autoplay) autoplay.reset();
       }
@@ -85,8 +53,10 @@ export default function HeroSlider() {
                         <h1>
                           <strong>{slide.titleStrong}</strong> {slide.titleRest}
                         </h1>
+                        {/* <h4>{slide.subtitle}</h4> */}
+                        <p>{slide.paragraph}</p>
                         <div className="btn">
-                          <button>Get a Quote</button>
+                          <button>{slide.buttonText}</button>
                         </div>
                       </div>
                     </div>
@@ -109,7 +79,7 @@ export default function HeroSlider() {
               <h5>
                 <strong>{btn.titleStrong}</strong> {btn.titleRest}
               </h5>
-              <p>{btn.desc}</p>
+              <p>{btn.subtitle}</p>
             </button>
           ))}
         </div>

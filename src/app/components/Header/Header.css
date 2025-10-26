@@ -1,0 +1,169 @@
+/* 
+==============================
+header top-header
+==============================
+*/
+header.header .top-header {
+  padding: 12px 0;
+}
+header.header .flex-box {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.header .flex-box .search-form {
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header.header .flex-box .header-right {
+  display: flex;
+  gap: 15px;
+}
+
+header.header .flex-box .header-right ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 15px;
+}
+
+header.header .flex-box .header-right .header-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+header.header .flex-box .search-form form {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid var(--blue);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+button.cart-btn {
+  border: 1px solid var(--blue);
+  padding: 4px 15px;
+  border-radius: 6px;
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+header.header .flex-box .header-right ul li a {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 14px;
+}
+header.header .flex-box .search-form form input {
+  color: #666;
+  font-family: var(--font-open-sans), sans-serif;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  min-width: 426px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 20px;
+}
+
+header.header .flex-box .search-form form button {
+  background-color: var(--background);
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--font-open-sans), sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  height: 34px;
+}
+header.header .flex-box .header-right .btn.btn2 button.login-btn {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px 10px;
+}
+
+header.header .flex-box .header-right ul li a svg {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+button.cart-btn svg {
+  color: var(--blue);
+  font-size: 20px;
+}
+
+header.header .flex-box .logo {
+  display: flex;
+}
+
+/* 
+==============================
+header main-header
+==============================
+*/
+
+.main-header nav.nev-menu ul {
+  list-style: none;
+  margin-left: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.main-header {
+  background: #f7f7f7;
+  padding: 12px 0;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.main-header nav.nev-menu ul a {
+  color: var(--blue);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+/* 
+==============================
+header last-header 
+==============================
+*/
+.last-header {
+  padding: 5px 0;
+}
+.last-header .last-header-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last-header .last-header-all .left-box {
+  display: flex;
+  gap: 20px;
+}
+
+.last-header .last-header-all .left-box a {
+  color: var(--blue);
+  font-size: 14px;
+}

@@ -1,482 +1,137 @@
+// src/app/page.js
 import Image from "next/image";
-import styles from "./page.module.css";
-import { FaBeer } from "react-icons/fa";
-import { FaHeadset } from "react-icons/fa6";
-import { IoMdInformationCircleOutline } from "react-icons/io";
-import { IoCartOutline } from "react-icons/io5";
-import { FiLogIn } from "react-icons/fi";
-import { IoMdSearch } from "react-icons/io";
 
 import HeroSlider from "./components/HeroSlider/HeroSlider";
 
+import Header from "./components/Header/Header";
+
+import Footer from "./components/Footer/Footer";
+
 import PrintingServices from "./components/PrintingServices/PrintingServices";
+
+import PrintSteps from "./components/PrintSteps/PrintSteps";
+
+import ProductCategory from "./components/ProductCategory/ProductCategory";
+
+import ProductsCard from "./components/ProductsCard/ProductsCard";
+
+const slides1 = [
+  {
+    id: 1,
+    bg: "/images/assets/hero1.webp",
+    titleStrong: "Same Day",
+    titleRest: "Printing",
+    subtitle: "Need urgent printing?",
+    paragraph:
+      "Fast, reliable same-day printing for your urgent business needs.",
+    buttonText: "Order Now",
+    buttonLink: "/quote/same-day",
+  },
+  {
+    id: 2,
+    bg: "/images/assets/hero1.webp",
+    titleStrong: "Digital / Litho",
+    titleRest: "Printing",
+    subtitle: "Professional and fast printing services.",
+    paragraph:
+      "High-quality digital and litho printing for marketing materials.",
+    buttonText: "Get Started",
+    buttonLink: "/quote/digital-printing",
+  },
+  {
+    id: 3,
+    bg: "/images/assets/hero1.webp",
+    titleStrong: "Large Format",
+    titleRest: "Print",
+    subtitle: "High-quality banners and posters.",
+    paragraph:
+      "Get stunning large-format prints for exhibitions and promotions.",
+    buttonText: "Get a Quote",
+    buttonLink: "/quote/large-format",
+  },
+  {
+    id: 4,
+    bg: "/images/assets/hero1.webp",
+    titleStrong: "T-Shirt and",
+    titleRest: "Hi Vis Vest",
+    subtitle: "Custom apparel printing on demand.",
+    paragraph:
+      "Personalized T-shirts and hi-vis vests for your brand or event.",
+    buttonText: "Shop Now",
+    buttonLink: "/quote/apparel-printing",
+  },
+];
+
+const slides2 = [
+  {
+    id: 1,
+    bg: "/images/assets/hero2.webp", // এখানে দাও তোমার নতুন ব্যাকগ্রাউন্ড ইমেজের path
+    titleStrong: "Professional",
+    titleRest: "Printing Services",
+    subtitle: "Quality that speaks for your brand.",
+    paragraph:
+      "From design to delivery — we offer professional-grade printing that makes your brand stand out with stunning clarity and precision.",
+    buttonText: "Discover More",
+    buttonLink: "/services/printing",
+  },
+  {
+    id: 2,
+    bg: "/images/assets/hero2.webp",
+    titleStrong: "Exclusive",
+    titleRest: "10% Discount",
+    subtitle: "Save big on all print orders this month!",
+    paragraph:
+      "Enjoy 10% off on flyers, brochures, and more. High-quality prints at unbeatable prices — offer valid for a limited time only.",
+    buttonText: "Grab the Offer",
+    buttonLink: "/offers/discount",
+  },
+  {
+    id: 3,
+    bg: "/images/assets/hero2.webp",
+    titleStrong: "Business",
+    titleRest: "Branding Essentials",
+    subtitle: "Everything you need to look professional.",
+    paragraph:
+      "Get business cards, booklets, and posters designed to impress. Build a consistent visual identity with HRJ Media.",
+    buttonText: "Start Branding",
+    buttonLink: "/services/branding",
+  },
+  {
+    id: 4,
+    bg: "/images/assets/hero2.webp",
+    titleStrong: "Eco-Friendly",
+    titleRest: "Printing",
+    subtitle: "Sustainable printing for a greener planet.",
+    paragraph:
+      "We use eco-conscious inks and recyclable materials to create vibrant prints that care for the environment.",
+    buttonText: "Learn More",
+    buttonLink: "/services/eco-printing",
+  },
+];
 
 export default function Home() {
   return (
     <>
-      <header className="header">
-        <div className="top-header">
-          <div className="container">
-            <div className="flex-box">
-              <div className="logo">
-                <Image
-                  src="/images/assets/logo.webp"
-                  alt="products"
-                  width={155}
-                  height={37}
-                />
-              </div>
+      <Header />
 
-              <div className="search-form">
-                <form>
-                  <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    required
-                  />
-                  <button type="submit">
-                    <IoMdSearch />
-                  </button>
-                </form>
-              </div>
+      <HeroSlider slides={slides1} />
 
-              <div className="header-right">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <FaHeadset />
-                      Contact us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      {/* need react icon for about  */}
-                      <IoMdInformationCircleOutline />
-                      About us
-                    </a>
-                  </li>
-                </ul>
-
-                <div className="header-buttons">
-                  <button className="cart-btn">
-                    <IoCartOutline /> <span className="cart-icon">0</span>
-                  </button>
-                  <div className="btn btn2">
-                    <button className="login-btn">
-                      <FiLogIn /> Sign in / Sign up
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="main-header">
-          <div className="container">
-            <nav className="nev-menu">
-              <ul>
-                <li>
-                  <a href="#">All products</a>
-                </li>
-                <li>
-                  <a href="#">Flyers & Leaflets</a>
-                </li>
-                <li>
-                  <a href="#">Booklets</a>
-                </li>
-                <li>
-                  <a href="#">Business Cards</a>
-                </li>
-                <li>
-                  <a href="#">Posters</a>
-                </li>
-                <li>
-                  <a href="#">Banners</a>
-                </li>
-                <li>
-                  <a href="#">Signs</a>
-                </li>
-                <li>
-                  <a href="#">Flags</a>
-                </li>
-                <li>
-                  <a href="#">Stickers</a>
-                </li>
-                <li>
-                  <a href="#">Gifts</a>
-                </li>
-                <li>
-                  <a href="#">Clothing</a>
-                </li>
-                <li>
-                  <a href="#">Eco</a>
-                </li>
-                <li>
-                  <a href="#">Quotations</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
-        <div className="last-header">
-          <div className="container">
-            <div className="last-header-all">
-              <div className="left-box">
-                <div className="left-box-card1">
-                  <a href="#">
-                    🤑
-                    <strong>Best price</strong> guaranteed
-                  </a>
-                </div>
-                <div className="left-box-card2">
-                  <a href="#">
-                    🔥 Always a <strong>Perfect Design</strong>
-                  </a>
-                </div>
-                <div className="left-box-card3">
-                  <a href="#">
-                    💯 100% <strong>satisfaction</strong>
-                  </a>
-                </div>
-                <div className="left-box-card4">
-                  <a href="#">
-                    👍
-                    <strong>B Corp & FSC</strong> Certified
-                  </a>
-                </div>
-              </div>
-              <div className="right-box">
-                <div className="google-icon">
-                  <Image
-                    src="/images/assets/img5.webp"
-                    alt="products"
-                    width={280}
-                    height={28}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <HeroSlider />
       <PrintingServices />
 
-      {/*  print-steps-section */}
-      <section className="print-steps-section">
-        <div className="container">
-          <div className="header-center">
-            <h2>Print in 3 Easy Steps</h2>
-            <p>
-              “Getting your high-quality prints has never been easier. At
-              <strong>HRJ Media</strong>, we make the process simple, fast, and
-              stress-free. Just follow these three steps and your prints will be
-              ready in no time.”
-            </p>
-          </div>
-          <div className="grid-box">
-            <div className="item">
-              <div className="item-inner">
-                <div className="item-content">
-                  <h4>Upload Your Design</h4>
-                  <p>Simple file upload or design in minutes.</p>
-                  <div className="btn btn2">
-                    <button>Get a Quote</button>
-                  </div>
-                </div>
-                <div className="item-image">
-                  <Image
-                    src="/images/assets/img1.webp"
-                    alt="Upload Your Design"
-                    width={70}
-                    height={75}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="item-inner">
-                <div className="item-content">
-                  <h4>Upload Your Design</h4>
-                  <p>Simple file upload or design in minutes.</p>
-                  <div className="btn btn2">
-                    <button>Get a Quote</button>
-                  </div>
-                </div>
-                <div className="item-image">
-                  <Image
-                    src="/images/assets/img1.webp"
-                    alt="Upload Your Design"
-                    width={70}
-                    height={75}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="item">
-              <div className="item-inner">
-                <div className="item-content">
-                  <h4>Upload Your Design</h4>
-                  <p>Simple file upload or design in minutes.</p>
-                  <div className="btn btn2">
-                    <button>Get a Quote</button>
-                  </div>
-                </div>
-                <div className="item-image">
-                  <Image
-                    src="/images/assets/img1.webp"
-                    alt="Upload Your Design"
-                    width={70}
-                    height={75}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PrintSteps />
 
-      {/* categories-section */}
-      <section className="categories-section">
-        <div className="container">
-          <div className="header-center">
-            <h2>Discover our categories</h2>
-          </div>
+      {/* categories-section ProductCategory */}
+      <ProductCategory />
 
-          <div className="grid-box">
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img2.webp"
-                alt="Event & Festival"
-                width={243}
-                height={150}
-              />
-              <h5>Event & Festival</h5>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="space-top-60"></div>
+      <HeroSlider slides={slides2} />
 
-      {/*  our-products-section */}
-      <section className="our-products-section">
-        <div className="container">
-          <div className="header-center">
-            <h2>The Best Weekly Products</h2>
-          </div>
-          <div className="grid-box">
-            <div className="item">
-              <Image
-                src="/images/assets/img3.webp"
-                alt="products"
-                width={337}
-                height={296}
-              />
-              <p>Event & Festival</p>
-              <h4>Poster Printing</h4>
-              <h4>$50.00 - $130.00</h4>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img3.webp"
-                alt="products"
-                width={337}
-                height={296}
-              />
-              <p>Event & Festival</p>
-              <h4>Poster Printing</h4>
-              <h4>$50.00 - $130.00</h4>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img3.webp"
-                alt="products"
-                width={337}
-                height={296}
-              />
-              <p>Event & Festival</p>
-              <h4>Poster Printing</h4>
-              <h4>$50.00 - $130.00</h4>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img3.webp"
-                alt="products"
-                width={337}
-                height={296}
-              />
-              <p>Event & Festival</p>
-              <h4>Poster Printing</h4>
-              <h4>$50.00 - $130.00</h4>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img3.webp"
-                alt="products"
-                width={337}
-                height={296}
-              />
-              <p>Event & Festival</p>
-              <h4>Poster Printing</h4>
-              <h4>$50.00 - $130.00</h4>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img3.webp"
-                alt="products"
-                width={337}
-                height={296}
-              />
-              <p>Event & Festival</p>
-              <h4>Poster Printing</h4>
-              <h4>$50.00 - $130.00</h4>
-            </div>
-            <div className="item">
-              <Image
-                src="/images/assets/img3.webp"
-                alt="products"
-                width={337}
-                height={296}
-              />
-              <p>Event & Festival</p>
-              <h4>Poster Printing</h4>
-              <h4>$50.00 - $130.00</h4>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/*  our-products-section  */}
+      <ProductsCard />
 
-      <div className="container">
-        {/*  section */}
+      <div className="space-bottom-60"></div>
 
-        {/*  section */}
-
-        {/*  section */}
-        <div className="header-center">
-          <h2>Bring Your Brand to Life with Outdoor Printing That Lasts</h2>
-          <p>
-            Elevate your brand&apos;s presence with custom outdoor signage and
-            banners from <strong>HRJ Media</strong>. Perfect for any occasion,
-            our high-quality, weather-resistant materials ensure your message
-            shines in any condition. Whether promoting an event, sale, or
-            building your brand identity, HRJ Media offers premium products,
-            easy ordering, and same-day or next-day delivery — so you’re always
-            ready to stand out.
-          </p>
-        </div>
-        {/*  section */}
-        {/*  section */}
-        {/*  section */}
-        {/*  section */}
-        {/*  section */}
-        <h1>
-          H1 <strong>Header</strong> text
-        </h1>
-        <h2>H2 Header text</h2>
-        <h3>H3 Header text</h3>
-        <h4>H4 Header text</h4>
-        <h5>H5 Header text</h5>
-        <h6>H6 Header text</h6>
-        <p>
-          This is a paragraph. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
-        <div className="btn-group">
-          <div className="btn">
-            <a href="#">This is a link</a>
-          </div>
-          <div className="btn">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-        <br />
-        <div className="btn">
-          <button>This is a link</button>
-        </div>
+      {/* <div className="container">
         <form>
           <div className="form-2col">
             <div className="form-group">
@@ -517,16 +172,228 @@ export default function Home() {
             </button>
           </div>
         </form>
-        <Image
-          src="/example.jpg"
-          alt="Example Image"
-          width={600}
-          height={400}
-          className={styles.image}
-        />
-      </div>
+      </div> */}
 
-      {/*  section */}
+      {/*  
+      ================
+      step-form
+      ===========
+
+
+
+
+      Step 1 - Product
+      ============
+
+      Product Type* ( A4 Print, A3 Print, Banner, Roll up banner with stand, Brochure/Booklet, Business Cards, Dissertation/Thesis Bind Service, Flyers, Folded Flyers & Leaflets, Posters, Printing, Binding & Finishing Service, Stickers & Labels, Tickets, Other)  - dropdown
+      ----------------
+
+      A4 Print - if selected A4 Print
+      ........................
+        Sides* (Single sided, Double sided) - radio button
+        Colour?* (Full Colour, Black & White) - radio button
+        Paper?* ( 70-80 gsm uncoated paper, 130-170 gsm gloss, 170-250 gsm gloss, 250-350 gsm gloss, 130-170 gsm matt, 170-250 gsm matt, 250-350 gsm matt ) - radio button
+        Bind?* ( Loose sheets, Staple bound in the top corner, Comb Bound, Saddle stitched booklet ) - radio button
+        
+
+      A3 Print
+      ........................
+        Sides* (Single sided, Double sided) - radio button
+        Quantity* () - input number min 1 max 10000
+        Paper Thickness?* [ 130 GSM (Thin), 170 GSM (Medium), 250 GSM (Moderately Thick), 300 GSM (Thick) ] - radio button
+        
+
+
+      Banner
+      ..................
+        Is this a roll up banner with a stand?* (Yes, No) - radio button
+        Quantity* () - input number min 1 max 1000
+
+
+        
+
+      Roll up banner  with stand
+      ........................
+        Quantity* () - input number min 1 max 1000
+
+
+      Brochure/Booklet
+      ..................
+        Quantity* () - input number min 1 max 1000
+        Booklet/Brochure Type* [Saddle Stitched (Staple Bound), Perfect Bound (1-2 days), Comb Bound] - radio button
+        Orientation* [Portrait, Landscape] - radio button
+        How many pages ? Must be multiple of 4 such as 4, 8, 12 , 16 etc.* - input number min 4 max 200
+        Finished Size* ( A6, A5, A4, Custom Size ) - radio button
+        Cover Thickness?* ( 130 gsm, 170 gsm, 250 gsm, 300 gsm, 350 gsm ) - radio button
+        Inner Pages Thickness?* ( 130 gsm, 170 gsm, 250 gsm, 300 gsm, 350 gsm ) - radio button
+        Paper Type* [ Silk (Matt), Gloss ] - radio button
+
+
+
+      Business Cards
+      ..................
+      Size* [85 x 55 mm (Standard), 85 x 25 mm (Mini), 55 x 55 mm (Square), 89 x 51 mm (American), 80 x 50 mm (Small), 90 x 55 mm (Long) ] - radio button
+      Printed Sides* ( Single Sided, Double Sided ) - radio button
+      Quantity* () - input number min 100 max 10000
+      Paper thickness* ( 300 gsm, 350 gsm ) - radio button
+
+
+
+      Dissertation/Thesis Bind Service
+      ................................
+      Sides* ( Single Sided, Double Sided ) - radio button
+      Colour?* ( Full Colour, Black & White ) - radio button
+      Paper?* ( 70-80 gsm uncoated paper, 130-170 gsm gloss, 170-250 gsm gloss, 250-350 gsm gloss, 130-170 gsm matt, 170-250 gsm matt, 250-350 gsm matt ) - radio button
+      Bind?* ( Loose sheets, Staple bound in the top corner, Comb Bound, Saddle stitched booklet ) - radio button
+
+
+
+
+      Flyers
+      ........
+      Sides* (Single sided, Double sided) - radio button
+      Quantity* () - input number min 1 max 10000
+      Orientation* ( Portrait, Landscape ) - radio button
+      Paper Thickness?* [ 130 GSM (Thin), 170 GSM (Medium), 250 GSM (Moderately Thick), 300 GSM (Thick) ] - radio button
+      Finished Size* ( A6, A5, A4, Custom Size ) - radio button
+      Paper Type* [ Silk (Matt), Gloss ] - radio button
+    
+
+
+
+      Folded Flyers & Leaflets
+      ..........................
+      Folded leaflet type* [ Half Fold Flyers & Leaflets, Roll Fold Flyers & Leaflets, Z-Fold Flyers & Leaflets, Tri Fold Flyers & Leaflets ] - radio button
+      Unfolded size* ( A5 (210 x 148 mm), A4 (297 x 210 mm), A3 (420 x 297 mm) ) - radio button
+      Folded size* ( A6 (105 x 148 mm), A5 (148 x 210 mm), A4 (210 x 297 mm), DL (99 x 210 mm) ) - radio button
+      Sides* ( Single Sided, Double Sided ) - radio button
+      Paper Thickness?* [ 130 GSM (Thin), 170 GSM (Medium), 250 GSM (Moderately Thick), 300 GSM (Thick), 350 GSM (Extra Thick) ] - radio button
+      Paper Type* [ Silk (Matt), Gloss ] - radio button
+
+
+
+
+
+      Posters
+      ................
+      Quantity* () - input number min 1 max 1000
+      Poster Size* ( A1, A2, A3, A4, Custom Size ) - radio button
+      Poster Material* [ 200 gsm satin (this is paper), PVC vinyl poster material (most common), PVC vinyl sticky back (can stick to a glass surface), Sticky wallpaper (can stick to a wall), PVC vinyl banner material ( a bit rough texture to be used outside), PVC mount on 5mm foamex board ] - radio button
+
+
+      Printing, Binding & Finishing Service
+      .................................
+      Sides* ( Single Sided, Double Sided ) - radio button
+      Quantity* () - input number min 1 max 10000
+      Paper Thickness?* [ 130 GSM (Thin), 170 GSM (Medium), 250 GSM (Moderately Thick), 300 GSM (Thick), 350 GSM (Extra Thick) ] - radio button
+      Finished Size* ( A6, A5, A4, Custom Size ) - radio button
+      Paper Type* [ Silk (Matt), Gloss ] - radio button
+
+
+
+
+      Stickers & Labels
+      .........................
+      Quantity* () - input number min 1 max 10000
+      Sticker Type* [ Vinyl Stickers (most economical), Window Stickers, Die Cut Stickers - individual hand-outs (suitable for non-urgent orders), Letter Cuts (just the letters and no background), Paper Stickers (suitable for non-urgent orders), Sticker Sheets (multiple stickers on a single sheet) ] - radio button
+      Background* [ White (this includes all colours, including white), Clear (transparent) ] - radio button
+      Sticker Shape* [ Rectangular, Circle, Custom Shape ] - radio button
+      Sticker Size Unit?* [ mm, cm, inch ] - radio button
+      Sticker height?* () - input number min 1 max 1000
+      Sticker width?* () - input number min 1 max 1000
+      Print specifications:* ( Printed on sheets ( most economical option), Tickets, Other (provide details below) ) - checkbox
+
+
+
+    
+      Tickets
+      ..................
+      Quantity* () - input number min 1 max 10000
+      Paper Thickness?* [ 130 GSM (Thin), 170 GSM (Medium), 250 GSM (Moderately Thick), 300 GSM (Thick), 350 GSM (Extra Thick) ] - radio button
+
+
+
+
+      Other (provide details below)
+      ..........................
+      Please provide details of the printing service you require:* - textarea
+
+
+
+
+      Step 2 - Delivery Details
+      ============
+
+      When would you like to receive your item?* - radio button
+      ................
+      To receive express same-day delivery, please continue to fill out the form and let us know your preferred delivery time in the comment section
+      Priority service tomorrow
+      Super Express Same Day Delivery ( by 6 pm today) *£££ express charges may apply
+      Super Express Night Delivery (by 11:59 pm today) *£££ express charges may apply
+      Express Delivery Tomorrow by 10:30 am *£££ express charges may apply
+      Express Delivery Tomorrow by 1 pm *£££ express charges may apply
+      Express Delivery Tomorrow by 6 pm *££ express charges may apply
+      Priority Delivery Tomorrow by 11:59 pm
+      Standard 2 Working Days Delivery
+      Standard 3 Working Days Delivery
+      Standard 4 Working Days Delivery
+      Standard (3-5 working days)
+      I have a custom delivery deadline
+
+
+      Delivery Address* - input text
+      .................
+      Enter postcode and click the Lookup button.
+      Postcode
+
+
+
+      Step 3 - Upload Design File (Optional)
+      ============
+
+      Do you have your design file/ document/ artwork ready?* - radio button
+      .........................
+        Yes
+        No
+
+      Upload Design File (multiple files allowed)** - file upload
+      .................................
+      PDF format is most desirable. We can still work with other format but can't guarantee quality. If size is too large too be uploaded here please send it via an online tool such as DropBox or WeTransfer. If it's an illustration file (i. vector file with .ai, .eps extension) please send them to us at
+
+
+      How many copies of each of the attached document do you need to print?* - textarea
+      .........................
+
+
+
+      Step 4 - Your Details (Final Step)
+      ============
+
+      Your Name* - input text
+      Your email* - input email
+      Confirm Email - input email
+      Your phone number* - input text
+      Who will receive the order?* - radio button
+      .........................
+        Myself
+        Someone else
+        
+      Any further instructions or details? (optional) - textarea
+      ...................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+      */}
 
       {/*  section */}
 
@@ -539,216 +406,7 @@ export default function Home() {
       {/*  section */}
 
       {/*  footer */}
-      <footer className="footer">
-        <div className="newsletter">
-          <div className="container">
-            <div className="flex-box">
-              <div className="newsletter-content">
-                <h4>
-                  Sign up for our newsletter and get a 10% discount on your
-                  first order!
-                </h4>
-                <p>
-                  You&apos;ll be the first to know about irresistible offers &
-                  exclusive print deals!
-                </p>
-              </div>
-              <div className="newsletter-form">
-                <form>
-                  <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    required
-                  />
-                  <button type="submit">Submit</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="google-review">
-          <div className="container">
-            <div className="flex-box">
-              <div className="info-box">
-                <div className="avatar">
-                  <Image
-                    src="/images/assets/img4.webp"
-                    alt="products"
-                    width={100}
-                    height={43}
-                  />
-                </div>
-
-                <div className="text-wrap">
-                  <h4>Do you need help?</h4>
-                  <ul>
-                    <li>
-                      <a href="#" target="_blank">
-                        Write a review
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">Contact us</a>
-                    </li>
-                    <li>
-                      <a href="mailto:tqBZU@example.com">Email us</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="google-icon">
-                <Image
-                  src="/images/assets/img5.webp"
-                  alt="products"
-                  width={402}
-                  height={40}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="main-footer">
-          <div className="container">
-            <div className="flex-box">
-              <div className="footer-item sm1">
-                <h4>Our services</h4>
-                <ul>
-                  <li>
-                    <a href="#">Business & Enterprise</a>
-                  </li>
-                  <li>
-                    <a href="#">Paper sizes for printing</a>
-                  </li>
-                  <li>
-                    <a href="#">Design online with Canva</a>
-                  </li>
-                  <li>
-                    <a href="#">Fast delivery</a>
-                  </li>
-                  <li>
-                    <a href="#">HelloPrint non profit</a>
-                  </li>
-                  <li>
-                    <a href="#">VIP Program</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="footer-item sm2">
-                <h4>Our services</h4>
-                <ul>
-                  <li>
-                    <a href="#">Business & Enterprise </a>
-                  </li>
-                  <li>
-                    <a href="#">Paper sizes for printing</a>
-                  </li>
-                  <li>
-                    <a href="#">Design online with Canva</a>
-                  </li>
-                  <li>
-                    <a href="#">Fast delivery</a>
-                  </li>
-                  <li>
-                    <a href="#">HelloPrint non profit</a>
-                  </li>
-                  <li>
-                    <a href="#">VIP Program</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="footer-item sm3">
-                <h4>Our services</h4>
-                <ul>
-                  <li>
-                    <a href="#">Business & Enterprise </a>
-                  </li>
-                  <li>
-                    <a href="#">Paper sizes for printing</a>
-                  </li>
-                  <li>
-                    <a href="#">Design online with Canva</a>
-                  </li>
-                  <li>
-                    <a href="#">Fast delivery</a>
-                  </li>
-                  <li>
-                    <a href="#">HelloPrint non profit</a>
-                  </li>
-                  <li>
-                    <a href="#">VIP Program</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="footer-item sm4">
-                <h4>Our services</h4>
-                <ul>
-                  <li>
-                    <a href="#">Business & Enterprise </a>
-                  </li>
-                  <li>
-                    <a href="#">Paper sizes for printing</a>
-                  </li>
-                  <li>
-                    <a href="#">Design online with Canva</a>
-                  </li>
-                  <li>
-                    <a href="#">Fast delivery</a>
-                  </li>
-                  <li>
-                    <a href="#">HelloPrint non profit</a>
-                  </li>
-                  <li>
-                    <a href="#">VIP Program</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="footer-item sm5">
-                <h4>Our services</h4>
-                <ul>
-                  <li>
-                    <a href="#">Business & Enterprise </a>
-                  </li>
-                  <li>
-                    <a href="#">Paper sizes for printing</a>
-                  </li>
-                  <li>
-                    <a href="#">Design online with Canva</a>
-                  </li>
-                  <li>
-                    <a href="#">Fast delivery</a>
-                  </li>
-                  <li>
-                    <a href="#">HelloPrint non profit</a>
-                  </li>
-                  <li>
-                    <a href="#">VIP Program</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer-copyright">
-          <div className="container">
-            <div className="flex-box">
-              <p>
-                © 2025 hrjmedia. Website developed by{" "}
-                <a href="https://ssweb.online/">ssweb online</a>
-              </p>
-
-              <div className="payments-images">
-                <Image
-                  src="/images/assets/img6.webp"
-                  alt="products"
-                  width={303}
-                  height={24}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
