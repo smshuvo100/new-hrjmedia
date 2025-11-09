@@ -6,6 +6,9 @@
   --gray-color: #f7f7f7;
   --light-blue: #224c92;
   --blue: #004b78;
+  --radius: 14px;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
 }
 
 html,
@@ -99,6 +102,23 @@ p {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.header-center {
+  text-align: center;
+  max-width: 840px;
+  margin: 60px auto 30px;
+}
+.header-center p {
+  margin-top: 15px;
+}
+
+.space-top-60 {
+  margin-top: 60px;
+}
+.space-bottom-60 {
+  margin-bottom: 60px;
+}
+
 .btn-group {
   display: flex;
   gap: 20px;
@@ -137,45 +157,4 @@ button {
 .btn.btn2 button {
   padding: 4px 20px;
   font-size: 15px;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 12px 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--text-color);
-  font-family: var(--font-open-sans), sans-serif;
-  outline: none;
-  transition: all 0.3s ease;
-  resize: vertical;
-  margin-top: 10px;
-}
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-2col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-
-.header-center {
-  text-align: center;
-  max-width: 840px;
-  margin: 60px auto 30px;
-}
-.header-center p {
-  margin-top: 15px;
-}
-
-.space-top-60 {
-  margin-top: 60px;
-}
-.space-bottom-60 {
-  margin-bottom: 60px;
 }

@@ -175,6 +175,7 @@ export default function Home() {
       </div> */}
 
       {/*  
+      
       ================
       step-form
       ===========
@@ -196,7 +197,7 @@ export default function Home() {
         Bind?* ( Loose sheets, Staple bound in the top corner, Comb Bound, Saddle stitched booklet ) - radio button
         
 
-      A3 Print
+      A3 Print - if selected A3 Print
       ........................
         Sides* (Single sided, Double sided) - radio button
         Quantity* () - input number min 1 max 10000
@@ -204,7 +205,7 @@ export default function Home() {
         
 
 
-      Banner
+      Banner - if selected Banner
       ..................
         Is this a roll up banner with a stand?* (Yes, No) - radio button
         Quantity* () - input number min 1 max 1000
@@ -212,12 +213,12 @@ export default function Home() {
 
         
 
-      Roll up banner  with stand
+      Roll up banner  with stand - if selected Roll up banner with stand
       ........................
         Quantity* () - input number min 1 max 1000
 
 
-      Brochure/Booklet
+      Brochure/Booklet - if selected Brochure/Booklet
       ..................
         Quantity* () - input number min 1 max 1000
         Booklet/Brochure Type* [Saddle Stitched (Staple Bound), Perfect Bound (1-2 days), Comb Bound] - radio button
@@ -230,7 +231,7 @@ export default function Home() {
 
 
 
-      Business Cards
+      Business Cards - if selected Business Cards
       ..................
       Size* [85 x 55 mm (Standard), 85 x 25 mm (Mini), 55 x 55 mm (Square), 89 x 51 mm (American), 80 x 50 mm (Small), 90 x 55 mm (Long) ] - radio button
       Printed Sides* ( Single Sided, Double Sided ) - radio button
@@ -239,7 +240,7 @@ export default function Home() {
 
 
 
-      Dissertation/Thesis Bind Service
+      Dissertation/Thesis Bind Service - if selected Dissertation/Thesis Bind Service
       ................................
       Sides* ( Single Sided, Double Sided ) - radio button
       Colour?* ( Full Colour, Black & White ) - radio button
@@ -249,7 +250,7 @@ export default function Home() {
 
 
 
-      Flyers
+      Flyers - if selected Flyers
       ........
       Sides* (Single sided, Double sided) - radio button
       Quantity* () - input number min 1 max 10000
@@ -261,7 +262,7 @@ export default function Home() {
 
 
 
-      Folded Flyers & Leaflets
+      Folded Flyers & Leaflets - if selected Folded Flyers & Leaflets
       ..........................
       Folded leaflet type* [ Half Fold Flyers & Leaflets, Roll Fold Flyers & Leaflets, Z-Fold Flyers & Leaflets, Tri Fold Flyers & Leaflets ] - radio button
       Unfolded size* ( A5 (210 x 148 mm), A4 (297 x 210 mm), A3 (420 x 297 mm) ) - radio button
@@ -274,14 +275,14 @@ export default function Home() {
 
 
 
-      Posters
+      Posters - if selected Posters
       ................
       Quantity* () - input number min 1 max 1000
       Poster Size* ( A1, A2, A3, A4, Custom Size ) - radio button
       Poster Material* [ 200 gsm satin (this is paper), PVC vinyl poster material (most common), PVC vinyl sticky back (can stick to a glass surface), Sticky wallpaper (can stick to a wall), PVC vinyl banner material ( a bit rough texture to be used outside), PVC mount on 5mm foamex board ] - radio button
 
 
-      Printing, Binding & Finishing Service
+      Printing, Binding & Finishing Service - if selected Printing, Binding & Finishing Service
       .................................
       Sides* ( Single Sided, Double Sided ) - radio button
       Quantity* () - input number min 1 max 10000
@@ -292,7 +293,7 @@ export default function Home() {
 
 
 
-      Stickers & Labels
+      Stickers & Labels - if selected Stickers & Labels
       .........................
       Quantity* () - input number min 1 max 10000
       Sticker Type* [ Vinyl Stickers (most economical), Window Stickers, Die Cut Stickers - individual hand-outs (suitable for non-urgent orders), Letter Cuts (just the letters and no background), Paper Stickers (suitable for non-urgent orders), Sticker Sheets (multiple stickers on a single sheet) ] - radio button
@@ -306,7 +307,7 @@ export default function Home() {
 
 
     
-      Tickets
+      Tickets - if selected Tickets
       ..................
       Quantity* () - input number min 1 max 10000
       Paper Thickness?* [ 130 GSM (Thin), 170 GSM (Medium), 250 GSM (Moderately Thick), 300 GSM (Thick), 350 GSM (Extra Thick) ] - radio button
@@ -314,7 +315,7 @@ export default function Home() {
 
 
 
-      Other (provide details below)
+      Other (provide details below) - if selected Other
       ..........................
       Please provide details of the printing service you require:* - textarea
 
@@ -394,6 +395,31 @@ export default function Home() {
 
 
       */}
+
+      {/* app/
+
+ ├─ get-a-quote/
+ │   ├─ page.jsx
+ │   ├─ components/
+ │   │    ├─ Step1Product.jsx
+ │   │    ├─ Step2Delivery.jsx
+ │   │    ├─ Step3Upload.jsx
+ │   │    └─ Step4Details.jsx
+ │   └─ store/useFormStore.js
+
+ no need tailwindcss used normally css - get-a-quote.css
+
+
+
+ app/
+ ├─ components/
+ │   ├─ page.jsx
+ │   ├─ components/
+ │   │    ├─ Step1Product.jsx
+ │   │    ├─ Step2Delivery.jsx
+ │   │    ├─ Step3Upload.jsx
+ │   │    └─ Step4Details.jsx
+ │   └─ store/useFormStore.js       */}
 
       {/*  section */}
 
