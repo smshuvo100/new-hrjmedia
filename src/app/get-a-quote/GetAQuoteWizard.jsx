@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { useFormStore } from "./store/useFormStore";
-import Step1Product from "./components/Step1Product";
-import Step2Delivery from "./components/Step2Delivery";
-import Step3Upload from "./components/Step3Upload";
-import Step4Details from "./components/Step4Details";
+import Step1Product from "./AllStep/Step1Product";
+import Step2Delivery from "./AllStep/Step2Delivery";
+import Step3Upload from "./AllStep/Step3Upload";
+import Step4Details from "./AllStep/Step4Details";
 import "./get-a-quote.css";
 
 import Header from "../components/Header/Header";

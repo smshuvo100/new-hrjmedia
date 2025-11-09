@@ -1,4 +1,5 @@
 // src/app/page.js
+"use client";
 import Image from "next/image";
 
 import HeroSlider from "./components/HeroSlider/HeroSlider";
@@ -14,6 +15,11 @@ import PrintSteps from "./components/PrintSteps/PrintSteps";
 import ProductCategory from "./components/ProductCategory/ProductCategory";
 
 import ProductsCard from "./components/ProductsCard/ProductsCard";
+
+import Modal from "./components/Modal";
+import GetAQuoteWizard from "./get-a-quote/GetAQuoteWizard";
+
+import { useState } from "react";
 
 const slides1 = [
   {
@@ -110,8 +116,26 @@ const slides2 = [
 ];
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
   return (
     <>
+      <button
+        onClick={() => setOpen(true)}
+        style={{
+          padding: "12px 20px",
+          borderRadius: 10,
+          border: "none",
+          color: "#fff",
+          background: "linear-gradient(90deg, #192b63 0%, #3357c9 100%)",
+          fontWeight: 600,
+          cursor: "pointer",
+        }}
+      >
+        Get a Quote
+      </button>
+      <Modal open={open} onClose={() => setOpen(false)} width={860}>
+        <GetAQuoteWizard />
+      </Modal>
       <Header />
 
       <HeroSlider slides={slides1} />
@@ -175,7 +199,7 @@ export default function Home() {
       </div> */}
 
       {/*  
-      
+
       ================
       step-form
       ===========
