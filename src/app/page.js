@@ -16,8 +16,8 @@ import ProductCategory from "./components/ProductCategory/ProductCategory";
 
 import ProductsCard from "./components/ProductsCard/ProductsCard";
 
-import Modal from "./components/Modal";
-import GetAQuoteWizard from "./get-a-quote/GetAQuoteWizard";
+import Modal from "./components/get-a-quote/Modal";
+import GetAQuoteWizard from "./components/get-a-quote/GetAQuoteWizard";
 
 import { useState } from "react";
 

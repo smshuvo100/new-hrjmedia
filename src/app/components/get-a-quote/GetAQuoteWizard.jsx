@@ -7,9 +7,6 @@ import Step3Upload from "./AllStep/Step3Upload";
 import Step4Details from "./AllStep/Step4Details";
 import "./get-a-quote.css";
 
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-
 export default function Page() {
   const { step, setStep } = useFormStore();
 

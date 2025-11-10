@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import "./modal.css";
 
 export default function Modal({ open, onClose, children }) {
   const [isVisible, setIsVisible] = useState(false);
