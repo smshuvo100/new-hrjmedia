@@ -167,3 +167,26 @@ header last-header
   color: var(--blue);
   font-size: 14px;
 }
+
+.last-header .info-box {
+  display: flex;
+  gap: 15px;
+}
+
+.last-header .info-box .text-wrap ul {
+  display: flex;
+  list-style: none;
+  margin-left: 0;
+  gap: 16px;
+}
+
+.last-header .info-box h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: -6px;
+}
+
+.last-header .info-box .text-wrap ul a {
+  font-size: 14px;
+  text-decoration: underline;
+}

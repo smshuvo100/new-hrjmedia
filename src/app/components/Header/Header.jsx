@@ -5,6 +5,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { FiLogIn } from "react-icons/fi";
 import { IoMdSearch } from "react-icons/io";
 import Image from "next/image";
+import Link from "next/link";
 import "./Header.css";
 
 export default function Header() {
@@ -15,12 +16,14 @@ export default function Header() {
           <div className="container">
             <div className="flex-box">
               <div className="logo">
-                <Image
-                  src="/images/assets/logo.webp"
-                  alt="products"
-                  width={155}
-                  height={37}
-                />
+                <Link href="/">
+                  <Image
+                    src="/images/assets/logo.webp"
+                    alt="products"
+                    width={155}
+                    height={37}
+                  />
+                </Link>
               </div>
 
               <div className="search-form">
@@ -144,13 +147,35 @@ export default function Header() {
                 </div>
               </div>
               <div className="right-box">
-                <div className="google-icon">
+                {/* <div className="google-icon">
                   <Image
                     src="/images/assets/img5.webp"
                     alt="products"
                     width={280}
                     height={28}
                   />
+                </div> */}
+                <div className="info-box">
+                  <div className="avatar">
+                    <Image
+                      src="/images/assets/img4.webp"
+                      alt="products"
+                      width={100}
+                      height={43}
+                    />
+                  </div>
+
+                  <div className="text-wrap">
+                    <h4>Do you need help?</h4>
+                    <ul>
+                      <li>
+                        <a href="#" target="_blank">
+                          Chat with us
+                        </a>
+                      </li>
+                      \
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

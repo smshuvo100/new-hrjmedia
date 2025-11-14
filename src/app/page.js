@@ -1,7 +1,7 @@
 // src/app/page.js
 "use client";
 import Image from "next/image";
-
+import Link from "next/link";
 import HeroSlider from "./components/HeroSlider/HeroSlider";
 
 import Header from "./components/Header/Header";
@@ -20,6 +20,9 @@ import Modal from "./components/get-a-quote/Modal";
 import GetAQuoteWizard from "./components/get-a-quote/GetAQuoteWizard";
 
 import { useState } from "react";
+
+import { FiPhoneCall } from "react-icons/fi";
+import { MdPhoneIphone } from "react-icons/md";
 
 const slides1 = [
   {
@@ -136,9 +139,51 @@ export default function Home() {
       <Modal open={open} onClose={() => setOpen(false)} width={860}>
         <GetAQuoteWizard />
       </Modal>
+
       <Header />
 
       <HeroSlider slides={slides1} />
+      <section className="urgent-print-cta">
+        <div className="container">
+          <div className="cta-box">
+            <div className="coll-left">
+              <h4>
+                Need to print urgently? Get high-quality prints with same-day
+                delivery guaranteed.
+              </h4>
+              <div className="cta-contact">
+                <Link href="tel:02081234567">
+                  <span>
+                    <FiPhoneCall />
+                  </span>
+                  0208 123 4567
+                </Link>
+
+                <a href="tel:07589876543">
+                  <span>
+                    <MdPhoneIphone />
+                  </span>
+                  0758 987 6543
+                </a>
+
+                <a href="tel:07589876543">
+                  <span>
+                    <MdPhoneIphone />
+                  </span>
+                  youreamil@gmail.com
+                </a>
+              </div>
+            </div>
+            <div className="coll-right">
+              <div class="btn">
+                <a href="/get-a-quote" className="cta-btn">
+                  Get a Quote
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <PrintingServices />
 

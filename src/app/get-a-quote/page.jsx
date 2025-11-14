@@ -7,6 +7,8 @@ import Step2Delivery from "./AllStep/Step2Delivery";
 import Step3Upload from "./AllStep/Step3Upload";
 import Step4Details from "./AllStep/Step4Details";
 import "./get-a-quote.css";
+import Header from "@/app/components/Header/Header";
+import Footer from "@/app/components/Footer/Footer";
 
 export default function Page() {
   const { step, setStep } = useFormStore();
@@ -20,6 +22,7 @@ export default function Page() {
 
   return (
     <>
+      <Header />
       <div className="quote-wrapper">
         {/* Header */}
         <div className="quote-header-container">
@@ -56,6 +59,8 @@ export default function Page() {
 
         <div className="step-indicator">Step {step} of 4</div>
       </div>
+
+      <Footer />
     </>
   );
 }
