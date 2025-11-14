@@ -127,7 +127,7 @@ header main-header
   list-style: none;
   margin-left: 0;
   display: flex;
-  gap: 30px;
+  gap: 37px;
 }
 
 .main-header {
@@ -152,6 +152,7 @@ header last-header
 .last-header {
   padding: 5px 0;
 }
+
 .last-header .last-header-all {
   display: flex;
   justify-content: space-between;

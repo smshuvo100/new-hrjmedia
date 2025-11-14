@@ -173,7 +173,6 @@ export default function Header() {
                           Chat with us
                         </a>
                       </li>
-                      \
                     </ul>
                   </div>
                 </div>
