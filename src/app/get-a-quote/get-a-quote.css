@@ -1,7 +1,60 @@
+section.get-a-quote-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+section.get-a-quote-section .quote-flex {
+  display: flex;
+  gap: 30px;
+}
+section.get-a-quote-section .quote-flex .quote-info {
+  width: 50%;
+}
+section.get-a-quote-section .quote-flex .quote-wrapper {
+  width: 50%;
+}
+section.get-a-quote-section .quote-flex .quote-info ul {
+  margin-left: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+section.get-a-quote-section .quote-flex .quote-info ul li .step-item {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+section.get-a-quote-section .quote-flex .quote-info ul li .step-item span.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: var(--blue-color);
+  font-weight: 700;
+  position: relative;
+  top: -10px;
+}
+section.get-a-quote-section .quote-flex .quote-info .step-item .text {
+  width: 90%;
+}
+section.get-a-quote-section .quote-title {
+  margin-bottom: 20px;
+}
+section.get-a-quote-section .quote-flex .quote-info .text span.title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+}
+section.get-a-quote-section .quote-flex .quote-info ul li {
+  margin-bottom: 20px;
+}
 /* ========== MAIN WRAPPER ========== */
 .quote-wrapper {
-  max-width: 700px;
-  margin: 70px auto;
+  /* max-width: 700px;
+  margin: 70px auto; */
   font-family: var(--font);
 }
 
