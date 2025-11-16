@@ -11,6 +11,8 @@ import "./get-a-quote.css";
 import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
 
+import SubHero from "@/app/components/SubHero/SubHero";
+
 export default function Page() {
   const { step, setStep } = useFormStore();
 
@@ -25,18 +27,7 @@ export default function Page() {
     <>
       <Header />
 
-      <section className="sub-hero">
-        <div className="container">
-          <h1>Get a Quote</h1>
-        </div>
-      </section>
-
-      {/* <Image
-        src="/images/assets/sub-header.webp"
-        alt="Get a Quote"
-        width={1920}
-        height={300}
-      /> */}
+      <SubHero bgImage="/images/assets/sub-header.webp" title="Get a Quote" />
 
       <section className="get-a-quote-section">
         <div className="container">

@@ -159,9 +159,85 @@ button {
   font-size: 15px;
 }
 
+/* ===============================
+  Defalt Form Styles
+============================== */
+
+/* ========== INPUTS / TEXTAREA / SELECT ========== */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.6px solid #d6daeb;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: var(--font);
+  color: var(--text-color);
+  background-color: #fff;
+  outline: none;
+  transition: var(--transition);
+  margin-top: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a0a6b9;
+  font-size: 14px;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #b3bbe0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #3357c9;
+  box-shadow: 0 0 0 4px rgba(51, 87, 201, 0.15);
+}
+
+/* Dropdown Arrow for select */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%233357C9' d='M7 8L0 0h14z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 10px;
+  cursor: pointer;
+}
+
+/* File input */
+input[type="file"] {
+  border: 1.6px dashed #c8cde7;
+  padding: 14px;
+  cursor: pointer;
+  color: #555;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+input[type="file"]:hover {
+  border-color: #3357c9;
+  background: #f8f9ff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.5;
+}
+
 /* 
 ===============================
-
+  Urgent Print CTA homepage -CTA
 ==============================
 */
 
@@ -219,31 +295,50 @@ section.urgent-print-cta .btn a {
 }
 
 /* 
-==========================
-  sub-hero
-==========================
+================================
+
+================================
 */
-/* 🔵 Overlay */
-section.sub-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgb(0 0 0 / 40%); /* blue overlay 65% opacity */
-  z-index: -1;
+section.left-right-sec {
+  padding-top: 60px;
 }
-.sub-hero h1 {
-  color: #fff;
-  font-weight: 700;
-  position: relative;
-  z-index: 2;
+
+section.left-right-sec .flex-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
-section.sub-hero {
-  position: relative;
-  background-image: url("/images/assets/sub-header.webp");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 80px 0;
-  z-index: 1;
-  overflow: hidden;
+
+section.left-right-sec .flex-box .image-wrapper {
+  width: 50%;
+  display: flex;
+}
+
+section.left-right-sec .flex-box .content-wrapper {
+  width: 50%;
+}
+
+section.left-right-sec.sm-right .flex-box {
+  flex-direction: row-reverse;
+}
+
+section.left-right-sec.sm-left .flex-box {
+  flex-direction: row;
+}
+
+section.left-right-sec .flex-box .image-wrapper img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+section.left-right-sec .content-wrapper h2 {
+  margin-bottom: 15px;
+}
+
+section.left-right-sec .content-wrapper p {
+  margin-bottom: 15px;
+}
+section.left-right-sec .content-wrapper p:last-child {
+  margin-bottom: 0;
 }
