@@ -16,8 +16,8 @@ import ProductCategory from "./components/ProductCategory/ProductCategory";
 
 import ProductsCard from "./components/ProductsCard/ProductsCard";
 
-import Modal from "./components/get-a-quote/Modal";
-import GetAQuoteWizard from "./components/get-a-quote/GetAQuoteWizard";
+// import Modal from "./components/get-a-quote/Modal";
+// import GetAQuoteWizard from "./components/get-a-quote/GetAQuoteWizard";
 
 import { useState } from "react";
 
@@ -122,7 +122,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <button
+      {/* <button
         onClick={() => setOpen(true)}
         style={{
           padding: "12px 20px",
@@ -138,7 +138,7 @@ export default function Home() {
       </button>
       <Modal open={open} onClose={() => setOpen(false)} width={860}>
         <GetAQuoteWizard />
-      </Modal>
+      </Modal> */}
 
       <Header />
 
