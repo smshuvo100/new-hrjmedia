@@ -72,7 +72,7 @@ export function MainHeader() {
       {openMegaMenu && (
         <div
           className="mega-menu-holder"
-          onMouseLeave={() => setOpenMegaMenu(true)}
+          onMouseLeave={() => setOpenMegaMenu(false)}
         >
           <MegaMenu />
         </div>
