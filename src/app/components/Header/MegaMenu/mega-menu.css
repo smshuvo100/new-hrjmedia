@@ -1,0 +1,196 @@
+/* ====== Mega menu position (overlap under header) ====== */
+
+.mega-menu-holder {
+  position: absolute;
+  top: 100%; /* header-এর ঠিক নিচে */
+  left: 0;
+  width: 100%;
+  z-index: 40;
+}
+
+/* পুরো ব্যাকগ্রাউন্ড – শুধু মেনুর জন্য */
+.mega-menu-bg {
+  width: 100%;
+  /* background: linear-gradient(90deg, #192b63 0%, #3357c9 100%); */
+  /* padding: 8px 0 16px; */
+}
+
+/* প্রধান কন্টেইনার */
+.mega-menu-container {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* ===== LEFT COLUMN (categories) ===== */
+
+.mega-menu-left {
+  /* background: rgba(0, 0, 0, 0.12); */
+  /* border-radius: 6px 0 0 6px; */
+  /* padding: 8px 0; */
+  background: var(--blue-g-color);
+}
+
+.mega-menu-left ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  color: #f2f4ff;
+}
+
+.left-item:hover,
+.left-item.active {
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.left-item span {
+  font-weight: 500;
+}
+
+.left-arrow {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+/* ===== RIGHT SIDE (multi columns) ===== */
+
+.mega-menu-right {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 0 6px 6px 6px;
+  /* padding: 14px 18px 10px; */
+}
+
+.mega-columns {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+}
+
+/* একেকটা ভর্তিকাল কলাম */
+.mega-column {
+  border-left: 1px solid rgba(255, 255, 255, 0.22);
+  padding-left: 12px;
+  background: var(--blue-g-color);
+  padding: 10px 10px;
+}
+
+.mega-column:first-child {
+  border-left: none;
+  /* padding-left: 0; */
+  /* background: var(--blue-g-color); */
+}
+
+/* সেকশন (headline + list) */
+.mega-section {
+  margin-bottom: 14px;
+}
+
+.mega-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: #fff;
+}
+
+.mega-section-list {
+  /* list-style: none; */
+  padding: 0;
+  /* margin: 0; */
+  margin-left: 14px;
+}
+
+.mega-section-list li {
+  padding: 2px 0;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.96;
+  cursor: pointer;
+}
+
+.mega-section-list li:hover {
+  text-decoration: underline;
+}
+
+/* 
+==============================
+    bottom CTA bar
+===============================
+*/
+
+/* ===== bottom CTA bar ===== */
+
+.bottom-cta {
+  margin-top: 0px;
+  /* padding-top: 10px; */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  background-color: var(--light-blue);
+  padding: 12px 20px !important;
+  border-radius: 0 0 12px 12px;
+}
+
+.bottom-cta .title h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.bottom-cta .contact-action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom-cta .contact-action .contact-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.bottom-cta .contact-action .contact-link span.icon {
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+}
+
+.bottom-cta .contact-action .contact-link span.text {
+  color: #fff;
+  font-size: 14px;
+}
+
+.bottom-cta .contact-action .contact-link span.number {
+  color: #fff;
+  font-size: 18.3px;
+  font-weight: 700;
+}
+
+.bottom-cta .cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.bottom-cta .btn .cta-btn {
+  background: #fff;
+  color: var(--blue-color);
+  width: 280px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -7,6 +7,7 @@ import { IoMdSearch } from "react-icons/io";
 import Image from "next/image";
 import Link from "next/link";
 import "./Header.css";
+import { MainHeader } from "./MainHeader";
 
 export default function Header() {
   return (
@@ -70,54 +71,8 @@ export default function Header() {
             </div>
           </div>
         </div>
-
-        <div className="main-header">
-          <div className="container">
-            <nav className="nev-menu">
-              <ul>
-                <li>
-                  <a href="#">All products</a>
-                </li>
-                <li>
-                  <a href="#">Flyers & Leaflets</a>
-                </li>
-                <li>
-                  <a href="#">Booklets</a>
-                </li>
-                <li>
-                  <a href="#">Business Cards</a>
-                </li>
-                <li>
-                  <a href="#">Posters</a>
-                </li>
-                <li>
-                  <a href="#">Banners</a>
-                </li>
-                <li>
-                  <a href="#">Signs</a>
-                </li>
-                <li>
-                  <a href="#">Flags</a>
-                </li>
-                <li>
-                  <a href="#">Stickers</a>
-                </li>
-                <li>
-                  <a href="#">Gifts</a>
-                </li>
-                <li>
-                  <a href="#">Clothing</a>
-                </li>
-                <li>
-                  <a href="#">Eco</a>
-                </li>
-                <li>
-                  <a href="#">Quotations</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+        {/* MainHeader */}
+        <MainHeader />
 
         <div className="last-header">
           <div className="container">

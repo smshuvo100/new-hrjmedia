@@ -147,11 +147,12 @@ export default function Home() {
         <div className="container">
           <div className="cta-box">
             <div className="coll-left">
-              <h4>
+              {/* <h4>
                 Need to print urgently? Get high-quality prints with same-day
                 delivery guaranteed.
-              </h4>
+              </h4> */}
               <div className="cta-contact">
+                <p>Contact us for arrgent quotation</p>
                 <Link href="tel:02081234567">
                   <span>
                     <FiPhoneCall />
@@ -175,7 +176,7 @@ export default function Home() {
               </div>
             </div>
             <div className="coll-right">
-              <div class="btn">
+              <div className="btn">
                 <a href="/get-a-quote" className="cta-btn">
                   Get a Quote
                 </a>

@@ -127,19 +127,18 @@ header main-header
   list-style: none;
   margin-left: 0;
   display: flex;
-  gap: 37px;
+  gap: 30px;
 }
 
 .main-header {
-  background: #f7f7f7;
+  background: var(--light-blue);
   padding: 12px 0;
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
 .main-header nav.nev-menu ul a {
-  color: var(--blue);
+  color: var(--background);
   text-align: center;
-  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;

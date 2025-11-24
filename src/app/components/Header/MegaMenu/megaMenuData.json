@@ -1,0 +1,288 @@
+{
+  "columns": [
+    {
+      "id": "col-print",
+      "sections": [
+        {
+          "title": "Printing and Photocopying",
+          "link": "/about-us",
+          "items": [
+            { "label": "A4 Document Printing", "link": "/about-us" },
+            { "label": "A3 Document Printing", "link": "/about-us" }
+          ]
+        },
+        {
+          "title": "Printing & Binding",
+          "link": "/",
+          "items": [
+            { "label": "Documents Printing", "link": "/" },
+            { "label": "Dissertation Printing", "link": "/" },
+            { "label": "Portfolio Printing", "link": "/" }
+          ]
+        },
+        {
+          "title": "Binding Service",
+          "link": "/",
+          "items": [
+            { "label": "Staple Bind", "link": "/" },
+            { "label": "Plastic Comb Bind", "link": "/" },
+            { "label": "Wire o Bind", "link": "/" },
+            { "label": "Hard Cover Bind", "link": "/" },
+            { "label": "Perfect Bind", "link": "/" }
+          ]
+        },
+        {
+          "title": "Scanning Service",
+          "link": "/",
+          "items": [
+            { "label": "A4 Scanning (High Res)", "link": "/" },
+            { "label": "A3 Scanning (High Res)", "link": "/" }
+          ]
+        },
+        {
+          "title": "Lamination & Encapsulation",
+          "link": "/",
+          "items": [
+            { "label": "A5, A4, A3, A2, A1", "link": "/" },
+            { "label": "Custom Sized", "link": "/" }
+          ]
+        },
+        {
+          "title": "Photo and Picture Print",
+          "link": "/",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "col-flyers",
+      "sections": [
+        {
+          "title": "Flyer & Leaflets",
+          "link": "/",
+          "items": [
+            { "label": "A3 Flyer & Leaflets", "link": "/" },
+            { "label": "A4 Flyer & Leaflets", "link": "/" },
+            { "label": "A5 Flyer & Leaflets", "link": "/" },
+            { "label": "A6 Flyer & Leaflets", "link": "/" },
+            { "label": "A7 Flyer & Leaflets", "link": "/" },
+            { "label": "Custom Sized Leaflets", "link": "/" }
+          ]
+        },
+        {
+          "title": "Folded Flyer & Leaflets",
+          "link": "/",
+          "items": [
+            { "label": "Half-Fold Leaflets", "link": "/" },
+            { "label": "Tri-fold Leaflets", "link": "/" },
+            { "label": "Roll-Fold Leaflets", "link": "/" }
+          ]
+        },
+        {
+          "title": "Business Cards",
+          "link": "/",
+          "items": [
+            { "label": "Classic Business Card", "link": "/" },
+            { "label": "Laminated Business Card", "link": "/" },
+            { "label": "Luxury Business Card", "link": "/" }
+          ]
+        },
+        {
+          "title": "Cards & Vouchers",
+          "link": "/",
+          "items": [
+            { "label": "Name Cards", "link": "/" },
+            { "label": "Reservation Cards", "link": "/" },
+            { "label": "Thank You Cards", "link": "/" },
+            { "label": "Wedding Cards", "link": "/" },
+            { "label": "Post Cards", "link": "/" },
+            { "label": "Cards & Invites", "link": "/" },
+            { "label": "Loyalty Cards", "link": "/" },
+            { "label": "Gift Vouchers", "link": "/" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "col-booklets",
+      "sections": [
+        {
+          "title": "Booklets",
+          "link": "/",
+          "items": [
+            { "label": "Stapled Booklets", "link": "/" },
+            { "label": "Wire-o Booklets", "link": "/" },
+            { "label": "Perfect Bound Booklets", "link": "/" },
+            { "label": "Books", "link": "/" },
+            { "label": "Funeral Booklet", "link": "/" },
+            { "label": "Order of Service Booklets", "link": "/" }
+          ]
+        },
+        {
+          "title": "Envelopes",
+          "link": "/",
+          "items": [
+            { "label": "C6 Envelopes", "link": "/" },
+            { "label": "C5 Envelopes", "link": "/" },
+            { "label": "C4 Envelopes", "link": "/" },
+            { "label": "DL Envelopes", "link": "/" }
+          ]
+        },
+        {
+          "title": "Calendars",
+          "link": "/",
+          "items": [
+            { "label": "Wall Calendars", "link": "/" },
+            { "label": "Desk Calendars", "link": "/" },
+            { "label": "CD Calendars", "link": "/" },
+            { "label": "Magnetocote Calendars", "link": "/" }
+          ]
+        },
+        {
+          "title": "Letterheads",
+          "link": "/",
+          "items": []
+        },
+        {
+          "title": "Notepads",
+          "link": "/",
+          "items": []
+        },
+        {
+          "title": "Compliment Slips",
+          "link": "/",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "col-posters",
+      "sections": [
+        {
+          "title": "Posters",
+          "link": "/",
+          "items": [
+            { "label": "Standard Posters", "link": "/" },
+            { "label": "Blueback Posters Paper", "link": "/" },
+            { "label": "Waterproof Posters", "link": "/" },
+            { "label": "Wallpaper", "link": "/" },
+            { "label": "Custom Size Posters", "link": "/" }
+          ]
+        },
+        {
+          "title": "Roller Banners",
+          "link": "/",
+          "items": [{ "label": "Self Standing Roller Banners", "link": "/" }]
+        },
+        {
+          "title": "PVC Banners",
+          "link": "/",
+          "items": [
+            { "label": "Regular Sized PVC Banner", "link": "/" },
+            { "label": "Custom Sized PVC Banner", "link": "/" },
+            { "label": "PVC Mesh Banner", "link": "/" }
+          ]
+        },
+        {
+          "title": "Signs and Panels",
+          "link": "/",
+          "items": [
+            { "label": "Foam Boards", "link": "/" },
+            { "label": "Foamex Boards", "link": "/" },
+            { "label": "Dibond Aluminium Boards", "link": "/" }
+          ]
+        },
+        {
+          "title": "Vinyl Stickers & Labels",
+          "link": "/",
+          "items": [
+            { "label": "Vinyl Stickers", "link": "/" },
+            { "label": "Transparent Stickers", "link": "/" },
+            { "label": "Window Stickers", "link": "/" },
+            { "label": "Frosted Window Graphics", "link": "/" },
+            { "label": "Floor Stickers", "link": "/" },
+            { "label": "Wall Stickers", "link": "/" },
+            { "label": "Custom Shape Stickers", "link": "/" },
+            { "label": "Vinyl Letter Cutting", "link": "/" },
+            { "label": "Paper Stickers", "link": "/" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "col-restaurant",
+      "sections": [
+        {
+          "title": "Restaurant Corner",
+          "link": "/",
+          "items": [
+            { "label": "Takeaway Menus", "link": "/" },
+            { "label": "Table Menus", "link": "/" },
+            { "label": "NCR Receipt Pads", "link": "/" },
+            { "label": "Opening Banner", "link": "/" },
+            { "label": "Outside A Boards", "link": "/" },
+            { "label": "Window Vinyl Sticker", "link": "/" },
+            { "label": "Leather Menu Cover", "link": "/" },
+            { "label": "Backlit Poster", "link": "/" },
+            { "label": "Sign Board", "link": "/" },
+            { "label": "Business Cards", "link": "/" },
+            { "label": "Voucher", "link": "/" },
+            { "label": "Loyalty Cards", "link": "/" },
+            { "label": "Seasons Greetings Cards", "link": "/" },
+            { "label": "Calendars", "link": "/" }
+          ]
+        },
+        {
+          "title": "Pavement Signs",
+          "link": "/",
+          "items": [
+            { "label": "A-Boards", "link": "/" },
+            { "label": "Waterproof Poster", "link": "/" }
+          ]
+        },
+        {
+          "title": "Personalised Clothing Printing",
+          "link": "/",
+          "items": [
+            { "label": "T-Shirts", "link": "/" },
+            { "label": "Hoodies & Sweatshirts", "link": "/" },
+            { "label": "Polo Shirts", "link": "/" },
+            { "label": "Caps", "link": "/" },
+            { "label": "Tote Bag", "link": "/" }
+          ]
+        },
+        {
+          "title": "Personalised Mugs",
+          "link": "/",
+          "items": []
+        }
+      ]
+    }
+  ],
+  "categoryMap": {
+    "all-products": [
+      "col-print",
+      "col-flyers",
+      "col-booklets",
+      "col-posters",
+      "col-restaurant"
+    ],
+    "print-scanning": ["col-print"],
+    "flyers-leaflets": ["col-flyers"],
+    "booklets": ["col-booklets"],
+    "cards": ["col-flyers", "col-booklets"],
+    "posters": ["col-posters"],
+    "banners": ["col-posters"],
+    "sign-display": ["col-posters"],
+    "stickers": ["col-posters"],
+    "envelopes": ["col-booklets"],
+    "calendars": ["col-booklets", "col-restaurant"],
+    "photo": ["col-print"],
+    "lamination": ["col-print"],
+    "binding": ["col-print"],
+    "clothing": ["col-restaurant"],
+    "restaurant-corner": ["col-restaurant"],
+    "student-corner": ["col-print", "col-flyers"],
+    "same-day-printing": ["col-print", "col-posters"]
+  }
+}
