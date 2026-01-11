@@ -14,6 +14,8 @@ import PrintSteps from "./components/PrintSteps/PrintSteps";
 
 import ProductCategory from "./components/ProductCategory/ProductCategory";
 
+import BestWeeklySellers from "./components/BestWeeklySellers/BestWeeklySellers";
+
 import ProductsCard from "./components/ProductsCard/ProductsCard";
 
 // import Modal from "./components/get-a-quote/Modal";
@@ -22,12 +24,13 @@ import ProductsCard from "./components/ProductsCard/ProductsCard";
 import { useState } from "react";
 
 import { FiPhoneCall } from "react-icons/fi";
-import { MdPhoneIphone } from "react-icons/md";
+
+import { MdPhoneIphone, MdEmail } from "react-icons/md";
 
 const slides1 = [
   {
     id: 1,
-    bg: "/images/assets/hero1.webp",
+    bg: "/images/assets/sslider1.jpg",
     titleStrong: "Same Day",
     titleRest: "Printing",
     subtitle: "Need urgent printing?",
@@ -143,14 +146,12 @@ export default function Home() {
       <Header />
 
       <HeroSlider slides={slides1} />
-      <section className="urgent-print-cta">
+
+      {/* <section className="urgent-print-cta">
         <div className="container">
           <div className="cta-box">
             <div className="coll-left">
-              {/* <h4>
-                Need to print urgently? Get high-quality prints with same-day
-                delivery guaranteed.
-              </h4> */}
+  
               <div className="cta-contact">
                 <p>Contact us for arrgent quotation</p>
                 <Link href="tel:02081234567">
@@ -184,6 +185,49 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section> */}
+      <section className="urgent-print-cta">
+        <div className="container">
+          <div className="cta-box">
+            {/* LEFT CONTENT */}
+            <div className="coll-left">
+              <p className="cta-text">
+                For urgent and high quality print with quick turnaround, we will
+                be happy to provide a personalised quote.
+              </p>
+
+              <div className="cta-contact">
+                <a href="tel:02081234567">
+                  <FiPhoneCall />
+                  <span className="c-text">Office Hours: </span>
+                  <span className="c-number">0208 123 4567</span>
+                </a>
+
+                <a href="tel:07589876543">
+                  <MdPhoneIphone />
+
+                  <span className="c-text">Chat or Call (24/7): </span>
+                  <span className="c-number">0758 987 6543</span>
+                </a>
+
+                <a href="mailto:info@hrjmedia.com">
+                  <MdEmail />
+                  <span className="c-text">Email us: </span>
+                  <span className="c-number">info@hrjmedia.com</span>
+                </a>
+              </div>
+            </div>
+
+            {/* RIGHT BUTTON */}
+            <div className="coll-right">
+              <div className="btn">
+                <a href="/get-a-quote" className="cta-btn">
+                  Get a Quote
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <PrintingServices />
@@ -198,6 +242,8 @@ export default function Home() {
 
       {/*  our-products-section  */}
       <ProductsCard />
+
+      <BestWeeklySellers />
 
       <div className="space-bottom-60"></div>
 

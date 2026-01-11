@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import MegaMenu from "./MegaMenu/MegaMenu";
 import { FiGrid } from "react-icons/fi";
 
+import Link from "next/link";
+
 export function MainHeader() {
   const [openMegaMenu, setOpenMegaMenu] = useState(false);
 
@@ -31,7 +33,13 @@ export function MainHeader() {
                 <a href="#">Flyers & Leaflets</a>
               </li>
               <li>
+                <a href="#">Folded Leaflets</a>
+              </li>
+              <li>
                 <a href="#">Booklets</a>
+              </li>
+              <li>
+                <a href="#">Cards</a>
               </li>
               <li>
                 <a href="#">Business Cards</a>
@@ -40,28 +48,19 @@ export function MainHeader() {
                 <a href="#">Posters</a>
               </li>
               <li>
+                <a href="#">Rollup Banners</a>
+              </li>
+              <li>
                 <a href="#">Banners</a>
               </li>
               <li>
-                <a href="#">Signs</a>
-              </li>
-              <li>
-                <a href="#">Flags</a>
+                <a href="#">Sign & Display</a>
               </li>
               <li>
                 <a href="#">Stickers</a>
               </li>
               <li>
-                <a href="#">Gifts</a>
-              </li>
-              <li>
                 <a href="#">Clothing</a>
-              </li>
-              <li>
-                <a href="#">Eco</a>
-              </li>
-              <li>
-                <a href="#">Quotations</a>
               </li>
             </ul>
           </nav>

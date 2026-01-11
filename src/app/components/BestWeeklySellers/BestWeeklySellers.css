@@ -1,0 +1,17 @@
+/* 
+==============================
+categories-section
+==============================
+*/
+section.best-weekly-sellers-section .grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+section.best-weekly-sellers-section .grid-box img {
+  border-radius: 10px 10px 30px 10px;
+  border: 1px solid #224c9266;
+}
+section.best-weekly-sellers-section span {
+  font-weight: 400;
+}

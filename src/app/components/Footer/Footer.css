@@ -66,7 +66,7 @@ footer .google-review
   align-items: center;
 }
 .google-review {
-  padding: 30px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #e7e7e7;
 }
 
@@ -79,17 +79,16 @@ footer .main-footer
   display: flex;
   gap: 15px;
 }
-
 .main-footer .flex-box .footer-item.sm1 {
   width: 25%;
 }
 
 .main-footer .flex-box .footer-item.sm2 {
-  width: 25%;
+  width: 18%;
 }
 
 .main-footer .flex-box .footer-item.sm3 {
-  width: 25%;
+  width: 22%;
 }
 
 .main-footer .flex-box .footer-item.sm4 {
@@ -97,7 +96,8 @@ footer .main-footer
 }
 
 .main-footer .flex-box .footer-item.sm5 {
-  width: 25%;
+  width: 10%;
+  text-align: right;
 }
 
 .main-footer .flex-box ul {
@@ -114,11 +114,10 @@ footer .main-footer
 }
 
 .main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #e7e7e7;
 }
-
 /* 
 ==============================
 footer .footer-copyright
@@ -135,9 +134,73 @@ footer .footer-copyright
 }
 
 .footer-copyright {
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
+.footer-copyright .footer-bottom-flex {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-copyright .footer-bottom-flex .footer-social {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-copyright .footer-bottom-flex .footer-social .social-icons {
+  display: flex;
+  gap: 10px;
+  /* align-items: center; */
+}
+
+.footer-copyright .footer-bottom-flex .footer-social .social-icons a {
+  background: var(--light-blue);
+  color: #ddd;
+  width: 30px;
+  height: 30px;
+  border-radius: 321px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-copyright .footer-bottom-flex .footer-social .social-icons a svg {
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-copyright .footer-links {
+  display: flex;
+  gap: 19px;
+}
+
+.footer-copyright .footer-links a {
+  font-size: 15px;
+  color: var(--light-blue);
+}
+
+.footer-copyright .footer-bottom-flex .footer-social span.social-title {
+  font-size: 15px;
+  color: var(--light-blue);
+}
+
+.footer-copyright .footer-payments {
+  display: flex;
+}
+
+.footer-copyright .footer-bottom-flex .footer-logo {
+}
+
+.footer-copyright .footer-bottom-flex .footer-links {
+}
+
+.footer-copyright .footer-bottom-flex .footer-payments {
+}
+
+.footer-copyright .footer-bottom-flex .footer-social {
+}
 /* 
 ==============================
 

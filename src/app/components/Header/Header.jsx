@@ -8,39 +8,17 @@ import Image from "next/image";
 import Link from "next/link";
 import "./Header.css";
 import { MainHeader } from "./MainHeader";
+import { FaPhoneAlt, FaMobileAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Header() {
   return (
     <>
       <header className="header">
-        <div className="top-header">
+        <div className="top-header-1">
           <div className="container">
             <div className="flex-box">
-              <div className="logo">
-                <Link href="/">
-                  <Image
-                    src="/images/assets/logo.webp"
-                    alt="products"
-                    width={155}
-                    height={37}
-                  />
-                </Link>
-              </div>
-
-              <div className="search-form">
-                <form>
-                  <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    required
-                  />
-                  <button type="submit">
-                    <IoMdSearch />
-                  </button>
-                </form>
-              </div>
-
-              <div className="header-right">
+              <div className="top-left-header"></div>
+              <div className="top-right-header-menu">
                 <ul>
                   <li>
                     <a href="#">
@@ -71,6 +49,58 @@ export default function Header() {
             </div>
           </div>
         </div>
+        <div className="top-header">
+          <div className="container">
+            <div className="flex-box">
+              <div className="logo">
+                <Link href="/">
+                  <Image
+                    src="/images/assets/HRJ-Media.gif"
+                    alt="products"
+                    width={140}
+                    height={37}
+                  />
+                </Link>
+              </div>
+
+              <div className="search-form">
+                <form>
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                  <button type="submit">
+                    <IoMdSearch />
+                  </button>
+                </form>
+              </div>
+
+              <div className="header-right">
+                <ul>
+                  <li>
+                    <a href="tel:02081234567">
+                      <FaPhoneAlt />
+                      <span>0208 123 4567</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:07589876543">
+                      <FaMobileAlt />
+                      <span>0758 987 6543</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@hrjmedia.com">
+                      <FaEnvelope />
+                      <span>info@hrjmedia.com</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* MainHeader */}
         <MainHeader />
 
@@ -80,42 +110,65 @@ export default function Header() {
               <div className="left-box">
                 <div className="left-box-card1">
                   <a href="#">
-                    🤑
-                    <strong>Best price</strong> guaranteed
+                    🤑{" "}
+                    <span>
+                      Quick <strong>Turnaround</strong>
+                    </span>
                   </a>
                 </div>
+
                 <div className="left-box-card2">
                   <a href="#">
-                    🔥 Always a <strong>Perfect Design</strong>
+                    🔥{" "}
+                    <span>
+                      High <strong>Quality Printing</strong>
+                    </span>
                   </a>
                 </div>
+
                 <div className="left-box-card3">
                   <a href="#">
-                    💯 100% <strong>satisfaction</strong>
+                    👍{" "}
+                    <span>
+                      <strong>Same Day Print</strong> Service
+                    </span>
                   </a>
                 </div>
+
                 <div className="left-box-card4">
                   <a href="#">
-                    👍
-                    <strong>Same day print</strong> service available
+                    ⏰{" "}
+                    <span>
+                      <strong>Overnight Print</strong> Service
+                    </span>
+                  </a>
+                </div>
+
+                <div className="left-box-card5">
+                  <a href="#">
+                    💯{" "}
+                    <span>
+                      100% <strong>Satisfaction</strong>
+                    </span>
+                  </a>
+                </div>
+                <div className="left-box-card6">
+                  <a href="#">
+                    📅{" "}
+                    <span>
+                      7 Days a Week <strong>(24/7)</strong>
+                    </span>
                   </a>
                 </div>
               </div>
+
               <div className="right-box">
-                {/* <div className="google-icon">
-                  <Image
-                    src="/images/assets/img5.webp"
-                    alt="products"
-                    width={280}
-                    height={28}
-                  />
-                </div> */}
                 <div className="info-box">
                   <div className="avatar">
                     <Image
-                      src="/images/assets/img4.webp"
+                      src="/images/assets/icon1.png"
                       alt="products"
-                      width={100}
+                      width={43}
                       height={43}
                     />
                   </div>

@@ -242,24 +242,11 @@ textarea {
 */
 section.urgent-print-cta {
   background-color: var(--light-blue);
+  padding: 14px 0;
 }
-section.urgent-print-cta .cta-box {
-  border-radius: 10px;
-  padding: 20px 30px;
-  margin: 0 auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-section.urgent-print-cta .cta-contact {
-  display: flex;
-  gap: 35px;
-  flex-wrap: wrap;
-}
+
 section.urgent-print-cta .cta-contact a {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 16px;
   color: var(--background);
   text-decoration: none;
   display: flex;
@@ -269,30 +256,45 @@ section.urgent-print-cta .cta-contact a {
 section.urgent-print-cta .cta-contact a:hover {
   text-decoration: underline;
 }
-section.urgent-print-cta .cta-box h4 {
-  margin-bottom: 14px;
-  /* font-weight: 600; */
-  /* color: #fff; */
-  color: var(--background);
-}
-section.urgent-print-cta .cta-contact a svg {
+
+section.urgent-print-cta .cta-box {
   display: flex;
-  width: 18px;
-  height: 18px;
-}
-section.urgent-print-cta .cta-contact a span {
-  width: 36px;
-  height: 36px;
-  border-radius: 50px;
-  border: 1px solid #dde3f5;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
 
-section.urgent-print-cta .btn a {
+section.urgent-print-cta a.cta-btn {
   background: var(--background);
   color: var(--light-blue);
+  width: 284px;
+  text-align: center;
+}
+
+section.urgent-print-cta p.cta-text {
+  color: var(--background);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+section.urgent-print-cta .cta-box .cta-contact {
+  display: flex;
+  gap: 46px;
+}
+
+section.urgent-print-cta .cta-box .cta-contact span.c-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+section.urgent-print-cta .cta-box .cta-contact span.c-number {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+section.urgent-print-cta .cta-box .cta-contact svg {
+  font-size: 21px;
 }
 
 /* 
