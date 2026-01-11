@@ -1,16 +1,12 @@
+// File: src/app/components/Header/MegaMenu/MegaMenu.jsx
 "use client";
-import React, { useState, useMemo } from "react";
+
+import React, { useEffect, useMemo, useState } from "react";
 import "./mega-menu.css";
 import { FaChevronRight } from "react-icons/fa";
 import megaMenuData from "./megaMenuData.json";
 import Link from "next/link";
-import {
-  FiPhone,
-  FiPhoneCall,
-  FiMail,
-  FiArrowRightCircle,
-  FiSmartphone,
-} from "react-icons/fi";
+import { FiPhoneCall, FiMail, FiSmartphone } from "react-icons/fi";
 
 const sideCategories = [
   { id: "all-products", label: "All Products" },
@@ -33,8 +29,17 @@ const sideCategories = [
   { id: "same-day-printing", label: "Same Day Printing" },
 ];
 
-export default function MegaMenu() {
-  const [activeCategory, setActiveCategory] = useState("all-products");
+export default function MegaMenu({
+  initialCategory = "all-products",
+  showLeft = true,
+  allowLeftInteraction = true,
+}) {
+  const [activeCategory, setActiveCategory] = useState(initialCategory);
+
+  // when top hover changes, update activeCategory
+  useEffect(() => {
+    setActiveCategory(initialCategory);
+  }, [initialCategory]);
 
   const columnsToRender = useMemo(() => {
     const { columns, categoryMap } = megaMenuData;
@@ -50,25 +55,38 @@ export default function MegaMenu() {
   return (
     <div className="mega-menu-bg">
       <div className="container">
-        <div className="mega-menu-container">
+        <div
+          className="mega-menu-container"
+          style={{
+            gridTemplateColumns: showLeft ? "230px 1fr" : "1fr",
+          }}
+        >
           {/* LEFT CATEGORY LIST */}
-          <div className="mega-menu-left">
-            <ul>
-              {sideCategories.map((cat) => (
-                <li
-                  key={cat.id}
-                  className={
-                    activeCategory === cat.id ? "left-item active" : "left-item"
-                  }
-                  onMouseEnter={() => setActiveCategory(cat.id)}
-                  onClick={() => setActiveCategory(cat.id)}
-                >
-                  <span>{cat.label}</span>
-                  <FaChevronRight className="left-arrow" />
-                </li>
-              ))}
-            </ul>
-          </div>
+          {showLeft && (
+            <div className="mega-menu-left">
+              <ul>
+                {sideCategories.map((cat) => (
+                  <li
+                    key={cat.id}
+                    className={
+                      activeCategory === cat.id
+                        ? "left-item active"
+                        : "left-item"
+                    }
+                    onMouseEnter={() =>
+                      allowLeftInteraction && setActiveCategory(cat.id)
+                    }
+                    onClick={() =>
+                      allowLeftInteraction && setActiveCategory(cat.id)
+                    }
+                  >
+                    <span>{cat.label}</span>
+                    <FaChevronRight className="left-arrow" />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* RIGHT MULTI-COLUMN AREA */}
           <div className="mega-menu-right">
@@ -104,7 +122,7 @@ export default function MegaMenu() {
           </div>
         </div>
 
-        {/* ✅ CTA BAR — ONLY WHEN ACTIVE CATEGORY = ALL PRODUCTS */}
+        {/* CTA ONLY IN ALL PRODUCTS */}
         {activeCategory === "all-products" && (
           <div className="bottom-cta">
             <div className="cta-content">
@@ -114,6 +132,7 @@ export default function MegaMenu() {
                   will be happy to provide a personalised quote.
                 </h4>
               </div>
+
               <div className="contact-action">
                 <a href="tel:02081234567" className="contact-link">
                   <span className="icon">
@@ -140,6 +159,7 @@ export default function MegaMenu() {
                 </a>
               </div>
             </div>
+
             <div className="btn">
               <Link href="/get-a-quote" className="cta-btn">
                 Get a Quote

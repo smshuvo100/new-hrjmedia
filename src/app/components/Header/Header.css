@@ -161,7 +161,7 @@ header main-header
   list-style: none;
   margin-left: 0;
   display: flex;
-  gap: 28px;
+  gap: 16px;
 }
 
 .main-header {
@@ -178,6 +178,7 @@ header main-header
   line-height: 22px;
   display: flex;
   align-items: center;
+  gap: 3px;
 }
 
 /* 
