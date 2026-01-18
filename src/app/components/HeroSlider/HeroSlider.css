@@ -37,15 +37,14 @@ section.hero-section .hero-all {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   height: 100%;
-
   /* padding: 0 60px; */
 }
 
 /* Left text */
 section.hero-section .hero-all .hero-left {
-  width: 30%;
+  width: 50%;
 }
 /* 
 section.hero-section .hero-all .hero-left .hero-left-text .left-title {
@@ -117,5 +116,16 @@ section.hero-section .container {
   position: relative;
 }
 section.hero-section .left-title h1 strong {
-  display: block;
+  /* display: block; */
+}
+
+section.hero-section .hero-all .left-title {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  padding-top: 24px;
+}
+
+section.hero-section .hero-all .left-title .btn {
+  padding-top: 95px;
 }

@@ -17,33 +17,23 @@ export default function Header() {
         <div className="top-header-1">
           <div className="container">
             <div className="flex-box">
-              <div className="top-left-header"></div>
+              <div className="top-left-header">
+                <p>
+                  <strong>Same Day</strong> and <strong>Overnight </strong>
+                  printing services in London.
+                </p>
+              </div>
               <div className="top-right-header-menu">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <FaHeadset />
-                      Contact us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      {/* need react icon for about  */}
-                      <IoMdInformationCircleOutline />
-                      About us
-                    </a>
-                  </li>
-                </ul>
-
                 <div className="header-buttons">
-                  <button className="cart-btn">
-                    <IoCartOutline /> <span className="cart-icon">0</span>
-                  </button>
-                  <div className="btn btn2">
+                  <div className="btn2">
                     <button className="login-btn">
-                      <FiLogIn /> Sign in / Sign up
+                      <FiLogIn /> Login / Register
                     </button>
                   </div>
+                  <button className="cart-btn">
+                    <IoCartOutline /> Basket{" "}
+                    <span className="cart-icon">(Empty)</span>
+                  </button>
                 </div>
               </div>
             </div>

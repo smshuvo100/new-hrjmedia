@@ -7,6 +7,10 @@ import { FiPhoneCall } from "react-icons/fi";
 
 import { MdPhoneIphone, MdEmail } from "react-icons/md";
 
+import { FiMail, FiHeadphones } from "react-icons/fi";
+import { HiOutlineChatAlt2 } from "react-icons/hi";
+import { BiChat } from "react-icons/bi";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -46,8 +50,8 @@ export default function Footer() {
             </div>
           </div>
         </div> */}
-        <section className="urgent-print-cta">
-          <div className="container">
+        <section className="container footer-cta">
+          <div className="urgent-print-cta">
             <div className="cta-box">
               {/* LEFT CONTENT */}
               <div className="coll-left">
@@ -108,14 +112,21 @@ export default function Footer() {
                   <ul>
                     <li>
                       <a href="#" target="_blank">
-                        Chat with us
+                        <BiChat />
+                        <span>Chat with us</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">Email us</a>
+                      <a href="#">
+                        <FiMail />
+                        <span>Email us</span>
+                      </a>
                     </li>
                     <li>
-                      <a href="mailto:tqBZU@example.com">Help Center</a>
+                      <a href="mailto:tqBZU@example.com">
+                        <FiHeadphones />
+                        <span>Help Center</span>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -123,10 +134,19 @@ export default function Footer() {
 
               <div className="google-icon">
                 <Image
-                  src="/images/assets/img5.webp"
+                  className="google-find-us"
+                  src="/images/assets/find-us-google.png"
                   alt="products"
-                  width={402}
-                  height={40}
+                  width={200}
+                  height={84}
+                />
+
+                <Image
+                  className="google-verified-reviews"
+                  src="/images/assets/google-verified-reviews.png"
+                  alt="products"
+                  width={400}
+                  height={76}
                 />
               </div>
             </div>

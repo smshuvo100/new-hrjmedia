@@ -18,6 +18,8 @@ import BestWeeklySellers from "./components/BestWeeklySellers/BestWeeklySellers"
 
 import ProductsCard from "./components/ProductsCard/ProductsCard";
 
+import InStore from "./components/InStore/InStore";
+
 // import Modal from "./components/get-a-quote/Modal";
 // import GetAQuoteWizard from "./components/get-a-quote/GetAQuoteWizard";
 
@@ -32,7 +34,7 @@ const slides1 = [
     id: 1,
     bg: "/images/assets/sslider1.jpg",
     titleStrong: "Same Day",
-    titleRest: "Printing",
+    titleRest: "Printing Service",
     subtitle: "Need urgent printing?",
     paragraph:
       "Fast, reliable same-day printing for your urgent business needs.",
@@ -41,7 +43,7 @@ const slides1 = [
   },
   {
     id: 2,
-    bg: "/images/assets/hero1.webp",
+    bg: "/images/assets/sslider1.jpg",
     titleStrong: "Digital / Litho",
     titleRest: "Printing",
     subtitle: "Professional and fast printing services.",
@@ -52,7 +54,7 @@ const slides1 = [
   },
   {
     id: 3,
-    bg: "/images/assets/hero1.webp",
+    bg: "/images/assets/sslider1.jpg",
     titleStrong: "Large Format",
     titleRest: "Print",
     subtitle: "High-quality banners and posters.",
@@ -63,7 +65,7 @@ const slides1 = [
   },
   {
     id: 4,
-    bg: "/images/assets/hero1.webp",
+    bg: "/images/assets/sslider1.jpg",
     titleStrong: "T-Shirt and",
     titleRest: "Hi Vis Vest",
     subtitle: "Custom apparel printing on demand.",
@@ -147,45 +149,6 @@ export default function Home() {
 
       <HeroSlider slides={slides1} />
 
-      {/* <section className="urgent-print-cta">
-        <div className="container">
-          <div className="cta-box">
-            <div className="coll-left">
-  
-              <div className="cta-contact">
-                <p>Contact us for arrgent quotation</p>
-                <Link href="tel:02081234567">
-                  <span>
-                    <FiPhoneCall />
-                  </span>
-                  0208 123 4567
-                </Link>
-
-                <a href="tel:07589876543">
-                  <span>
-                    <MdPhoneIphone />
-                  </span>
-                  0758 987 6543
-                </a>
-
-                <a href="tel:07589876543">
-                  <span>
-                    <MdPhoneIphone />
-                  </span>
-                  youreamil@gmail.com
-                </a>
-              </div>
-            </div>
-            <div className="coll-right">
-              <div className="btn">
-                <a href="/get-a-quote" className="cta-btn">
-                  Get a Quote
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="urgent-print-cta">
         <div className="container">
           <div className="cta-box">
@@ -234,14 +197,15 @@ export default function Home() {
 
       <PrintSteps />
 
-      {/* categories-section ProductCategory */}
-      <ProductCategory />
+      <InStore />
 
-      <div className="space-top-60"></div>
-      <HeroSlider slides={slides2} />
+      {/* <ProductCategory /> */}
+
+      {/* <HeroSlider slides={slides2} /> */}
 
       {/*  our-products-section  */}
-      <ProductsCard />
+
+      {/* <ProductsCard /> */}
 
       <BestWeeklySellers />
 

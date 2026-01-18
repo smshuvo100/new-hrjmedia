@@ -3,7 +3,6 @@
 header top-header-1
 ==============================
 */
-
 .top-header-1 {
   background-color: #f7f7f7;
   padding: 10px 0;
@@ -13,14 +12,12 @@ header top-header-1
   display: flex;
   gap: 15px;
 }
-
 .top-right-header-menu ul {
   display: flex;
   list-style: none;
   align-items: center;
   gap: 15px;
 }
-
 .top-right-header-menu .header-buttons {
   display: flex;
   gap: 15px;
@@ -43,6 +40,25 @@ header top-header-1
 .top-right-header-menu ul li a svg {
   color: var(--blue);
   font-size: 14px;
+}
+.top-header-1 .top-left-header p {
+  color: #008700;
+  font-size: 14px;
+  line-height: 24px;
+}
+.top-header-1 .btn2 button.login-btn,
+.top-header-1 button.cart-btn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.top-header-1 .btn2 button.login-btn svg,
+.top-header-1 button.cart-btn svg {
+  margin-right: 6px;
+  color: var(--blue);
+  font-size: 16px !important;
 }
 
 /* 
@@ -88,23 +104,13 @@ header.header .flex-box .search-form form {
   flex-direction: row;
 }
 
-button.cart-btn {
-  border: 1px solid var(--blue);
-  padding: 4px 15px;
-  border-radius: 6px;
-  background: var(--background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-}
-
 header.header .flex-box .header-right ul li a {
   display: flex;
   gap: 9px;
   align-items: center;
   font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
 }
 header.header .flex-box .search-form form input {
   color: #666;
@@ -180,7 +186,6 @@ header main-header
   align-items: center;
   gap: 3px;
 }
-
 /* 
 ==============================
 header last-header 
@@ -196,12 +201,10 @@ header last-header
   justify-content: space-between;
   align-items: center;
 }
-
 .last-header .last-header-all .left-box {
   display: flex;
   gap: 13px;
 }
-
 .last-header .last-header-all .left-box a {
   color: var(--blue);
   font-size: 13px;
@@ -209,31 +212,33 @@ header last-header
   align-items: center;
   gap: 6px;
 }
-
 .last-header .info-box {
   display: flex;
   gap: 7px;
+  align-items: center;
 }
-
 .last-header .info-box .text-wrap ul {
   display: flex;
   list-style: none;
   margin-left: 0;
   gap: 16px;
 }
-
 .last-header .info-box h4 {
   font-size: 13px;
   font-weight: 600;
-  margin-bottom: -6px;
+  margin-bottom: -8px;
 }
-
 .last-header .info-box .text-wrap ul a {
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: underline;
 }
-
 .last-header .info-box .text-wrap {
   display: flex;
   flex-direction: column;
+}
+.last-header .info-box .avatar img {
+  width: auto;
+  height: 28px;
+  position: relative;
+  top: 4px;
 }

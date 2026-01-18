@@ -2,6 +2,14 @@ import React from "react";
 import Image from "next/image";
 import "./PrintSteps.css";
 
+import {
+  FiFileText,
+  FiShoppingCart,
+  FiHeadphones,
+  FiTruck,
+  FiEdit,
+} from "react-icons/fi";
+
 export default function PrintSteps() {
   return (
     <>
@@ -9,71 +17,39 @@ export default function PrintSteps() {
       <section className="print-steps-section">
         <div className="container">
           <div className="header-center">
-            <h2>Print in 3 Easy Steps</h2>
+            <h2>Easy Steps for Placing an Order</h2>
             <p>
-              “Getting your high-quality prints has never been easier. At
-              <strong>HRJ Media</strong>, we make the process simple, fast, and
-              stress-free. Just follow these three steps and your prints will be
-              ready in no time.”
+              Getting your high-quality prints has been easier. HRJ Media make
+              the process simple, fast and stress-free. Just follow these three
+              steps and your prints will be ready in on time.
             </p>
           </div>
+
           <div className="grid-box">
             <div className="item">
-              <div className="item-inner">
-                <div className="item-content">
-                  <h4>Upload Your Design</h4>
-                  <p>Simple file upload or design in minutes.</p>
-                  <div className="btn btn2">
-                    <button>Get a Quote</button>
-                  </div>
-                </div>
-                <div className="item-image">
-                  <Image
-                    src="/images/assets/img1.webp"
-                    alt="Upload Your Design"
-                    width={70}
-                    height={75}
-                  />
-                </div>
-              </div>
+              <FiFileText />
+              <h2>Get A Quote 24/7</h2>
+              <p>Contact us for bespoke quotation</p>
             </div>
             <div className="item">
-              <div className="item-inner">
-                <div className="item-content">
-                  <h4>Upload Your Design</h4>
-                  <p>Simple file upload or design in minutes.</p>
-                  <div className="btn btn2">
-                    <button>Get a Quote</button>
-                  </div>
-                </div>
-                <div className="item-image">
-                  <Image
-                    src="/images/assets/img1.webp"
-                    alt="Upload Your Design"
-                    width={70}
-                    height={75}
-                  />
-                </div>
-              </div>
+              <FiShoppingCart />
+              <h2>Order Online 24/7</h2>
+              <p>Esily add items to your basket</p>
             </div>
             <div className="item">
-              <div className="item-inner">
-                <div className="item-content">
-                  <h4>Upload Your Design</h4>
-                  <p>Simple file upload or design in minutes.</p>
-                  <div className="btn btn2">
-                    <button>Get a Quote</button>
-                  </div>
-                </div>
-                <div className="item-image">
-                  <Image
-                    src="/images/assets/img1.webp"
-                    alt="Upload Your Design"
-                    width={70}
-                    height={75}
-                  />
-                </div>
-              </div>
+              <FiHeadphones />
+              <h2>Contact Us</h2>
+              <p>Do you need any help?</p>
+            </div>
+            <div className="item">
+              <FiTruck />
+              <h2>Collection or Delivery</h2>
+              <p>Store collection or delivery</p>
+            </div>
+            <div className="item">
+              <FiEdit />
+              <h2>Don’t Have Artwork</h2>
+              <p>We can create the artwork for you?</p>
             </div>
           </div>
         </div>

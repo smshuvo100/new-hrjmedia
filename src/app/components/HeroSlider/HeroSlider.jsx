@@ -20,7 +20,7 @@ export default function HeroSlider({ slides }) {
         if (autoplay) autoplay.reset();
       }
     },
-    [emblaApi]
+    [emblaApi],
   );
 
   const onSelect = useCallback(() => {
@@ -50,11 +50,14 @@ export default function HeroSlider({ slides }) {
                   <div className="hero-left">
                     <div className="hero-left-text">
                       <div className="left-title">
-                        <h1>
-                          <strong>{slide.titleStrong}</strong> {slide.titleRest}
-                        </h1>
-                        {/* <h4>{slide.subtitle}</h4> */}
-                        <p>{slide.paragraph}</p>
+                        <div className="text">
+                          <h1>
+                            <strong>{slide.titleStrong}</strong>{" "}
+                            {slide.titleRest}
+                          </h1>
+                          {/* <h4>{slide.subtitle}</h4> */}
+                          <p>{slide.paragraph}</p>
+                        </div>
                         <div className="btn">
                           <button>{slide.buttonText}</button>
                         </div>

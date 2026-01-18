@@ -1,52 +1,5 @@
 /* 
 ==============================
-footer .newsletter
-==============================
-*/
-footer.footer .newsletter {
-  background-color: var(--light-blue);
-  padding: 25px 0;
-}
-footer.footer .newsletter .flex-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer.footer .newsletter .flex-box .newsletter-content h4,
-footer.footer .newsletter .flex-box .newsletter-content p {
-  color: var(--background);
-}
-footer.footer .newsletter .flex-box .newsletter-form form {
-  overflow: hidden;
-  display: flex;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 8px;
-}
-footer.footer .newsletter .flex-box .newsletter-form form input[type="email"] {
-  margin: 0;
-  border-radius: 0;
-  border: 0;
-  border-radius: 10px 0 0 10px;
-  color: #666;
-  font-family: var(--font-open-sans), sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  min-width: 400px;
-}
-footer.footer .newsletter .flex-box .newsletter-form form button {
-  background: var(--background);
-  padding: 0 20px;
-  color: #696969;
-  text-align: center;
-  font-family: var(--font-open-sans), sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  border-radius: 0 10px 10px 0;
-}
-
-/* 
-==============================
 footer .google-review
 ==============================
 */
@@ -67,7 +20,8 @@ footer .google-review
 }
 .google-review {
   padding: 10px 0;
-  border-bottom: 1px solid #e7e7e7;
+  background-color: rgb(247, 247, 247);
+  margin-top: 20px;
 }
 
 /* 
@@ -97,26 +51,28 @@ footer .main-footer
 
 .main-footer .flex-box .footer-item.sm5 {
   width: 10%;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .main-footer .flex-box ul {
   margin-left: 0;
-  list-style: none;
+  /* list-style: none; */
+  list-style-type: circle;
+  margin-left: 16px;
 }
 
 .main-footer .flex-box h4 {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
+  /* margin-left: 20px; */
 }
 
 .main-footer .flex-box ul li {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 .main-footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #e7e7e7;
 }
 /* 
 ==============================
@@ -134,13 +90,15 @@ footer .footer-copyright
 }
 
 .footer-copyright {
-  padding: 5px 0;
+  padding: 10px 0;
+  background-color: rgb(247, 247, 247);
 }
 
 .footer-copyright .footer-bottom-flex {
   display: flex;
   align-items: center;
   gap: 32px;
+  justify-content: space-between;
 }
 
 .footer-copyright .footer-bottom-flex .footer-social {
@@ -151,15 +109,15 @@ footer .footer-copyright
 
 .footer-copyright .footer-bottom-flex .footer-social .social-icons {
   display: flex;
-  gap: 10px;
+  gap: 7px;
   /* align-items: center; */
 }
 
 .footer-copyright .footer-bottom-flex .footer-social .social-icons a {
   background: var(--light-blue);
   color: #ddd;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border-radius: 321px;
   display: flex;
   align-items: center;
@@ -168,7 +126,7 @@ footer .footer-copyright
 
 .footer-copyright .footer-bottom-flex .footer-social .social-icons a svg {
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .footer-copyright .footer-links {
@@ -177,12 +135,12 @@ footer .footer-copyright
 }
 
 .footer-copyright .footer-links a {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--light-blue);
 }
 
 .footer-copyright .footer-bottom-flex .footer-social span.social-title {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--light-blue);
 }
 
@@ -190,19 +148,51 @@ footer .footer-copyright
   display: flex;
 }
 
-.footer-copyright .footer-bottom-flex .footer-logo {
-}
-
-.footer-copyright .footer-bottom-flex .footer-links {
-}
-
-.footer-copyright .footer-bottom-flex .footer-payments {
-}
-
-.footer-copyright .footer-bottom-flex .footer-social {
-}
 /* 
 ==============================
 
 ==============================
 */
+
+.google-review ul li a {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.google-review ul li a svg {
+  font-size: 16px;
+}
+
+.google-review .info-box img {
+  height: 40px;
+  width: auto;
+  position: relative;
+  top: 4px;
+}
+
+.google-review .google-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.google-review .google-icon img.google-find-us {
+  height: 45px;
+  width: auto;
+}
+
+.google-review .google-icon img.google-verified-reviews {
+  width: auto;
+  height: 45px;
+}
+
+.main-footer .flex-box ul li a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-footer .flex-box ul li::marker {
+  color: var(--blue-color);
+}

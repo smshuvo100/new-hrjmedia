@@ -105,8 +105,8 @@ p {
 
 .header-center {
   text-align: center;
-  max-width: 840px;
-  margin: 60px auto 30px;
+  /* max-width: 840px; */
+  margin: 30px auto 20px;
 }
 .header-center p {
   margin-top: 15px;
@@ -240,12 +240,12 @@ textarea {
   Urgent Print CTA homepage -CTA
 ==============================
 */
-section.urgent-print-cta {
-  background-color: var(--light-blue);
+.urgent-print-cta {
+  background: var(--light-blue);
   padding: 14px 0;
 }
 
-section.urgent-print-cta .cta-contact a {
+.urgent-print-cta .cta-contact a {
   font-size: 16px;
   color: var(--background);
   text-decoration: none;
@@ -253,24 +253,24 @@ section.urgent-print-cta .cta-contact a {
   align-items: center;
   gap: 9px;
 }
-section.urgent-print-cta .cta-contact a:hover {
+.urgent-print-cta .cta-contact a:hover {
   text-decoration: underline;
 }
 
-section.urgent-print-cta .cta-box {
+.urgent-print-cta .cta-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-section.urgent-print-cta a.cta-btn {
+.urgent-print-cta a.cta-btn {
   background: var(--background);
   color: var(--light-blue);
   width: 284px;
   text-align: center;
 }
 
-section.urgent-print-cta p.cta-text {
+.urgent-print-cta p.cta-text {
   color: var(--background);
   font-size: 17px;
   font-weight: 600;
@@ -278,28 +278,41 @@ section.urgent-print-cta p.cta-text {
   margin-bottom: 10px;
 }
 
-section.urgent-print-cta .cta-box .cta-contact {
+.urgent-print-cta .cta-box .cta-contact {
   display: flex;
   gap: 46px;
 }
 
-section.urgent-print-cta .cta-box .cta-contact span.c-text {
+.urgent-print-cta .cta-box .cta-contact span.c-text {
   font-size: 14px;
   font-weight: 500;
 }
 
-section.urgent-print-cta .cta-box .cta-contact span.c-number {
+.urgent-print-cta .cta-box .cta-contact span.c-number {
   font-size: 18px;
   font-weight: 600;
 }
 
-section.urgent-print-cta .cta-box .cta-contact svg {
+.urgent-print-cta .cta-box .cta-contact svg {
   font-size: 21px;
+}
+/*
+======================================
+  Urgent Print CTA homepage -FOOTER
+======================================
+*/
+.footer-cta .urgent-print-cta {
+  background: var(--blue-g-color);
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+.footer-cta .urgent-print-cta a.cta-btn {
+  width: 240px;
 }
 
 /* 
 ================================
-
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ================================
 */
 section.left-right-sec {

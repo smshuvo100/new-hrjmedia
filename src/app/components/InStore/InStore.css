@@ -1,0 +1,56 @@
+section.in-store-section .orderBanner {
+  width: 100%;
+}
+
+section.in-store-section .orderBanner__top,
+section.in-store-section .orderBanner__bottom {
+  background: var(--blue-g-color);
+  color: white;
+  text-align: center;
+  padding: 16px 12px;
+  font-size: 20px;
+}
+
+section.in-store-section .orderBanner__steps {
+  background: #ffd913;
+  color: #1b2e63;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section.in-store-section .header-center {
+  max-width: 100%;
+  margin: 30px 0 30px 0;
+}
+
+section.in-store-section .header-center .content {
+  text-align: left;
+}
+
+section.in-store-section .header-center .content p {
+  margin-bottom: 20px;
+}
+
+section.in-store-section .in-store-box {
+  border-top: 1px solid #ffd913;
+  padding: 16px 0;
+}
+
+section.in-store-section .in-store-box .flax-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section.in-store-section .in-store-box .flax-box .item {
+  text-align: center;
+}
+
+section.in-store-section .in-store-box .flax-box .item h3 {
+  font-weight: 400;
+}
+
+section.in-store-section .orderBanner__steps span.arrow {
+  padding: 0 23px;
+}
