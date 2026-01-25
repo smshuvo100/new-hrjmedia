@@ -35,7 +35,7 @@
               "label": "Plastic Comb Binding",
               "link": "/plastic-comb-binding"
             },
-            { "label": "Wire o Binding", "link": "/wire-o-binding" },
+            { "label": "Wire o Bindong", "link": "/wire-o-binding" },
             { "label": "Hard Cover Binding", "link": "/hard-cover-binding" },
             { "label": "Perfect Binding", "link": "/perfect-binding" }
           ]
@@ -71,7 +71,7 @@
       "id": "col-flyers-cards",
       "sections": [
         {
-          "title": "Flyers & Leaflets",
+          "title": "Flyer & Leaflets",
           "link": "/flyers-leaflets",
           "items": [
             { "label": "A3 Flyers & Leaflets", "link": "/a3-flyers-leaflets" },
@@ -171,16 +171,8 @@
             { "label": "Magnecote Calendars", "link": "/magnecote-calendars" }
           ]
         },
-        {
-          "title": "Letterheads",
-          "link": "/letterheads",
-          "items": []
-        },
-        {
-          "title": "Notepads",
-          "link": "/notepads",
-          "items": []
-        },
+        { "title": "Letterheads", "link": "/letterheads", "items": [] },
+        { "title": "Notepads", "link": "/notepads", "items": [] },
         {
           "title": "Compliment Slips",
           "link": "/compliment-slips",
@@ -337,9 +329,15 @@
       "col-restaurant"
     ],
 
-    "same-day-printing": ["col-print", "col-posters"],
-    "print-scan": ["col-print"],
+    "same-day-printing": [
+      "col-print",
+      "col-flyers-cards",
+      "col-booklets",
+      "col-posters",
+      "col-restaurant"
+    ],
 
+    "print-scan": ["col-print"],
     "flyers-leaflets": ["col-flyers-cards"],
     "cards": ["col-flyers-cards"],
 
