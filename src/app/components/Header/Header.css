@@ -1,3 +1,5 @@
+/* File: src/app/components/Header/Header.css */
+
 /* 
 ==============================
 header top-header-1
@@ -151,11 +153,6 @@ button.cart-btn svg {
 header.header .flex-box .logo {
   display: flex;
 }
-/* 
-==============================
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-==============================
-*/
 
 /* 
 =================================
@@ -186,6 +183,15 @@ header main-header
   align-items: center;
   gap: 3px;
 }
+
+/* ✅ NEW: hover/open menu item yellow (Same Day Printing yellow as screenshot) */
+.main-header nav.nev-menu ul a.menu-link.is-active {
+  color: #f2c94c; /* yellow */
+}
+.main-header nav.nev-menu ul a.menu-link.is-active svg {
+  color: #f2c94c; /* yellow */
+}
+
 /* 
 ==============================
 header last-header 

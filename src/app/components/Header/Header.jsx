@@ -1,3 +1,5 @@
+// File: src/app/components/Header/Header.jsx
+
 import React from "react";
 import { FaHeadset } from "react-icons/fa6";
 import { IoMdInformationCircleOutline } from "react-icons/io";

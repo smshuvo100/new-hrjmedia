@@ -4,101 +4,124 @@
       "id": "col-print",
       "sections": [
         {
-          "title": "Printing and Photocopying",
-          "link": "/about-us",
+          "title": "Printing & Photocopying",
+          "link": "/printing-photocopying",
           "items": [
-            { "label": "A4 Document Printing", "link": "/about-us" },
-            { "label": "A3 Document Printing", "link": "/about-us" }
+            {
+              "label": "A4 Document Printing",
+              "link": "/a4-document-printing"
+            },
+            { "label": "A3 Documnet Printing", "link": "/a3-document-printing" }
           ]
         },
         {
           "title": "Printing & Binding",
-          "link": "/",
+          "link": "/printing-binding",
           "items": [
-            { "label": "Documents Printing", "link": "/" },
-            { "label": "Dissertation Printing", "link": "/" },
-            { "label": "Portfolio Printing", "link": "/" }
+            { "label": "Documents Printing", "link": "/documents-printing" },
+            {
+              "label": "Dissertation Printing",
+              "link": "/dissertation-printing"
+            },
+            { "label": "Portfolio Printing", "link": "/portfolio-printing" }
           ]
         },
         {
           "title": "Binding Service",
-          "link": "/",
+          "link": "/binding-service",
           "items": [
-            { "label": "Staple Bind", "link": "/" },
-            { "label": "Plastic Comb Bind", "link": "/" },
-            { "label": "Wire o Bind", "link": "/" },
-            { "label": "Hard Cover Bind", "link": "/" },
-            { "label": "Perfect Bind", "link": "/" }
+            { "label": "Staple Binding", "link": "/staple-binding" },
+            {
+              "label": "Plastic Comb Binding",
+              "link": "/plastic-comb-binding"
+            },
+            { "label": "Wire o Binding", "link": "/wire-o-binding" },
+            { "label": "Hard Cover Binding", "link": "/hard-cover-binding" },
+            { "label": "Perfect Binding", "link": "/perfect-binding" }
           ]
         },
         {
           "title": "Scanning Service",
-          "link": "/",
+          "link": "/scanning-service",
           "items": [
-            { "label": "A4 Scanning (High Res)", "link": "/" },
-            { "label": "A3 Scanning (High Res)", "link": "/" }
+            { "label": "A4 Scanning (High Res)", "link": "/a4-scanning" },
+            { "label": "A3 Scanning (High Res)", "link": "/a3-scanning" },
+            { "label": "Document Scanning", "link": "/document-scanning" }
           ]
         },
         {
           "title": "Lamination & Encapsulation",
-          "link": "/",
+          "link": "/lamination-encapsulation",
           "items": [
-            { "label": "A5, A4, A3, A2, A1", "link": "/" },
-            { "label": "Custom Sized", "link": "/" }
+            {
+              "label": "A5, A4, A3, A2, A1",
+              "link": "/lamination-standard-sizes"
+            },
+            { "label": "Custom Sized", "link": "/lamination-custom-sized" }
           ]
         },
         {
           "title": "Photo and Picture Print",
-          "link": "/",
+          "link": "/photo-print",
           "items": []
         }
       ]
     },
     {
-      "id": "col-flyers",
+      "id": "col-flyers-cards",
       "sections": [
         {
-          "title": "Flyer & Leaflets",
-          "link": "/",
+          "title": "Flyers & Leaflets",
+          "link": "/flyers-leaflets",
           "items": [
-            { "label": "A3 Flyer & Leaflets", "link": "/" },
-            { "label": "A4 Flyer & Leaflets", "link": "/" },
-            { "label": "A5 Flyer & Leaflets", "link": "/" },
-            { "label": "A6 Flyer & Leaflets", "link": "/" },
-            { "label": "A7 Flyer & Leaflets", "link": "/" },
-            { "label": "Custom Sized Leaflets", "link": "/" }
+            { "label": "A3 Flyers & Leaflets", "link": "/a3-flyers-leaflets" },
+            { "label": "A4 Flyers & Leaflets", "link": "/a4-flyers-leaflets" },
+            { "label": "A5 Flyers & Leaflets", "link": "/a5-flyers-leaflets" },
+            { "label": "A6 Flyers & Leaflets", "link": "/a6-flyers-leaflets" },
+            { "label": "A7 Flyers & Leaflets", "link": "/a7-flyers-leaflets" },
+            { "label": "DL Flyers & Leaflets", "link": "/dl-flyers-leaflets" },
+            {
+              "label": "Custom Sized Leaflets",
+              "link": "/custom-sized-leaflets"
+            }
           ]
         },
         {
-          "title": "Folded Flyer & Leaflets",
-          "link": "/",
+          "title": "Folded Flyers & Leaflets",
+          "link": "/folded-leaflets",
           "items": [
-            { "label": "Half-Fold Leaflets", "link": "/" },
-            { "label": "Tri-fold Leaflets", "link": "/" },
-            { "label": "Roll-Fold Leaflets", "link": "/" }
+            { "label": "Half-Fold Leaflets", "link": "/half-fold-leaflets" },
+            { "label": "Tri-fold Leaflets", "link": "/tri-fold-leaflets" },
+            { "label": "Roll-Fold Leaflets", "link": "/roll-fold-leaflets" }
           ]
         },
         {
           "title": "Business Cards",
-          "link": "/",
+          "link": "/business-cards",
           "items": [
-            { "label": "Classic Business Card", "link": "/" },
-            { "label": "Laminated Business Card", "link": "/" },
-            { "label": "Luxury Business Card", "link": "/" }
+            {
+              "label": "Classic Business Card",
+              "link": "/classic-business-card"
+            },
+            {
+              "label": "Laminated Business Card",
+              "link": "/laminated-business-card"
+            },
+            { "label": "Luxury Business Card", "link": "/luxury-business-card" }
           ]
         },
         {
           "title": "Cards & Vouchers",
-          "link": "/",
+          "link": "/cards-vouchers",
           "items": [
-            { "label": "Name Cards", "link": "/" },
-            { "label": "Reservation Cards", "link": "/" },
-            { "label": "Thank You Cards", "link": "/" },
-            { "label": "Wedding Cards", "link": "/" },
-            { "label": "Post Cards", "link": "/" },
-            { "label": "Cards & Invites", "link": "/" },
-            { "label": "Loyalty Cards", "link": "/" },
-            { "label": "Gift Vouchers", "link": "/" }
+            { "label": "Name Cards", "link": "/name-cards" },
+            { "label": "Reservation Cards", "link": "/reservation-cards" },
+            { "label": "Thank You Cards", "link": "/thank-you-cards" },
+            { "label": "Wedding Cards", "link": "/wedding-cards" },
+            { "label": "Post Cards", "link": "/post-cards" },
+            { "label": "Cards & Invites", "link": "/cards-invites" },
+            { "label": "Loyalty Cards", "link": "/loyalty-cards" },
+            { "label": "Gift Vouchers", "link": "/gift-vouchers" }
           ]
         }
       ]
@@ -108,49 +131,59 @@
       "sections": [
         {
           "title": "Booklets",
-          "link": "/",
+          "link": "/booklets",
           "items": [
-            { "label": "Stapled Booklets", "link": "/" },
-            { "label": "Wire-o Booklets", "link": "/" },
-            { "label": "Perfect Bound Booklets", "link": "/" },
-            { "label": "Books", "link": "/" },
-            { "label": "Funeral Booklet", "link": "/" },
-            { "label": "Order of Service Booklets", "link": "/" }
+            { "label": "Stapled Booklets", "link": "/stapled-booklets" },
+            { "label": "Wire-O Binding Booklets", "link": "/wire-o-booklets" },
+            {
+              "label": "Comb Binding Booklets",
+              "link": "/comb-binding-booklets"
+            },
+            {
+              "label": "Perfect Bound Booklets",
+              "link": "/perfect-bound-booklets"
+            },
+            { "label": "Books and Booklets", "link": "/books-and-booklets" },
+            { "label": "Funeral Booklets", "link": "/funeral-booklets" },
+            {
+              "label": "Order of Service Booklets",
+              "link": "/order-of-service-booklets"
+            }
           ]
         },
         {
           "title": "Envelopes",
-          "link": "/",
+          "link": "/envelopes",
           "items": [
-            { "label": "C6 Envelopes", "link": "/" },
-            { "label": "C5 Envelopes", "link": "/" },
-            { "label": "C4 Envelopes", "link": "/" },
-            { "label": "DL Envelopes", "link": "/" }
+            { "label": "C6 Envelopes", "link": "/c6-envelopes" },
+            { "label": "C5 Envelopes", "link": "/c5-envelopes" },
+            { "label": "C4 Envelopes", "link": "/c4-envelopes" },
+            { "label": "DL Envelopes", "link": "/dl-envelopes" }
           ]
         },
         {
-          "title": "Calendars",
-          "link": "/",
+          "title": "Calenders",
+          "link": "/calenders",
           "items": [
-            { "label": "Wall Calendars", "link": "/" },
-            { "label": "Desk Calendars", "link": "/" },
-            { "label": "CD Calendars", "link": "/" },
-            { "label": "Magnetocote Calendars", "link": "/" }
+            { "label": "Wall Calendars", "link": "/wall-calendars" },
+            { "label": "Desk Calendars", "link": "/desk-calendars" },
+            { "label": "CD Calendars", "link": "/cd-calendars" },
+            { "label": "Magnecote Calendars", "link": "/magnecote-calendars" }
           ]
         },
         {
           "title": "Letterheads",
-          "link": "/",
+          "link": "/letterheads",
           "items": []
         },
         {
           "title": "Notepads",
-          "link": "/",
+          "link": "/notepads",
           "items": []
         },
         {
           "title": "Compliment Slips",
-          "link": "/",
+          "link": "/compliment-slips",
           "items": []
         }
       ]
@@ -160,51 +193,77 @@
       "sections": [
         {
           "title": "Posters",
-          "link": "/",
+          "link": "/posters",
           "items": [
-            { "label": "Standard Posters", "link": "/" },
-            { "label": "Blueback Posters Paper", "link": "/" },
-            { "label": "Waterproof Posters", "link": "/" },
-            { "label": "Wallpaper", "link": "/" },
-            { "label": "Custom Size Posters", "link": "/" }
+            { "label": "Standard Posters", "link": "/standard-posters" },
+            { "label": "Blueback Posters Paper", "link": "/blueback-posters" },
+            { "label": "Waterproof Posters", "link": "/waterproof-posters" },
+            { "label": "Wallpaper", "link": "/wallpaper" },
+            { "label": "Custom Size Posters", "link": "/custom-size-posters" }
           ]
         },
         {
           "title": "Roller Banners",
-          "link": "/",
-          "items": [{ "label": "Self Standing Roller Banners", "link": "/" }]
+          "link": "/roller-banners",
+          "items": [
+            {
+              "label": "Self Standing Roller Banners",
+              "link": "/self-standing-roller-banners"
+            }
+          ]
         },
         {
           "title": "PVC Banners",
-          "link": "/",
+          "link": "/pvc-banners",
           "items": [
-            { "label": "Regular Sized PVC Banner", "link": "/" },
-            { "label": "Custom Sized PVC Banner", "link": "/" },
-            { "label": "PVC Mesh Banner", "link": "/" }
+            {
+              "label": "Regular Sized PVC Banner",
+              "link": "/regular-sized-pvc-banner"
+            },
+            {
+              "label": "Custom Sized PVC Banner",
+              "link": "/custom-sized-pvc-banner"
+            },
+            { "label": "PVC Mesh Banner", "link": "/pvc-mesh-banner" }
           ]
         },
         {
           "title": "Signs and Panels",
-          "link": "/",
+          "link": "/signs-panels",
           "items": [
-            { "label": "Foam Boards", "link": "/" },
-            { "label": "Foamex Boards", "link": "/" },
-            { "label": "Dibond Aluminium Boards", "link": "/" }
+            { "label": "Foam Boards", "link": "/foam-boards" },
+            { "label": "Foamex Boards", "link": "/foamex-boards" },
+            {
+              "label": "Dibond Aluminium Boards",
+              "link": "/dibond-aluminium-boards"
+            }
           ]
         },
         {
           "title": "Vinyl Stickers & Labels",
-          "link": "/",
+          "link": "/vinyl-stickers-labels",
           "items": [
-            { "label": "Vinyl Stickers", "link": "/" },
-            { "label": "Transparent Stickers", "link": "/" },
-            { "label": "Window Stickers", "link": "/" },
-            { "label": "Frosted Window Graphics", "link": "/" },
-            { "label": "Floor Stickers", "link": "/" },
-            { "label": "Wall Stickers", "link": "/" },
-            { "label": "Custom Shape Stickers", "link": "/" },
-            { "label": "Vinyl Letter Cutting", "link": "/" },
-            { "label": "Paper Stickers", "link": "/" }
+            { "label": "Vinyl Stickers", "link": "/vinyl-stickers" },
+            {
+              "label": "Transparent Stickers",
+              "link": "/transparent-stickers"
+            },
+            { "label": "Window Stickers", "link": "/window-stickers" },
+            {
+              "label": "Frosted Window Graphics",
+              "link": "/frosted-window-graphics"
+            },
+            { "label": "Floor Stickers", "link": "/floor-stickers" },
+            { "label": "Wall Stickers", "link": "/wall-stickers" },
+            {
+              "label": "Custom Shape Stickers",
+              "link": "/custom-shape-stickers"
+            },
+            {
+              "label": "Vinyl Letter Cutting",
+              "link": "/vinyl-letter-cutting"
+            },
+            { "label": "Paper Stickers", "link": "/paper-stickers" }
           ]
         }
       ]
@@ -213,47 +272,57 @@
       "id": "col-restaurant",
       "sections": [
         {
-          "title": "Restaurant Corner",
-          "link": "/",
+          "title": "Restaurent Corner",
+          "link": "/restaurent-corner",
           "items": [
-            { "label": "Takeaway Menus", "link": "/" },
-            { "label": "Table Menus", "link": "/" },
-            { "label": "NCR Receipt Pads", "link": "/" },
-            { "label": "Opening Banner", "link": "/" },
-            { "label": "Outside A Boards", "link": "/" },
-            { "label": "Window Vinyl Sticker", "link": "/" },
-            { "label": "Leather Menu Cover", "link": "/" },
-            { "label": "Backlit Poster", "link": "/" },
-            { "label": "Sign Board", "link": "/" },
-            { "label": "Business Cards", "link": "/" },
-            { "label": "Voucher", "link": "/" },
-            { "label": "Loyalty Cards", "link": "/" },
-            { "label": "Seasons Greetings Cards", "link": "/" },
-            { "label": "Calendars", "link": "/" }
+            { "label": "Takeaway Menus", "link": "/takeaway-menus" },
+            { "label": "Flyers and Leaflets", "link": "/flyers-leaflets" },
+            { "label": "Table Menus", "link": "/table-menus" },
+            { "label": "NCR Receipt Pads", "link": "/ncr-receipt-pads" },
+            { "label": "Opening Banner", "link": "/opening-banner" },
+            { "label": "Outside A Boards", "link": "/outside-a-boards" },
+            {
+              "label": "Window Vinyl Sticker",
+              "link": "/window-vinyl-sticker"
+            },
+            { "label": "Leather Menu Cover", "link": "/leather-menu-cover" },
+            { "label": "Backlit Poster", "link": "/backlit-poster" },
+            { "label": "Sign Board", "link": "/sign-board" },
+            { "label": "Business Cards", "link": "/business-cards" },
+            { "label": "Voucher", "link": "/voucher" },
+            { "label": "Loyalty Cards", "link": "/loyalty-cards" },
+            {
+              "label": "Seasons Greetings Cards",
+              "link": "/seasons-greetings-cards"
+            },
+            { "label": "Calenders", "link": "/calenders" }
           ]
         },
         {
           "title": "Pavement Signs",
-          "link": "/",
+          "link": "/pavement-signs",
           "items": [
-            { "label": "A-Boards", "link": "/" },
-            { "label": "Waterproof Poster", "link": "/" }
+            { "label": "A-Boards", "link": "/a-boards" },
+            { "label": "(Waterproof Poster)", "link": "/waterproof-posters" }
           ]
         },
         {
-          "title": "Personalised Clothing Printing",
-          "link": "/",
+          "title": "Personalised Clothing",
+          "link": "/personalised-clothing",
           "items": [
-            { "label": "T-Shirts", "link": "/" },
-            { "label": "Hoodies & Sweatshirts", "link": "/" },
-            { "label": "Polo Shirts", "link": "/" },
-            { "label": "Caps", "link": "/" },
-            { "label": "Tote Bag", "link": "/" }
+            { "label": "T-Shirts", "link": "/t-shirts" },
+            {
+              "label": "Hoodies & Sweatshirts",
+              "link": "/hoodies-sweatshirts"
+            },
+            { "label": "Polo Shirts", "link": "/polo-shirts" },
+            { "label": "Caps", "link": "/caps" },
+            { "label": "Tote Bag", "link": "/tote-bag" }
           ]
         },
         {
           "title": "Personalised Mugs",
-          "link": "/",
+          "link": "/personalised-mugs",
           "items": []
         }
       ]
@@ -262,27 +331,34 @@
   "categoryMap": {
     "all-products": [
       "col-print",
-      "col-flyers",
+      "col-flyers-cards",
       "col-booklets",
       "col-posters",
       "col-restaurant"
     ],
-    "print-scanning": ["col-print"],
-    "flyers-leaflets": ["col-flyers"],
+
+    "same-day-printing": ["col-print", "col-posters"],
+    "print-scan": ["col-print"],
+
+    "flyers-leaflets": ["col-flyers-cards"],
+    "cards": ["col-flyers-cards"],
+
     "booklets": ["col-booklets"],
-    "cards": ["col-flyers", "col-booklets"],
+    "envelopes": ["col-booklets"],
+    "calenders": ["col-booklets", "col-restaurant"],
+
     "posters": ["col-posters"],
     "banners": ["col-posters"],
-    "sign-display": ["col-posters"],
     "stickers": ["col-posters"],
-    "envelopes": ["col-booklets"],
-    "calendars": ["col-booklets", "col-restaurant"],
+    "sign-display": ["col-posters"],
+    "sign-display-board": ["col-posters"],
+
     "photo": ["col-print"],
     "lamination": ["col-print"],
     "binding": ["col-print"],
+
     "clothing": ["col-restaurant"],
-    "restaurant-corner": ["col-restaurant"],
-    "student-corner": ["col-print", "col-flyers"],
-    "same-day-printing": ["col-print", "col-posters"]
+    "restaurent-corner": ["col-restaurant"],
+    "student-corner": ["col-print", "col-flyers-cards"]
   }
 }

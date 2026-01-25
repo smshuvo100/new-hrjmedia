@@ -1,4 +1,3 @@
-// File: src/app/components/Header/MainHeader.jsx
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -7,18 +6,29 @@ import Link from "next/link";
 import { FiGrid, FiChevronDown } from "react-icons/fi";
 
 const NAV_ITEMS = [
-  { id: "all-products", label: "All products", href: "/products", icon: true },
-  { id: "flyers-leaflets", label: "Flyers & Leaflets", href: "/flyers" },
-  { id: "flyers-leaflets", label: "Folded Leaflets", href: "/folded-leaflets" },
-  { id: "booklets", label: "Booklets", href: "/booklets" },
+  { id: "all-products", label: "Products", href: "/products", icon: true },
+  {
+    id: "same-day-printing",
+    label: "Same Day Printing",
+    href: "/same-day-printing",
+  },
   { id: "cards", label: "Cards", href: "/cards" },
-  { id: "cards", label: "Business Cards", href: "/business-cards" },
+  {
+    id: "flyers-leaflets",
+    label: "Flyers & Leaflets",
+    href: "/flyers-leaflets",
+  },
   { id: "posters", label: "Posters", href: "/posters" },
-  { id: "posters", label: "Rollup", href: "/roller-banners" },
+  { id: "booklets", label: "Booklets", href: "/booklets" },
   { id: "banners", label: "Banners", href: "/banners" },
-  { id: "sign-display", label: "Sign & Display", href: "/sign-display" },
   { id: "stickers", label: "Stickers", href: "/stickers" },
+  {
+    id: "sign-display-board",
+    label: "Sign & Display Board",
+    href: "/sign-display-board",
+  },
   { id: "clothing", label: "Clothing", href: "/clothing" },
+  { id: "quotations", label: "Quotations", href: "/quotations" },
 ];
 
 export function MainHeader() {
@@ -28,10 +38,21 @@ export function MainHeader() {
   const [open, setOpen] = useState(false);
   const [activeTopCategory, setActiveTopCategory] = useState("all-products");
 
-  // dropdown position (anchored under hovered li)
-  const [dropdownStyle, setDropdownStyle] = useState({ left: 0 });
+  const [dropdownStyle, setDropdownStyle] = useState({
+    left: 0,
+    width: "auto",
+    mode: "anchored", // "anchored" | "container"
+  });
 
   const showLeft = activeTopCategory === "all-products";
+
+  const getNavbarContainerEl = () => {
+    if (!wrapperRef.current) return null;
+    return (
+      wrapperRef.current.querySelector(".main-header .container") ||
+      wrapperRef.current.querySelector(".container")
+    );
+  };
 
   const openAt = (catId, anchorEl) => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -39,13 +60,46 @@ export function MainHeader() {
     setActiveTopCategory(catId);
     setOpen(true);
 
-    // position dropdown under the hovered li
+    /**
+     * ✅ IMPORTANT FIX:
+     * Products + Same Day Printing + Quotations => mega menu container-এর ভেতরে aligned থাকবে
+     */
+    if (
+      catId === "all-products" ||
+      catId === "same-day-printing" ||
+      catId === "quotations"
+    ) {
+      const containerEl = getNavbarContainerEl();
+      const wrapRect = wrapperRef.current?.getBoundingClientRect();
+
+      if (containerEl && wrapRect) {
+        const containerRect = containerEl.getBoundingClientRect();
+        const left = containerRect.left - wrapRect.left;
+        const width = containerRect.width;
+
+        setDropdownStyle({ left, width, mode: "container" });
+      } else {
+        setDropdownStyle({ left: 0, width: "100%", mode: "container" });
+      }
+      return;
+    }
+
+    /**
+     * ✅ Others => hovered li এর নিচে anchored থাকবে
+     */
     if (wrapperRef.current && anchorEl) {
       const wrapRect = wrapperRef.current.getBoundingClientRect();
       const itemRect = anchorEl.getBoundingClientRect();
 
       const left = itemRect.left - wrapRect.left;
-      setDropdownStyle({ left });
+
+      setDropdownStyle({
+        left: Math.max(0, left),
+        width: "auto",
+        mode: "anchored",
+      });
+    } else {
+      setDropdownStyle({ left: 0, width: "auto", mode: "anchored" });
     }
   };
 
@@ -58,7 +112,6 @@ export function MainHeader() {
     if (closeTimer.current) clearTimeout(closeTimer.current);
   };
 
-  // close on outside click
   useEffect(() => {
     const onDocClick = (e) => {
       if (!wrapperRef.current) return;
@@ -68,7 +121,6 @@ export function MainHeader() {
     return () => document.removeEventListener("mousedown", onDocClick);
   }, []);
 
-  // close on ESC
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "Escape") setOpen(false);
@@ -91,29 +143,25 @@ export function MainHeader() {
           <nav className="nev-menu">
             <ul>
               {NAV_ITEMS.map((item) => {
-                const showArrow = item.id !== "all-products";
+                const isActive = open && activeTopCategory === item.id;
 
                 return (
                   <li
-                    key={item.label}
+                    key={item.id}
                     onMouseEnter={(e) => openAt(item.id, e.currentTarget)}
                     onFocus={(e) => openAt(item.id, e.currentTarget)}
                     className="has-dropdown"
                   >
-                    <Link href={item.href} className="menu-link">
-                      {item.icon && (
-                        <FiGrid size={16} style={{ marginRight: 6 }} />
-                      )}
-
+                    <Link
+                      href={item.href}
+                      className={`menu-link ${isActive ? "is-active" : ""}`}
+                    >
                       <span className="label">{item.label}</span>
-
-                      {showArrow && (
-                        <FiChevronDown
-                          className="dropdown-arrow"
-                          size={14}
-                          aria-hidden
-                        />
-                      )}
+                      <FiChevronDown
+                        className="dropdown-arrow"
+                        size={14}
+                        aria-hidden
+                      />
                     </Link>
                   </li>
                 );
@@ -133,6 +181,7 @@ export function MainHeader() {
             position: "absolute",
             top: "100%",
             left: dropdownStyle.left,
+            width: dropdownStyle.width,
             zIndex: 60,
           }}
         >
@@ -140,6 +189,7 @@ export function MainHeader() {
             initialCategory={activeTopCategory}
             showLeft={showLeft}
             allowLeftInteraction={showLeft}
+            dropdownMode={dropdownStyle.mode} // ✅ IMPORTANT
           />
         </div>
       )}
