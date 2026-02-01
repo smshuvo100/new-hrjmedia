@@ -11,7 +11,7 @@
               "label": "A4 Document Printing",
               "link": "/a4-document-printing"
             },
-            { "label": "A3 Documnet Printing", "link": "/a3-document-printing" }
+            { "label": "A3 Document Printing", "link": "/a3-document-printing" }
           ]
         },
         {
@@ -328,7 +328,6 @@
       "col-posters",
       "col-restaurant"
     ],
-
     "same-day-printing": [
       "col-print",
       "col-flyers-cards",
