@@ -241,7 +241,7 @@
 .quote-mega-contacts {
   display: flex;
   justify-content: center;
-  gap: 28px;
+  gap: 15px;
   flex-wrap: wrap;
   margin-top: 13px;
 }
@@ -249,7 +249,7 @@
 .quote-contact {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -257,7 +257,7 @@
 
 .quote-contact .icon {
   display: flex;
-  font-size: 18px;
+  font-size: 15px;
   opacity: 0.95;
 }
 
@@ -268,7 +268,7 @@
 .quote-contact .value {
   font-weight: 600;
   color: #f2c94c; /* yellow numbers */
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .quote-mega-btn-row {
