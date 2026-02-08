@@ -80,7 +80,9 @@
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0;
   /* height: -webkit-fill-available; */
-  height: stretch; /* future spec */
+  /* height: -webkit-fill-available; */ /* future spec */
+  /* align-content: stretch; */
+  height: 100%;
 }
 
 /* একেকটা ভর্তিকাল কলাম */
