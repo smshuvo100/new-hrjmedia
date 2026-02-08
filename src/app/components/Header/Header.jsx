@@ -57,11 +57,7 @@ export default function Header() {
 
               <div className="search-form">
                 <form>
-                  <input
-                    type="email"
-                    placeholder="Enter your email address"
-                    required
-                  />
+                  <input type="email" placeholder="Search . . ." required />
                   <button type="submit">
                     <IoMdSearch />
                   </button>

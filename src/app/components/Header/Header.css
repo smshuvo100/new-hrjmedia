@@ -111,7 +111,7 @@ header.header .flex-box .header-right ul li a {
   gap: 9px;
   align-items: center;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--blue);
 }
 header.header .flex-box .search-form form input {

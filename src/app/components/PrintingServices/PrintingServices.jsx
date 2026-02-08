@@ -26,42 +26,51 @@ const PrintingServices = () => {
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
-
+  //
+  //
   const data = [
     {
-      title: "Flyers",
-      img: "/images/assets/img2.webp",
-      paragraph: "High-quality flyers to promote your business and events.",
+      title: "Business Cards",
+      img: "/images/assets/business-cards1.jpg",
+      paragraph:
+        "Instantly provide contact details and convey professionalism.",
       buttonLink: "/quote/flyers",
     },
     {
-      title: "Booklets",
-      img: "/images/assets/img2.webp",
-      paragraph: "Custom booklets for marketing, events, and publications.",
+      title: "Boards",
+      img: "/images/assets/boards.jpg",
+      paragraph:
+        "Instantly provide contact details and convey professionalism.",
       buttonLink: "/quote/booklets",
     },
     {
-      title: "Brochure",
-      img: "/images/assets/img2.webp",
-      paragraph: "Professional brochures to showcase your products.",
+      title: "Flyers",
+      img: "/images/assets/flyers-and-leaflets.jpg",
+      paragraph: "High-quality flayers to promote your business and events.",
       buttonLink: "/quote/brochure",
     },
     {
-      title: "Posters",
-      img: "/images/assets/img2.webp",
-      paragraph: "Eye-catching posters to capture attention instantly.",
+      title: "Booklets",
+      img: "/images/assets/booklets.jpg",
+      paragraph: "Custom booklets for events, presentation, marketing more...",
       buttonLink: "/quote/posters",
     },
     {
-      title: "Banners",
-      img: "/images/assets/img2.webp",
-      paragraph: "Durable banners for indoor and outdoor promotions.",
+      title: "Banner",
+      img: "/images/assets/banner.jpg",
+      paragraph: "Eye-catching banners to capture attention instantly.",
       buttonLink: "/quote/banners",
     },
     {
-      title: "Cards",
-      img: "/images/assets/img2.webp",
-      paragraph: "Personalized business and greeting cards for all occasions.",
+      title: "Posters",
+      img: "/images/assets/posters1.jpg",
+      paragraph: "Spread the news about an event or advertise a product.",
+      buttonLink: "/quote/cards",
+    },
+    {
+      title: "Stickers",
+      img: "/images/assets/stickers1.jpg",
+      paragraph: "Product information, Brand Visibility and Loyalty Packaging.",
       buttonLink: "/quote/cards",
     },
   ];

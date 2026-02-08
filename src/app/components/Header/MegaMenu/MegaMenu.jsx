@@ -119,7 +119,7 @@ const SIMPLE_SUBMENUS = {
 
   banners: {
     sections: [
-      { title: "Roller Banners", items: ["Self Standing Roller Banners"] },
+      { title: "Roller Banners", items: ["Self Standing Roller Banner"] },
       {
         title: "PVC Banners",
         items: [
@@ -182,37 +182,39 @@ function QuotationsMegaPanel() {
   return (
     <div className="quote-mega-wrap">
       <div className="quote-mega-inner">
-        <h2 className="quote-mega-title">SAME DAY PRINTING SERVICE</h2>
+        <div className="quote-mega-content">
+          <h2 className="quote-mega-title">SAME DAY PRINTING SERVICE</h2>
 
-        <p className="quote-mega-subtitle">
-          For urgent and high quality print with quick turnaround, we will be
-          happy to provide a personalised quote.
-        </p>
+          <p className="quote-mega-subtitle">
+            For urgent and high quality print with quick turnaround, we will be
+            happy to provide a personalised quote.
+          </p>
 
-        <div className="quote-mega-contacts">
-          <a href="tel:02081234567" className="quote-contact">
-            <span className="icon">
-              <FiPhoneCall />
-            </span>
-            <span className="label">Office Hours</span>
-            <span className="value">020 8123 4567</span>
-          </a>
+          <div className="quote-mega-contacts">
+            <a href="tel:02081234567" className="quote-contact">
+              <span className="icon">
+                <FiPhoneCall />
+              </span>
+              <span className="label">Office Hours</span>
+              <span className="value">020 8123 4567</span>
+            </a>
 
-          <a href="tel:07589876543" className="quote-contact">
-            <span className="icon">
-              <FiSmartphone />
-            </span>
-            <span className="label">Chat or Call (24/7)</span>
-            <span className="value">07589 876543</span>
-          </a>
+            <a href="tel:07589876543" className="quote-contact">
+              <span className="icon">
+                <FiSmartphone />
+              </span>
+              <span className="label">Chat or Call (24/7)</span>
+              <span className="value">07589 876543</span>
+            </a>
 
-          <a href="mailto:info@hrjmedia.com" className="quote-contact">
-            <span className="icon">
-              <FiMail />
-            </span>
-            <span className="label">Email us</span>
-            <span className="value">info@hrjmedia.com</span>
-          </a>
+            <a href="mailto:info@hrjmedia.com" className="quote-contact">
+              <span className="icon">
+                <FiMail />
+              </span>
+              <span className="label">Email us</span>
+              <span className="value">info@hrjmedia.com</span>
+            </a>
+          </div>
         </div>
 
         <div className="quote-mega-btn-row">
@@ -311,8 +313,8 @@ const PRODUCTS_FLYERS_LEAFLETS_SINGLE_COLUMN = {
       link: "/roller-banners",
       items: [
         {
-          label: "Self Standing Roller Banners",
-          link: "/self-standing-roller-banners",
+          label: "Self Standing Roller Banner",
+          link: "/self-standing-roller-banner",
         },
       ],
     },
@@ -358,8 +360,8 @@ const PRODUCTS_BOOKLETS_SINGLE_COLUMN = {
       link: "/roller-banners",
       items: [
         {
-          label: "Self Standing Roller Banners",
-          link: "/self-standing-roller-banners",
+          label: "Self Standing Roller Banner",
+          link: "/self-standing-roller-banner",
         },
       ],
     },
@@ -492,8 +494,8 @@ const PRODUCTS_POSTERS_SINGLE_COLUMN = {
       link: "/roller-banners",
       items: [
         {
-          label: "Self Standing Roller Banners",
-          link: "/self-standing-roller-banners",
+          label: "Self Standing Roller Banner",
+          link: "/self-standing-roller-banner",
         },
       ],
     },
@@ -541,8 +543,8 @@ const PRODUCTS_BANNERS_SINGLE_COLUMN = {
       link: "/roller-banners",
       items: [
         {
-          label: "Self Standing Roller Banners",
-          link: "/self-standing-roller-banners",
+          label: "Self Standing Roller Banner",
+          link: "/self-standing-roller-banner",
         },
       ],
     },
@@ -623,8 +625,8 @@ const PRODUCTS_SIGN_DISPLAY_SINGLE_COLUMN = {
       link: "/roller-banners",
       items: [
         {
-          label: "Self Standing Roller Banners",
-          link: "/self-standing-roller-banners",
+          label: "Self Standing Roller Banner",
+          link: "/self-standing-roller-banner",
         },
       ],
     },
@@ -1248,8 +1250,8 @@ export const PRODUCTS_STUDENT_CORNER_TWO_COLUMNS = [
         title: "Roller Banners",
         items: [
           {
-            label: "Self Standing Roller Banners",
-            link: "/student-corner/roller-banners",
+            label: "Self Standing Roller Banner",
+            link: "/student-corner/roller-banner",
           },
         ],
       },
@@ -1509,7 +1511,7 @@ export default function MegaMenu({
                   className="mega-menu-container"
                   style={{
                     gridTemplateColumns: effectiveShowLeft
-                      ? "230px 1fr"
+                      ? "190px 1fr"
                       : "1fr",
                   }}
                 >
