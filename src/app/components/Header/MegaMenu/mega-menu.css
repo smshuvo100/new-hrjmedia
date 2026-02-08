@@ -327,6 +327,9 @@
 .sub-menu-section {
   margin-bottom: 16px;
 }
+.sub-menu-section:last-child {
+  margin-bottom: 0;
+}
 
 .sub-menu-title {
   margin: 0 0 0 0;

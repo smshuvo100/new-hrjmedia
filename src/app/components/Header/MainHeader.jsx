@@ -173,7 +173,7 @@ export function MainHeader() {
       </div>
 
       {/* DROPDOWN */}
-      {open && (
+      {!open && (
         <div
           className="mega-menu-holder"
           onMouseEnter={cancelClose}
