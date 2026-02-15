@@ -249,3 +249,16 @@ header last-header
   position: relative;
   top: 4px;
 }
+
+/* 
+==============================
+header last-header Quaration
+==============================
+*/
+
+.main-header nav.nev-menu ul li.has-dropdown:last-child {
+  margin-left: 43px;
+}
+.main-header nav.nev-menu ul li.has-dropdown:last-child a.menu-link {
+  font-weight: 800;
+}
