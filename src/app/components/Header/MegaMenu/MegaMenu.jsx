@@ -1311,8 +1311,10 @@ export default function MegaMenu({
   showLeft = true,
   allowLeftInteraction = true,
   dropdownMode = "anchored",
+  onRoundActiveChange = () => {}, // ✅ NEW
 }) {
   const [activeCategory, setActiveCategory] = useState(initialCategory);
+  const [hoveredCategory, setHoveredCategory] = useState(null);
 
   useEffect(() => {
     setActiveCategory(initialCategory);
@@ -1330,6 +1332,23 @@ export default function MegaMenu({
     !isProductsContext && Boolean(SIMPLE_SUBMENUS?.[activeCategory]);
 
   const effectiveShowLeft = showLeft && !isQuotations;
+
+  useEffect(() => {
+    // ✅ Only Products sidebar context + left menu visible হলে round-active কাজ করবে
+    if (!(isProductsContext && effectiveShowLeft)) {
+      onRoundActiveChange(false);
+      return;
+    }
+
+    // ✅ "Same Day Printing" item (id = "all-products") => NO round-active
+    // ✅ Other sidebar items => round-active ON (even if mouse goes to right panel)
+    onRoundActiveChange(activeCategory !== "all-products");
+  }, [
+    activeCategory,
+    isProductsContext,
+    effectiveShowLeft,
+    onRoundActiveChange,
+  ]);
 
   const Wrapper = ({ children }) =>
     dropdownMode === "container" ? (
@@ -1516,7 +1535,13 @@ export default function MegaMenu({
                   }}
                 >
                   {effectiveShowLeft && (
-                    <div className="mega-menu-left">
+                    <div
+                      className="mega-menu-left"
+                      onMouseEnter={() => {
+                        setHoveredCategory(cat.id);
+                        allowLeftInteraction && setActiveCategory(cat.id);
+                      }}
+                    >
                       <ul>
                         {sideCategories.map((cat) => (
                           <li
@@ -1526,9 +1551,18 @@ export default function MegaMenu({
                                 ? "left-item active"
                                 : "left-item"
                             }
-                            onMouseEnter={() =>
-                              allowLeftInteraction && setActiveCategory(cat.id)
-                            }
+                            onMouseEnter={() => {
+                              // ✅ hoveredCategory সেট
+                              setHoveredCategory(cat.id);
+
+                              // ✅ Products sidebar logic:
+                              if (cat.id && cat.id !== "all-products")
+                                onRoundActiveChange(true);
+                              else onRoundActiveChange(false);
+
+                              // existing behavior
+                              allowLeftInteraction && setActiveCategory(cat.id);
+                            }}
                             onClick={() =>
                               allowLeftInteraction && setActiveCategory(cat.id)
                             }

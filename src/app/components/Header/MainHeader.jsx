@@ -4,7 +4,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import MegaMenu from "./MegaMenu/MegaMenu";
 import Link from "next/link";
-import { FiGrid, FiChevronDown } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
 
 const NAV_ITEMS = [
   { id: "all-products", label: "Products", href: "/products", icon: true },
@@ -39,6 +39,9 @@ export function MainHeader() {
   const [open, setOpen] = useState(false);
   const [activeTopCategory, setActiveTopCategory] = useState("all-products");
 
+  // ✅ MegaMenu থেকে আসবে: Products sidebar hover হলে round-active true/false
+  const [isRoundActive, setIsRoundActive] = useState(false);
+
   const [dropdownStyle, setDropdownStyle] = useState({
     left: 0,
     width: "auto",
@@ -60,6 +63,9 @@ export function MainHeader() {
 
     setActiveTopCategory(catId);
     setOpen(true);
+
+    // ✅ dropdown open হলে by default round-active false (MegaMenu hover থেকে পরে সেট হবে)
+    setIsRoundActive(false);
 
     /**
      * ✅ IMPORTANT FIX:
@@ -175,7 +181,7 @@ export function MainHeader() {
       {/* DROPDOWN */}
       {open && (
         <div
-          className="mega-menu-holder"
+          className={`mega-menu-holder${isRoundActive ? " round-active" : ""}`}
           onMouseEnter={cancelClose}
           onMouseLeave={scheduleClose}
           style={{
@@ -191,6 +197,7 @@ export function MainHeader() {
             showLeft={showLeft}
             allowLeftInteraction={showLeft}
             dropdownMode={dropdownStyle.mode} // ✅ IMPORTANT
+            onRoundActiveChange={setIsRoundActive} // ✅ NEW
           />
         </div>
       )}

@@ -404,3 +404,34 @@
   background: var(--blue-g-color);
   padding: 30px 6px;
 }
+
+/* 
+=================
+✅ round corners
+=================
+*/
+
+.mega-menu-holder.round-active .mega-menu-container .mega-menu-left {
+  border-radius: 0 0 0 20px;
+}
+.mega-menu-holder.round-active
+  .mega-menu-container
+  .mega-menu-right
+  .mega-columns
+  .mega-column {
+  border-radius: 0 0 20px 0;
+}
+.mega-menu-holder.round-active
+  .mega-menu-container
+  .mega-menu-right
+  .mega-columns
+  .mega-column:first-child {
+  border-radius: 0;
+}
+.mega-menu-holder.round-active
+  .mega-menu-container
+  .mega-menu-right
+  .mega-columns
+  .mega-column:only-child {
+  border-radius: 0 0 20px 0;
+}
