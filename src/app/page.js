@@ -20,6 +20,8 @@ import ProductsCard from "./components/ProductsCard/ProductsCard";
 
 import InStore from "./components/InStore/InStore";
 
+import UrgentPrintCta from "./components/UrgentPrintCta/UrgentPrintCta";
+
 // import Modal from "./components/get-a-quote/Modal";
 // import GetAQuoteWizard from "./components/get-a-quote/GetAQuoteWizard";
 
@@ -149,49 +151,7 @@ export default function Home() {
 
       <HeroSlider slides={slides1} />
 
-      <section className="urgent-print-cta">
-        <div className="container">
-          <div className="cta-box">
-            {/* LEFT CONTENT */}
-            <div className="coll-left">
-              <p className="cta-text">
-                For urgent and high quality print with quick turnaround, we will
-                be happy to provide a personalised quote.
-              </p>
-
-              <div className="cta-contact">
-                <a href="tel:02081234567">
-                  <FiPhoneCall />
-                  <span className="c-text">Office Hours: </span>
-                  <span className="c-number">0208 123 4567</span>
-                </a>
-
-                <a href="tel:07589876543">
-                  <MdPhoneIphone />
-
-                  <span className="c-text">Chat or Call (24/7): </span>
-                  <span className="c-number">0758 987 6543</span>
-                </a>
-
-                <a href="mailto:info@hrjmedia.com">
-                  <MdEmail />
-                  <span className="c-text">Email us: </span>
-                  <span className="c-number">info@hrjmedia.com</span>
-                </a>
-              </div>
-            </div>
-
-            {/* RIGHT BUTTON */}
-            <div className="coll-right">
-              <div className="btn">
-                <a href="/get-a-quote" className="cta-btn">
-                  Get a Quote
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <UrgentPrintCta />
 
       <PrintingServices />
 

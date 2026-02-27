@@ -129,3 +129,8 @@ section.hero-section .hero-all .left-title {
 section.hero-section .hero-all .left-title .btn {
   padding-top: 95px;
 }
+
+/* for Animation */
+section.hero-section .hero-right button {
+  will-change: transform;
+}

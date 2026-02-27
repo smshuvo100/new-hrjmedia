@@ -36,3 +36,7 @@ section.print-steps-section .grid-box .item {
 section.print-steps-section .header-center {
   max-width: 800px;
 }
+
+section.print-steps-section .grid-box .item {
+  will-change: transform;
+}

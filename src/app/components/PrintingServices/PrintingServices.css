@@ -119,3 +119,6 @@ section.printing-services .embla__next {
     flex: 0 0 80%;
   }
 }
+section.printing-services .item {
+  will-change: transform;
+}

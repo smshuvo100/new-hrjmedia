@@ -132,8 +132,89 @@ button {
   border: none;
   outline: none;
 }
+/* =============================== */
+/* ===============================
+   Gradient → Flip to Black (TEXT FIX)
+=============================== */
 
+.btn {
+  perspective: 1000px;
+}
+
+/* button base */
 .btn input[type="submit"],
+.btn button,
+.btn a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 30px;
+  border-radius: 10px;
+  background: var(--blue-g-color);
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  transform-style: preserve-3d;
+}
+
+/* ✅ text stays in front during 3D flip */
+.btn input[type="submit"] span,
+.btn button span,
+.btn a span {
+  position: relative;
+  z-index: 999;
+  transform: translateZ(40px); /* 🔥 keeps visible while flipping */
+}
+.btn input[type="submit"]:hover span,
+.btn button:hover span,
+.btn a:hover span {
+  color: #fff;
+}
+
+/* gradient base layer (always behind) */
+.btn input[type="submit"]::after,
+.btn button::after,
+.btn a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit; /* keep gradient */
+  z-index: 1;
+}
+
+/* black flip layer */
+.btn input[type="submit"]::before,
+.btn button::before,
+.btn a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+
+  transform: rotateY(180deg);
+  transform-origin: center;
+  backface-visibility: hidden;
+
+  transition: transform 0.6s ease;
+  z-index: 2;
+}
+
+/* hover flip */
+.btn input[type="submit"]:hover::before,
+.btn button:hover::before,
+.btn a:hover::before {
+  transform: rotateY(0deg);
+}
+/* .btn input[type="submit"],
 .btn button,
 .btn a {
   display: inline-block;
@@ -159,7 +240,7 @@ button {
 .btn.btn2 button {
   padding: 4px 20px;
   font-size: 15px;
-}
+} */
 
 /* ===============================
   Defalt Form Styles
@@ -237,67 +318,6 @@ textarea {
   line-height: 1.5;
 }
 
-/* 
-===============================
-  Urgent Print CTA homepage -CTA
-==============================
-*/
-.urgent-print-cta {
-  background: var(--light-blue);
-  padding: 14px 0;
-}
-
-.urgent-print-cta .cta-contact a {
-  font-size: 16px;
-  color: var(--background);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-}
-.urgent-print-cta .cta-contact a:hover {
-  text-decoration: underline;
-}
-
-.urgent-print-cta .cta-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.urgent-print-cta a.cta-btn {
-  background: var(--background);
-  color: var(--light-blue);
-  width: 284px;
-  text-align: center;
-}
-
-.urgent-print-cta p.cta-text {
-  color: var(--background);
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  margin-bottom: 10px;
-}
-
-.urgent-print-cta .cta-box .cta-contact {
-  display: flex;
-  gap: 46px;
-}
-
-.urgent-print-cta .cta-box .cta-contact span.c-text {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.urgent-print-cta .cta-box .cta-contact span.c-number {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.urgent-print-cta .cta-box .cta-contact svg {
-  font-size: 21px;
-}
 /*
 ======================================
   Urgent Print CTA homepage -FOOTER
