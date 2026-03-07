@@ -48,7 +48,7 @@ const slides1 = [
     bg: "/images/assets/digital-printing.jpg",
     titleStrong: "Digital and Litho",
     titleRest: "Printing",
-    subtitle: "Professional and fast printing services.",
+    subtitle: "Professional and fast printing",
     paragraph:
       "High-quality digital and litho printing for marketing materials.",
     buttonText: "Get Started",
