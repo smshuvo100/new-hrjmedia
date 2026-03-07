@@ -58,7 +58,7 @@ const slides1 = [
     id: 3,
     bg: "/images/assets/large-formate-print.jpg",
     titleStrong: "Large Format",
-    titleRest: "Print",
+    titleRest: "Printing",
     subtitle: "High-quality Banner, Sticker and Poster",
     paragraph:
       "Get stunning large-format prints for exhibitions and promotions.",
