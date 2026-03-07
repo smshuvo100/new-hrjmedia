@@ -34,7 +34,7 @@ import { MdPhoneIphone, MdEmail } from "react-icons/md";
 const slides1 = [
   {
     id: 1,
-    bg: "/images/assets/sslider1.jpg",
+    bg: "/images/assets/same-day-printing.jpg",
     titleStrong: "Same Day",
     titleRest: "Printing Service",
     subtitle: "Need urgent printing?",
@@ -45,8 +45,8 @@ const slides1 = [
   },
   {
     id: 2,
-    bg: "/images/assets/sslider1.jpg",
-    titleStrong: "Digital / Litho",
+    bg: "/images/assets/digital-printing.jpg",
+    titleStrong: "Digital and Litho",
     titleRest: "Printing",
     subtitle: "Professional and fast printing services.",
     paragraph:
@@ -56,10 +56,10 @@ const slides1 = [
   },
   {
     id: 3,
-    bg: "/images/assets/sslider1.jpg",
+    bg: "/images/assets/large-formate-print.jpg",
     titleStrong: "Large Format",
     titleRest: "Print",
-    subtitle: "High-quality banners and posters.",
+    subtitle: "High-quality Banner, Sticker and Poster",
     paragraph:
       "Get stunning large-format prints for exhibitions and promotions.",
     buttonText: "Get a Quote",
@@ -67,7 +67,7 @@ const slides1 = [
   },
   {
     id: 4,
-    bg: "/images/assets/sslider1.jpg",
+    bg: "/images/assets/t-shirt-and-hi-vis-vest.jpg",
     titleStrong: "T-Shirt and",
     titleRest: "Hi Vis Vest",
     subtitle: "Custom apparel printing on demand.",
