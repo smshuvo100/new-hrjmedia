@@ -36,7 +36,7 @@ const slides1 = [
     id: 1,
     bg: "/images/assets/same-day-printing.jpg",
     titleStrong: "Same Day",
-    titleRest: "Printing Service",
+    titleRest: "Printing",
     subtitle: "Need urgent printing?",
     paragraph:
       "Fast, reliable same-day printing for your urgent business needs.",
@@ -69,7 +69,7 @@ const slides1 = [
     id: 4,
     bg: "/images/assets/t-shirt-and-hi-vis-vest.jpg",
     titleStrong: "T-Shirt and",
-    titleRest: "Hi Vis Vest",
+    titleRest: "Hi Vis Vest Printing",
     subtitle: "Custom apparel printing on demand.",
     paragraph:
       "Personalized T-shirts and hi-vis vests for your brand or event.",
