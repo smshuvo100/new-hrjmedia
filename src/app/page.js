@@ -34,7 +34,8 @@ import { MdPhoneIphone, MdEmail } from "react-icons/md";
 const slides1 = [
   {
     id: 1,
-    bg: "/images/assets/same-day-printing.jpg",
+    bg: "/images/assets/digital-printing.jpg",
+
     titleStrong: "Same Day",
     titleRest: "Printing",
     subtitle: "Need urgent printing?",
@@ -45,7 +46,7 @@ const slides1 = [
   },
   {
     id: 2,
-    bg: "/images/assets/digital-printing.jpg",
+    bg: "/images/assets/same-day-printing.jpg",
     titleStrong: "Digital and Litho",
     titleRest: "Printing",
     subtitle: "Professional and fast printing",
@@ -69,7 +70,7 @@ const slides1 = [
     id: 4,
     bg: "/images/assets/t-shirt-and-hi-vis-vest.jpg",
     titleStrong: "T-Shirt and",
-    titleRest: "Hi Vis Vest Printing",
+    titleRest: "Hi Vis Vest",
     subtitle: "Custom apparel printing on demand.",
     paragraph:
       "Personalized T-shirts and hi-vis vests for your brand or event.",
