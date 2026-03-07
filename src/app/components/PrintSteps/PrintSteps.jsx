@@ -157,7 +157,7 @@ export default function PrintSteps() {
       {
         icon: <FiShoppingCart />,
         title: "Order Online 24/7",
-        desc: "Esily add items to your basket",
+        desc: "Add items to your basket",
       },
       {
         icon: <FiHeadphones />,

@@ -217,9 +217,9 @@ function QuotationsMegaPanel() {
           </div>
         </div>
 
-        <div className="quote-mega-btn-row">
+        <div className="quote-mega-btn-row btn">
           <Link href="/get-a-quote" className="quote-mega-btn">
-            GET AN INSTANT QUOTE
+            <span>GET AN INSTANT QUOTE</span>
           </Link>
         </div>
       </div>
@@ -253,9 +253,11 @@ function SimpleSubMenuPanel({ activeKey }) {
       </div>
 
       <div className="sub-menu-cta">
-        <Link href="/get-a-quote" className="sub-menu-cta-btn">
-          Get a Quote
-        </Link>
+        <div className="btn">
+          <Link href="/get-a-quote" className="sub-menu-cta-btn">
+            <span>Get a Quote</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
@@ -1660,7 +1662,7 @@ export default function MegaMenu({
 
                     <div className="btn">
                       <Link href="/get-a-quote" className="cta-btn">
-                        Get a Quote
+                        <span>Get a Quote</span>
                       </Link>
                     </div>
                   </div>

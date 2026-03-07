@@ -284,7 +284,7 @@
   background: linear-gradient(180deg, #3357c9eb 0%, #192b63e0 100%);
 }
 
-.quote-mega-btn {
+.quote-mega-wrap .quote-mega-btn {
   background: #fff;
   color: var(--blue-color);
   font-weight: 600;
@@ -385,7 +385,7 @@
   background: linear-gradient(180deg, #3357c9eb 0%, #192b63e0 100%);
 }
 
-.sub-menu-cta-btn {
+.mega-menu-bg .sub-menu-wrap .sub-menu-cta-btn {
   background: #fff;
   color: var(--blue-color);
   font-weight: 700;
@@ -434,4 +434,22 @@
   .mega-columns
   .mega-column:only-child {
   border-radius: 0 0 20px 0;
+}
+
+/* 
+==================
+✅ active menu underline (yellow)
+=================================
+*/
+li.has-dropdown a.menu-link {
+  position: relative;
+}
+
+li.has-dropdown a.menu-link.is-active:after {
+  content: "";
+  width: calc(100% - 17px);
+  height: 4px;
+  background: var(--yellow);
+  position: absolute;
+  top: -12px;
 }

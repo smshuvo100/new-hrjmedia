@@ -69,7 +69,7 @@ header top-header
 ==============================
 */
 header.header .top-header {
-  padding: 3px 0;
+  padding: 10px 0;
 }
 header.header .flex-box {
   display: flex;

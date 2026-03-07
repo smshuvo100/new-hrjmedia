@@ -54,3 +54,8 @@ section.in-store-section .in-store-box .flax-box .item h3 {
 section.in-store-section .orderBanner__steps span.arrow {
   padding: 0 23px;
 }
+
+/* not good  */
+section.in-store-section .content p {
+  text-align: justify;
+}

@@ -243,9 +243,9 @@ export default function InStore() {
           <motion.div className="flax-box" variants={gridWrap}>
             {[
               { h: "In-Store", p: "Instant Printing" },
-              { h: "Same Day", p: "Instant Printing" },
-              { h: "Overnignt", p: "Instant Printing" },
-              { h: "Online", p: "Instant Printing" },
+              { h: "Same Day", p: "Printing Services" },
+              { h: "Overnignt", p: "Printing Services" },
+              { h: "Overnignt", p: "Printing Services" },
             ].map((x, idx) => (
               <motion.div
                 key={idx}

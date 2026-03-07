@@ -288,7 +288,7 @@ export default function Header() {
                 animate="visible"
               >
                 <form>
-                  <input type="email" placeholder="Search . . ." required />
+                  <input type="text" placeholder="Search . . ." required />
                   <button type="submit">
                     <IoMdSearch />
                   </button>

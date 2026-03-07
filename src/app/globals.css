@@ -142,6 +142,7 @@ button {
 }
 
 /* button base */
+
 .btn input[type="submit"],
 .btn button,
 .btn a {
@@ -167,6 +168,7 @@ button {
 }
 
 /* ✅ text stays in front during 3D flip */
+
 .btn input[type="submit"] span,
 .btn button span,
 .btn a span {
@@ -325,7 +327,7 @@ textarea {
 */
 .footer-cta .urgent-print-cta {
   background: var(--blue-g-color);
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 20px 30px;
 }
 .footer-cta .urgent-print-cta a.cta-btn {

@@ -74,7 +74,7 @@ section.hero-section .hero-right {
 
 section.hero-section .hero-right button {
   border-radius: 6px;
-  background: var(--blue-g-color);
+  background: linear-gradient(90deg, #192b63bf 0%, #3357c9c7 100%);
   width: 284px;
   height: 70px;
   display: flex;
@@ -85,6 +85,14 @@ section.hero-section .hero-right button {
   border: none;
   cursor: pointer;
   opacity: 0.8;
+}
+/* active button */
+section.hero-section .hero-right button:hover,
+section.hero-section .hero-right button.active {
+  background: var(--blue-g-color);
+  /* transform: scale(1.03); */
+  transition: all 0.3s ease;
+  opacity: 1 !important;
 }
 
 section.hero-section .hero-right button h5 {
@@ -101,15 +109,6 @@ section.hero-section .hero-right button p {
   line-height: 18px;
   margin: 0;
   font-family: var(--font-open-sans), sans-serif;
-}
-
-/* active button */
-section.hero-section .hero-right button:hover,
-section.hero-section .hero-right button.active {
-  background: var(--blue-g-color);
-  /* transform: scale(1.03); */
-  transition: all 0.3s ease;
-  opacity: 1 !important;
 }
 
 section.hero-section .container {

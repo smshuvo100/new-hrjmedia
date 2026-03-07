@@ -254,7 +254,7 @@ export default function HeroSlider({ slides }) {
               className={selectedIndex === index ? "active" : ""}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.99 }}
-              transition={{ duration: 0.2 }}
+              transition={{ duration: 0.3 }}
             >
               <h5>
                 <strong>{btn.titleStrong}</strong> {btn.titleRest}
