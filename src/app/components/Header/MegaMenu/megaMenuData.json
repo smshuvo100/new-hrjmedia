@@ -35,7 +35,7 @@
               "label": "Plastic Comb Binding",
               "link": "/plastic-comb-binding"
             },
-            { "label": "Wire o Bindong", "link": "/wire-o-binding" },
+            { "label": "Wire o Binding", "link": "/wire-o-binding" },
             { "label": "Hard Cover Binding", "link": "/hard-cover-binding" },
             { "label": "Perfect Binding", "link": "/perfect-binding" }
           ]
@@ -134,7 +134,7 @@
           "link": "/booklets",
           "items": [
             { "label": "Stapled Booklets", "link": "/stapled-booklets" },
-            { "label": "Wire-O Binding Booklets", "link": "/wire-o-booklets" },
+            { "label": "Wire o Binding Booklets", "link": "/wire-o-booklets" },
             {
               "label": "Comb Binding Booklets",
               "link": "/comb-binding-booklets"
@@ -188,8 +188,15 @@
           "link": "/posters",
           "items": [
             { "label": "Standard Posters", "link": "/standard-posters" },
-            { "label": "Blueback Posters Paper", "link": "/blueback-posters" },
-            { "label": "Waterproof Posters", "link": "/waterproof-posters" },
+            { "label": "Blueback Posters", "link": "/blueback-posters" },
+            {
+              "label": "Waterproof PVC Posters",
+              "link": "/waterproof-posters"
+            },
+            {
+              "label": "Lightbox Backlit Posters",
+              "link": "lightbox-backlit-posters"
+            },
             { "label": "Wallpaper", "link": "/wallpaper" },
             { "label": "Custom Size Posters", "link": "/custom-size-posters" }
           ]

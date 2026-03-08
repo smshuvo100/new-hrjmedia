@@ -91,8 +91,9 @@ const SIMPLE_SUBMENUS = {
           "A2 Poster",
           "A3 Poster",
           "Standard Posters",
-          "Blueback Posters Paper",
-          "Waterproof Posters",
+          "Blueback Posters",
+          "Waterproof PVC Posters",
+          "Lightbox Backlit Posters",
           "Wallpaper",
           "Custom Size Posters",
         ],
@@ -306,8 +307,12 @@ const PRODUCTS_FLYERS_LEAFLETS_SINGLE_COLUMN = {
       link: "/posters",
       items: [
         { label: "Standard Posters", link: "/standard-posters" },
-        { label: "Blueback Posters Paper", link: "/blueback-posters" },
-        { label: "Waterproof Posters", link: "/waterproof-posters" },
+        { label: "Blueback Posters", link: "/blueback-posters" },
+        { label: "Waterproof PVC Posters", link: "/waterproof-posters" },
+        {
+          label: "Lightbox Backlit Posters",
+          link: "lightbox-backlit-posters",
+        },
       ],
     },
     {
@@ -346,7 +351,7 @@ const PRODUCTS_BOOKLETS_SINGLE_COLUMN = {
       link: "/booklets",
       items: [
         { label: "Stapled Booklets", link: "/stapled-booklets" },
-        { label: "Wire-O Binding Booklets", link: "/wire-o-booklets" },
+        { label: "Wire o Binding Booklets", link: "/wire-o-booklets" },
         { label: "Comb Binding Booklets", link: "/comb-binding-booklets" },
         { label: "Perfect Bound Booklets", link: "/perfect-bound-booklets" },
         { label: "Books and Booklets", link: "/books-and-booklets" },
@@ -391,8 +396,12 @@ const PRODUCTS_BOOKLETS_SINGLE_COLUMN = {
       link: "/posters",
       items: [
         { label: "Standard Posters", link: "/standard-posters" },
-        { label: "Blueback Posters Paper", link: "/blueback-posters" },
-        { label: "Waterproof Posters", link: "/waterproof-posters" },
+        { label: "Blueback Posters", link: "/blueback-posters" },
+        { label: "Waterproof PVC Posters", link: "/waterproof-posters" },
+        {
+          label: "Lightbox Backlit Posters",
+          link: "lightbox-backlit-posters",
+        },
       ],
     },
     {
@@ -485,8 +494,12 @@ const PRODUCTS_POSTERS_SINGLE_COLUMN = {
 
         // JSON-এ already আছে
         { label: "Standard Posters", link: "/standard-posters" },
-        { label: "Blueback Posters Paper", link: "/blueback-posters" },
-        { label: "Waterproof Posters", link: "/waterproof-posters" },
+        { label: "Blueback Posters", link: "/blueback-posters" },
+        { label: "Waterproof PVC Posters", link: "/waterproof-posters" },
+        {
+          label: "Lightbox Backlit Posters",
+          link: "lightbox-backlit-posters",
+        },
         { label: "Wallpaper", link: "/wallpaper" },
         { label: "Custom Size Posters", link: "/custom-size-posters" },
       ],
@@ -593,8 +606,12 @@ const PRODUCTS_BANNERS_SINGLE_COLUMN = {
         { label: "A2 Poster", link: "/a2-poster" },
         { label: "A3 Poster", link: "/a3-poster" },
         { label: "Standard Posters", link: "/standard-posters" },
-        { label: "Blueback Posters Paper", link: "/blueback-posters" },
-        { label: "Waterproof Posters", link: "/waterproof-posters" },
+        { label: "Blueback Posters", link: "/blueback-posters" },
+        { label: "Waterproof PVC Posters", link: "/waterproof-posters" },
+        {
+          label: "Lightbox Backlit Posters",
+          link: "lightbox-backlit-posters",
+        },
         { label: "Wallpaper", link: "/wallpaper" },
       ],
     },
@@ -681,12 +698,16 @@ const PRODUCTS_SIGN_DISPLAY_SINGLE_COLUMN = {
       items: [
         { label: "Standard Posters", link: "/standard-posters" },
         {
-          label: "Blueback Posters Paper",
+          label: "Blueback Posters",
           link: "/blueback-posters",
         },
         {
-          label: "Waterproof Posters",
+          label: "Waterproof PVC Posters",
           link: "/waterproof-posters",
+        },
+        {
+          label: "Lightbox Backlit Posters",
+          link: "lightbox-backlit-posters",
         },
         { label: "Wallpaper", link: "/wallpaper" },
       ],
@@ -890,8 +911,12 @@ const PRODUCTS_PHOTO_SINGLE_COLUMN = {
       link: "/posters",
       items: [
         { label: "Standard Posters", link: "/standard-posters" },
-        { label: "Blueback Posters Paper", link: "/blueback-posters" },
-        { label: "Waterproof Posters", link: "/waterproof-posters" },
+        { label: "Blueback Posters", link: "/blueback-posters" },
+        { label: "Waterproof PVC Posters", link: "/waterproof-posters" },
+        {
+          label: "Lightbox Backlit Posters",
+          link: "lightbox-backlit-posters",
+        },
         { label: "Wallpaper", link: "/wallpaper" },
         { label: "Custom Size Posters", link: "/custom-size-posters" },
       ],
@@ -966,8 +991,12 @@ const PRODUCTS_LAMINATION_SINGLE_COLUMN = {
       link: "/posters",
       items: [
         { label: "Standard Posters", link: "/standard-posters" },
-        { label: "Blueback Posters Paper", link: "/blueback-posters" },
-        { label: "Waterproof Posters", link: "/waterproof-posters" },
+        { label: "Blueback Posters", link: "/blueback-posters" },
+        { label: "Waterproof PVC Posters", link: "/waterproof-posters" },
+        {
+          label: "Lightbox Backlit Posters",
+          link: "lightbox-backlit-posters",
+        },
         { label: "Wallpaper", link: "/wallpaper" },
         { label: "Custom Size Posters", link: "/custom-size-posters" },
       ],
@@ -1049,8 +1078,12 @@ const PRODUCTS_BINDING_SINGLE_COLUMN = {
       link: "/posters",
       items: [
         { label: "Standard Posters", link: "/standard-posters" },
-        { label: "Blueback Posters Paper", link: "/blueback-posters" },
-        { label: "Waterproof Posters", link: "/waterproof-posters" },
+        { label: "Blueback Posters", link: "/blueback-posters" },
+        { label: "Waterproof PVC Posters", link: "/waterproof-posters" },
+        {
+          label: "Lightbox Backlit Posters",
+          link: "lightbox-backlit-posters",
+        },
         { label: "Wallpaper", link: "/wallpaper" },
         { label: "Custom Size Posters", link: "/custom-size-posters" },
       ],
@@ -1235,12 +1268,16 @@ export const PRODUCTS_STUDENT_CORNER_TWO_COLUMNS = [
             link: "/student-corner/standard-posters",
           },
           {
-            label: "Blueback Posters Paper",
+            label: "Blueback Posters",
             link: "/student-corner/blueback-posters",
           },
           {
-            label: "Waterproof Posters",
+            label: "Waterproof PVC Posters",
             link: "/student-corner/waterproof-posters",
+          },
+          {
+            label: "Lightbox Backlit Posters",
+            link: "lightbox-backlit-posters",
           },
           {
             label: "Custom Size Posters",
