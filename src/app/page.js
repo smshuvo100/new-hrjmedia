@@ -56,7 +56,7 @@ const slides1 = [
   },
   {
     id: 3,
-    bg: "/images/assets/large-formate-print.jpg",
+    bg: "/images/assets/large-format-printing.jpg",
     titleStrong: "Large Format",
     titleRest: "Printing",
     subtitle: "High-quality Banner, Sticker and Poster",
@@ -67,7 +67,7 @@ const slides1 = [
   },
   {
     id: 4,
-    bg: "/images/assets/t-shirt-and-hi-vis-vest.jpg",
+    bg: "/images/assets/t-shirt-and-hi-vis-printing.jpg",
     titleStrong: "T-Shirt and",
     titleRest: "Hi Vis Vest",
     subtitle: "Custom apparel printing on demand.",
