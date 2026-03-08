@@ -72,7 +72,7 @@ const slides1 = [
     titleRest: "Printing",
     subtitle: "Custom apparel printing on demand.",
     paragraph:
-      "Personalized T-shirts and hi-vis vests for promoting brands or events.",
+      "Personalized T-shirts and hi-vis vest printing for promoting brands or events.",
     buttonText: "Shop Now",
     buttonLink: "/quote/apparel-printing",
   },
