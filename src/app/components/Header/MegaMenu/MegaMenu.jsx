@@ -107,7 +107,7 @@ const SIMPLE_SUBMENUS = {
         title: "Booklets",
         items: [
           "Stapled Booklets",
-          "Wire-O Binding Booklets",
+          "Wire o Binding Booklets",
           "Comb Binding Booklets",
           "Perfect Bound Booklets",
           "Books and Booklets",
