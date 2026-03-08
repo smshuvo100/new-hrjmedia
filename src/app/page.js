@@ -69,7 +69,7 @@ const slides1 = [
     id: 4,
     bg: "/images/assets/t-shirt-and-hi-vis-printing.jpg",
     titleStrong: "T-Shirt and",
-    titleRest: "Hi Vis Vest",
+    titleRest: "Hi Vis Printing",
     subtitle: "Custom apparel printing on demand.",
     paragraph:
       "Personalized T-shirts and hi-vis vests for promoting brands or events.",
