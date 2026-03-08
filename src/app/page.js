@@ -34,8 +34,7 @@ import { MdPhoneIphone, MdEmail } from "react-icons/md";
 const slides1 = [
   {
     id: 1,
-    bg: "/images/assets/digital-printing.jpg",
-
+    bg: "/images/assets/same-day-printing.jpg",
     titleStrong: "Same Day",
     titleRest: "Printing",
     subtitle: "Need urgent printing?",
@@ -46,7 +45,7 @@ const slides1 = [
   },
   {
     id: 2,
-    bg: "/images/assets/same-day-printing.jpg",
+    bg: "/images/assets/digital-printing.jpg",
     titleStrong: "Digital and Litho",
     titleRest: "Printing",
     subtitle: "Professional and fast printing",
