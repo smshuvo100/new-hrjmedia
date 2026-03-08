@@ -37,9 +37,9 @@ const slides1 = [
     bg: "/images/assets/same-day-printing.jpg",
     titleStrong: "Same Day",
     titleRest: "Printing",
-    subtitle: "Need urgent printing?",
+    subtitle: "Urgent printing services.",
     paragraph:
-      "Fast, reliable same-day printing for your urgent business needs.",
+      "Super fast and reliable same day printing for urgent business needs.",
     buttonText: "Order Now",
     buttonLink: "/quote/same-day",
   },
@@ -48,7 +48,7 @@ const slides1 = [
     bg: "/images/assets/digital-printing.jpg",
     titleStrong: "Digital and Litho",
     titleRest: "Printing",
-    subtitle: "Professional and fast printing",
+    subtitle: "Professional and fast printing services.",
     paragraph:
       "High-quality digital and litho printing for marketing materials.",
     buttonText: "Get Started",
@@ -59,9 +59,9 @@ const slides1 = [
     bg: "/images/assets/large-format-printing.jpg",
     titleStrong: "Large Format",
     titleRest: "Printing",
-    subtitle: "High-quality Banner, Sticker and Poster",
+    subtitle: "High quality Banner, Sticker and Poster.",
     paragraph:
-      "Get stunning large-format prints for exhibitions and promotions.",
+      "Get stunning large format printing for exhibitions and promotions.",
     buttonText: "Get a Quote",
     buttonLink: "/quote/large-format",
   },
@@ -72,7 +72,7 @@ const slides1 = [
     titleRest: "Hi Vis Vest",
     subtitle: "Custom apparel printing on demand.",
     paragraph:
-      "Personalized T-shirts and hi-vis vests for your brand or event.",
+      "Personalized T-shirts and hi-vis vests for promoting brands or events.",
     buttonText: "Shop Now",
     buttonLink: "/quote/apparel-printing",
   },
