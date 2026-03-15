@@ -195,3 +195,7 @@ footer .footer-copyright
 .main-footer .flex-box ul li::marker {
   color: var(--blue-color);
 }
+
+footer.footer {
+  padding-top: 30px;
+}
