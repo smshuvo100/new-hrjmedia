@@ -381,7 +381,7 @@ export default function Page() {
               />
             </div>
             <div className="content-wrapper">
-              <h2>Who We Are</h2>
+              <h2>Who we are</h2>
               <p>
                 Our mission is to cultivate relationships and provide
                 uncompromising personal service with a relentless passion for
@@ -410,7 +410,7 @@ export default function Page() {
         <div className="container">
           <div className="services-showcase-head">
             <span className="services-badge">Our Services</span>
-            <h2>What We Do</h2>
+            <h2>What we do</h2>
 
             <p>
               Our Printing team is extremely passionate about delivering a
