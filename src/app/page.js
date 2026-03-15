@@ -22,6 +22,8 @@ import InStore from "./components/InStore/InStore";
 
 import UrgentPrintCta from "./components/UrgentPrintCta/UrgentPrintCta";
 
+import GoogleReviews from "./components/GoogleReviews/GoogleReviews";
+
 // import Modal from "./components/get-a-quote/Modal";
 // import GetAQuoteWizard from "./components/get-a-quote/GetAQuoteWizard";
 
@@ -470,6 +472,7 @@ export default function Home() {
       {/*  section */}
 
       {/*  section */}
+      <GoogleReviews />
 
       {/*  footer */}
       <Footer />
