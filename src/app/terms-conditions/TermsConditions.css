@@ -5,38 +5,34 @@ TERMS PAGE
 */
 
 .terms-section {
-  padding: 70px 0;
-  background: #ffffff; /* বাইরেরটা white */
+  padding: 60px 0 80px;
+  background: #f7f7f7;
 }
 
 .terms-wrapper {
-  background: #f7f7f7; /* ভেতরেরটা grey */
+  background: #fff;
   padding: 50px;
   border-radius: var(--radius);
-  border: 1px solid #e5e7f2;
+  box-shadow: var(--shadow);
 }
-
-/* text */
 
 .terms-wrapper p {
   margin-bottom: 18px;
   color: #444;
-  line-height: 1.7;
 }
-
-/* section block */
 
 .terms-block {
   margin-top: 35px;
 }
 
-/* heading */
-
 .terms-block h2 {
   margin-bottom: 12px;
   color: var(--blue-color);
-  font-size: 22px;
-  font-weight: 700;
+}
+
+.terms-block p {
+  margin-bottom: 12px;
+  line-height: 1.7;
 }
 
 /*

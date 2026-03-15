@@ -230,7 +230,6 @@ export default function Page() {
         </div>
       </section>
 
-      <FooterCta />
       <Footer />
     </>
   );
