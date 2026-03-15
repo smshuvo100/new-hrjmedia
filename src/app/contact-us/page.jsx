@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import SubHero from "../components/SubHero/SubHero";
+import GoogleMap from "../components/GoogleMap/GoogleMap";
 import "./Contact.css";
 
 export default function Page() {
@@ -273,6 +274,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <GoogleMap />
 
       <Footer />
     </>
