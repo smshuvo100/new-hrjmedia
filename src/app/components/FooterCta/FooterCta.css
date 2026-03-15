@@ -1,0 +1,75 @@
+/*
+======================================
+  Urgent Print CTA homepage -FOOTER
+======================================
+*/
+.footer-cta .urgent-print-cta {
+  background: var(--blue-g-color);
+  border-radius: 15px;
+  padding: 20px 30px;
+}
+.footer-cta .urgent-print-cta a.cta-btn {
+  width: 240px;
+}
+
+/* 
+===============================
+  Urgent Print CTA homepage -CTA
+==============================
+*/
+.urgent-print-cta {
+  background: var(--light-blue);
+  padding: 14px 0;
+}
+
+.urgent-print-cta .cta-contact a {
+  font-size: 16px;
+  color: var(--background);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.urgent-print-cta .cta-contact a:hover {
+  text-decoration: underline;
+}
+
+.urgent-print-cta .cta-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.urgent-print-cta a.cta-btn {
+  background: var(--background);
+  color: var(--light-blue);
+  width: 284px;
+  text-align: center;
+}
+
+.urgent-print-cta p.cta-text {
+  color: var(--background);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+.urgent-print-cta .cta-box .cta-contact {
+  display: flex;
+  gap: 46px;
+}
+
+.urgent-print-cta .cta-box .cta-contact span.c-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.urgent-print-cta .cta-box .cta-contact span.c-number {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.urgent-print-cta .cta-box .cta-contact svg {
+  font-size: 21px;
+}
