@@ -501,7 +501,6 @@ export default function Page() {
         </div>
       </section>
 
-      <div className="space-bottom-60"></div>
       <GoogleReviews />
       <FooterCta />
       <Footer />

@@ -1,0 +1,62 @@
+/*
+===============================
+TERMS PAGE
+===============================
+*/
+
+.terms-section {
+  padding: 70px 0;
+  background: #ffffff; /* বাইরেরটা white */
+}
+
+.terms-wrapper {
+  background: #f7f7f7; /* ভেতরেরটা grey */
+  padding: 50px;
+  border-radius: var(--radius);
+  border: 1px solid #e5e7f2;
+}
+
+/* text */
+
+.terms-wrapper p {
+  margin-bottom: 18px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* section block */
+
+.terms-block {
+  margin-top: 35px;
+}
+
+/* heading */
+
+.terms-block h2 {
+  margin-bottom: 12px;
+  color: var(--blue-color);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/*
+===============================
+RESPONSIVE
+===============================
+*/
+
+@media (max-width: 991px) {
+  .terms-wrapper {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .terms-wrapper {
+    padding: 25px;
+  }
+
+  .terms-block {
+    margin-top: 25px;
+  }
+}
