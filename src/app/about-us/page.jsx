@@ -383,21 +383,23 @@ export default function Page() {
             <div className="content-wrapper">
               <h2>Who We Are</h2>
               <p>
-                At Digital Press, our mission is to cultivate relationships and
-                provide uncompromising personal service with a relentless
-                passion for quality, communication, success, and teamwork. We
-                value our clients and build lifelong partnerships, based on our
-                commitment to serving, with the standards of excellence that
-                each and every client deserves.
+                Our mission is to cultivate relationships and provide
+                uncompromising personal service with a relentless passion for
+                quality, communication, success, and teamwork. We value our
+                clients and build lifelong partnerships, based on our commitment
+                to serving, with the standards of excellence that each and every
+                client deserves.
               </p>
               <p>
-                Our mission is to provide you with the highest-quality products
-                and services possible in a timely fashion and at a competitive
-                price. We promise to listen to you and help you achieve your
-                business goals. We will always be there with you by providing
-                honest, expert advice and quick, friendly customer service. Our
-                goal is to meet and exceed your expectations. We Could deliver
-                order Cheaper, Faster and Easier.
+                We provide with the highest-quality products and services
+                possible in a timely fashion and at a competitive price. We
+                promise to listen to you and help you achieve your business
+                goals. We will always be there with you by providing honest,
+                expert advice and quick, friendly customer service.
+              </p>
+              <p>
+                Our goal is to meet and exceed your expectations. We Could
+                deliver order Cheaper, Faster and Easier.
               </p>
             </div>
           </div>
@@ -409,12 +411,33 @@ export default function Page() {
           <div className="services-showcase-head">
             <span className="services-badge">Our Services</span>
             <h2>What We Do</h2>
+
             <p>
-              We provide a wide range of printing, binding, signage, branding,
-              and custom product solutions for businesses, events, retail, and
-              personal use. From same day document printing to large format
-              posters, menus, banners, stickers, clothing, and promotional
-              items, we help bring your ideas to life with speed and quality.
+              Our Printing team is extremely passionate about delivering a
+              prompt and reliable service. With over a decade of combined team
+              experience in the industry, we are focused on delivering quality
+              products at a super speedy rate. Day, night, weekend or bank
+              holiday, we’ll work hard to bring your project to authenticity.
+            </p>
+
+            <p>
+              Our state of the art in-house technology includes all the
+              equipment we need to produce outstanding printing projects. We are
+              dedicated to providing a high standard of customer service paired
+              with a high quality of reasonably priced printing and promotional
+              products. In addition to producing everyday essentials for your
+              any events while you wait. All our printing that are carried out
+              on-site gives us an opportunity to manage a large workload and
+              produce the finished result at exceptionally quick rates. This
+              means we can oversee every detail of the printing process and
+              offer same day delivery printing on the majority of our products
+              and services. If you’re within the London area, we strive to get
+              your project delivered to you with a few hours.
+            </p>
+            <p>
+              We have a highly skilled graphic designer in our location who can
+              help with any artwork and design needs creating professional
+              looking brands to promote your business.
             </p>
           </div>
 

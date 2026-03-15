@@ -64,7 +64,6 @@ WHAT WE DO SECTION
 }
 
 .services-showcase-head {
-  max-width: 880px;
   margin: 0 auto 36px;
   text-align: center;
 }
@@ -91,8 +90,9 @@ WHAT WE DO SECTION
 .services-showcase-head p {
   margin: 0;
   color: #555555;
-  font-size: 17px;
+  text-align: left;
   line-height: 1.75;
+  margin-bottom: 15px;
 }
 
 /* Masonry layout */
