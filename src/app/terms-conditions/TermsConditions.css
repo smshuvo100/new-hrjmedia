@@ -5,34 +5,46 @@ TERMS PAGE
 */
 
 .terms-section {
-  padding: 60px 0 80px;
-  background: #f7f7f7;
+  padding: 70px 0;
+  background: #ffffff;
 }
 
 .terms-wrapper {
-  background: #fff;
+  background: #f7f7f7;
   padding: 50px;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  border: 1px solid #e5e7f2;
 }
 
 .terms-wrapper p {
   margin-bottom: 18px;
   color: #444;
+  line-height: 1.7;
 }
 
 .terms-block {
-  margin-top: 35px;
+  margin-top: 40px;
 }
+
+/* Title */
 
 .terms-block h2 {
-  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
   color: var(--blue-color);
+  margin-bottom: 10px;
 }
 
-.terms-block p {
-  margin-bottom: 12px;
-  line-height: 1.7;
+/* line under title */
+
+.terms-block h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--blue-color);
+  margin-top: 8px;
+  border-radius: 2px;
 }
 
 /*
@@ -52,7 +64,7 @@ RESPONSIVE
     padding: 25px;
   }
 
-  .terms-block {
-    margin-top: 25px;
+  .terms-block h2 {
+    font-size: 18px;
   }
 }
