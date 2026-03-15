@@ -178,19 +178,22 @@ export default function Footer() {
               <h4>Who we are</h4>
               <ul>
                 <li>
-                  <Link href="/">About Us</Link>
+                  <Link href="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <Link href="/">Contact Us</Link>
+                  <Link href="/contact-us">Contact Us</Link>
                 </li>
                 <li>
-                  <Link href="/">Reseller Solutions</Link>
+                  <Link href="/artwork">Artwork</Link>
                 </li>
                 <li>
-                  <Link href="/">Artwork Information</Link>
+                  <Link href="/delivery">Delivery</Link>
                 </li>
                 <li>
-                  <Link href="/">Newsroom</Link>
+                  <Link href="/24-7-printing">24/7 Printing Turnaround</Link>
+                </li>
+                <li>
+                  <Link href="/terms-conditions">Terms & Conditions</Link>
                 </li>
               </ul>
             </motion.div>
