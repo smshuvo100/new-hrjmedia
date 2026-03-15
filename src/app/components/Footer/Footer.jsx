@@ -192,9 +192,6 @@ export default function Footer() {
                 <li>
                   <Link href="/24-7-printing">24/7 Printing Turnaround</Link>
                 </li>
-                <li>
-                  <Link href="/terms-conditions">Terms & Conditions</Link>
-                </li>
               </ul>
             </motion.div>
 
@@ -276,9 +273,11 @@ export default function Footer() {
             </motion.div>
 
             <motion.div className="footer-links" variants={gridItem}>
-              <a href="/terms-and-conditions">Terms &amp; Conditions</a>
-              <a href="/cookie-statement">Cookie Statement</a>
-              <a href="/privacy-policy">Privacy policy</a>
+              <Link href="/terms-conditions">Terms & Conditions</Link>
+
+              <Link href="/cookie-statement">Cookie Statement</Link>
+
+              <Link href="/privacy-policy">Privacy policy</Link>
             </motion.div>
 
             <motion.div className="footer-payments" variants={gridItem}>

@@ -1,0 +1,71 @@
+/*
+===============================
+TERMS PAGE
+===============================
+*/
+
+.terms-section {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.terms-wrapper {
+  background: #f7f7f7;
+  padding: 50px;
+  border-radius: var(--radius);
+  border: 1px solid #e5e7f2;
+}
+
+.terms-wrapper p {
+  margin-bottom: 18px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.terms-block {
+  margin-top: 40px;
+}
+
+/* Title */
+
+.terms-block h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--blue-color);
+  margin-bottom: 10px;
+}
+
+/* line under title */
+
+.terms-block h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--blue-color);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+/*
+===============================
+RESPONSIVE
+===============================
+*/
+
+@media (max-width: 991px) {
+  .terms-wrapper {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .terms-wrapper {
+    padding: 25px;
+  }
+
+  .terms-block h2 {
+    font-size: 18px;
+  }
+}
