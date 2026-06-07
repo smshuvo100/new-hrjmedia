@@ -1,3 +1,4 @@
+/* src/app/contact-us/Contact.css */
 .contact-page-section {
   padding: 70px 0;
   background: #f5f3ef;
@@ -24,21 +25,6 @@
 }
 .contact-info-block h2 {
   margin-bottom: 28px;
-}
-.contact-form-card::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 42px;
-  height: 22px;
-  background: #fbfaf8;
-  border-left: 1px solid #e3ddd3;
-  border-right: 1px solid #e3ddd3;
-  border-bottom: 1px solid #e3ddd3;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
 }
 
 .contact-form-card h2 {
@@ -129,22 +115,18 @@
 }
 
 .upload-box {
-  height: 49px;
-  border: 1.5px solid var(--light-blue);
-  border-radius: 16px;
-  background: #f7f4ef;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+  border: 2px dashed var(--light-blue);
+  height: 55px;
   color: var(--light-blue);
-  font-size: 17px;
-  font-weight: 600;
   cursor: pointer;
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  background: #f0f4ff;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  transition: all 0.3s;
+  display: flex;
 }
 
 .upload-box:hover {
@@ -158,21 +140,16 @@
 }
 
 .contact-submit-btn {
-  width: 100%;
-  /* height: 52px;
+  background: var(--blue-g-color);
+  color: #fff;
+  cursor: pointer;
   border: none;
-  border-radius: 999px;
- 
-  color: #ffffff;
+  border-radius: 50px;
+  width: 100%;
+  height: 52px;
   font-size: 16px;
   font-weight: 700;
-  cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease,
-    box-shadow 0.2s ease; */
-  /* padding: 15px 30px !important; */
-  height: 49px;
+  transition: all 0.3s;
 }
 
 .contact-submit-btn:hover {
@@ -404,5 +381,60 @@
 
   .info-action-btn {
     font-size: 14px;
+  }
+}
+
+/* Image Preview Grid for Contact Page */
+.contact-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.contact-preview-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid var(--light-blue);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.contact-preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-remove-img {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+.contact-remove-img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments for previews */
+@media (max-width: 575px) {
+  .contact-preview-grid {
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+    gap: 8px;
   }
 }

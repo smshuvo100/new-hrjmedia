@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { FiUploadCloud, FiX } from "react-icons/fi"; // আইকন ইম্পোর্ট
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import SubHero from "../components/SubHero/SubHero";
@@ -19,21 +20,32 @@ export default function Page() {
     message: "",
   });
 
-  const [artwork, setArtwork] = useState(null);
+  const [previews, setPreviews] = useState([]); // মাল্টিপল ইমেজ প্রিভিউ স্টেট
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState({ type: "", message: "" });
+  const fileInputRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // ইমেজ হ্যান্ডেলার (লাইভ প্রিভিউ লজিক)
   const handleFileChange = (e) => {
-    const file = e.target.files?.[0] || null;
-    setArtwork(file);
+    const files = Array.from(e.target.files);
+    const newPreviews = files.map((file) => ({
+      file,
+      url: URL.createObjectURL(file),
+    }));
+    setPreviews([...previews, ...newPreviews]);
+  };
+
+  // ইমেজ রিমুভ লজিক
+  const removeFile = (index) => {
+    const updated = [...previews];
+    URL.revokeObjectURL(updated[index].url); // মেমোরি ক্লিনআপ
+    updated.splice(index, 1);
+    setPreviews(updated);
   };
 
   const handleSubmit = async (e) => {
@@ -43,34 +55,26 @@ export default function Page() {
 
     try {
       const payload = new FormData();
-      payload.append("companyName", formData.companyName);
-      payload.append("subject", formData.subject);
-      payload.append("firstName", formData.firstName);
-      payload.append("lastName", formData.lastName);
-      payload.append("phone", formData.phone);
-      payload.append("email", formData.email);
-      payload.append("message", formData.message);
+      Object.keys(formData).forEach((key) =>
+        payload.append(key, formData[key]),
+      );
 
-      if (artwork) {
-        payload.append("artwork", artwork);
-      }
+      // সব প্রিভিউ ফাইলগুলো অ্যাড করা
+      previews.forEach((item) => {
+        payload.append("artwork", item.file);
+      });
 
       const res = await fetch("/api/contact", {
         method: "POST",
         body: payload,
       });
 
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data?.error || "Failed to send message.");
-      }
+      if (!res.ok) throw new Error("Failed to send message.");
 
       setStatus({
         type: "success",
         message: "Your message has been sent successfully.",
       });
-
       setFormData({
         companyName: "",
         subject: "",
@@ -80,10 +84,7 @@ export default function Page() {
         email: "",
         message: "",
       });
-      setArtwork(null);
-
-      const fileInput = document.getElementById("artwork");
-      if (fileInput) fileInput.value = "";
+      setPreviews([]); // প্রিভিউ ক্লিয়ার
     } catch (error) {
       setStatus({
         type: "error",
@@ -113,7 +114,7 @@ export default function Page() {
                       id="companyName"
                       name="companyName"
                       type="text"
-                      placeholder="Enter your company name"
+                      placeholder="Enter company name"
                       value={formData.companyName}
                       onChange={handleChange}
                     />
@@ -150,7 +151,7 @@ export default function Page() {
                       id="phone"
                       name="phone"
                       type="text"
-                      placeholder="Enter your mobile phone number"
+                      placeholder="Enter phone number"
                       value={formData.phone}
                       onChange={handleChange}
                       required
@@ -170,21 +171,45 @@ export default function Page() {
                     />
                   </div>
 
+                  {/* উন্নত আপলোড এবং প্রিভিউ এরিয়া */}
                   <div className="form-group full-width">
-                    <label htmlFor="artwork">Upload Artwork</label>
-
-                    <label className="upload-box" htmlFor="artwork">
-                      <span className="upload-icon">↑</span>
-                      <span>{artwork ? artwork.name : "Upload Files"}</span>
-                    </label>
-
+                    <label>Upload Artwork (Visual Preview)</label>
+                    <div
+                      className="upload-box"
+                      onClick={() => fileInputRef.current.click()}
+                    >
+                      <FiUploadCloud className="upload-icon" />
+                      <span>
+                        {previews.length > 0
+                          ? `${previews.length} Files Selected`
+                          : "Upload Files"}
+                      </span>
+                    </div>
                     <input
-                      id="artwork"
-                      name="artwork"
                       type="file"
+                      multiple
                       onChange={handleFileChange}
+                      ref={fileInputRef}
                       hidden
                     />
+
+                    {/* ইমেজ প্রিভিউ গ্রিড */}
+                    {previews.length > 0 && (
+                      <div className="contact-preview-grid">
+                        {previews.map((item, index) => (
+                          <div className="contact-preview-item" key={index}>
+                            <img src={item.url} alt="preview" />
+                            <button
+                              type="button"
+                              className="contact-remove-img"
+                              onClick={() => removeFile(index)}
+                            >
+                              <FiX />
+                            </button>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
 
@@ -201,8 +226,6 @@ export default function Page() {
                       <option value="">Choose your subject</option>
                       <option value="General Inquiry">General Inquiry</option>
                       <option value="Request a Quote">Request a Quote</option>
-                      <option value="Artwork Support">Artwork Support</option>
-                      <option value="Order Support">Order Support</option>
                       <option value="Urgent Printing">Urgent Printing</option>
                     </select>
                   </div>
@@ -211,28 +234,26 @@ export default function Page() {
                     <textarea
                       id="message"
                       name="message"
-                      placeholder="You can write your message here"
+                      placeholder="Write your message here"
                       value={formData.message}
                       onChange={handleChange}
                       required
                     />
                   </div>
-                  <div className="btn">
-                    <button
-                      type="submit"
-                      className="contact-submit-btn"
-                      disabled={loading}
-                    >
-                      <span>{loading ? "Sending..." : "Send"}</span>
-                    </button>
-                  </div>
+                  <button
+                    type="submit"
+                    className="contact-submit-btn quote_submit_btn"
+                    disabled={loading}
+                  >
+                    <span>{loading ? "Sending..." : "Send"}</span>
+                  </button>
                 </div>
 
-                {status.message ? (
+                {status.message && (
                   <p className={`form-status ${status.type}`}>
                     {status.message}
                   </p>
-                ) : null}
+                )}
               </form>
             </div>
 
@@ -262,7 +283,6 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
               <div className="contact-info-actions">
                 <a href="/get-a-quote" className="info-action-btn">
                   Get a Quote
@@ -277,7 +297,6 @@ export default function Page() {
       </section>
 
       <GoogleMap />
-
       <FooterCta />
       <Footer />
     </>
